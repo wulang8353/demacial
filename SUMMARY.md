@@ -5,6 +5,6 @@
   * [下载1](chapter1/section1.md)
   * [下载2](chapter1/section2.md)
 * [第二章——安装](chapter2/README.md)
-  * 安装1
-  * 安装2
+  * [安装1](chapter2/section1.md)
+  * [安装2](chapter2/section2.md)
 
