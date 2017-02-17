@@ -1,6 +1,6 @@
 # Summary
 
-* [Angular Baby](README.md)
+* [Javascript](javascript/Directory.md)
 * [第一章——下载](chapter1/README.md)
   * [下载1](chapter1/section1.md)
   * [下载2](chapter1/section2.md)
