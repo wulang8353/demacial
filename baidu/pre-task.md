@@ -79,9 +79,27 @@
 
 ## 第四关
 
-
-`
-
+打开 Console 窗口，只需用鼠标点击图中任意位置，即可看到当前点坐标信息。
+```
+function moveBall(ball) {
+ball.at(45, 45, ball => ball.wait(2000));
+ball.at(75, 45, ball => ball.turnRight());
+ball.at(75, 132, ball => ball.turnLeft());
+ball.at(221, 132, ball => ball.turnRight());
+ball.at(221, 240, ball => ball.turnRight());
+ball.at(80, 240, ball => ball.turnLeft());
+ball.at(80, 363, ball => ball.turnRight());
+ball.at(26, 363, ball => ball.turnBack());
+ball.at(165, 363, ball => ball.turnRight());
+ball.at(165, 467, ball => ball.turnRight());
+ball.at(26, 467, ball => ball.turnBack());
+ball.at(367, 467, ball => ball.turnLeft());
+ball.at(367, 183, ball => ball.turnRight());
+ball.at(575, 183, ball => ball.turnRight());
+ball.at(575, 473, ball => ball.turnLeft());
+}
+```
+每当转弯的时候，其坐标（x 或者 y）会相同。
 
 
 
