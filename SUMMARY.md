@@ -1,10 +1,7 @@
 # Summary
 
+* [Introduction](README.md)
 * [Javascript](javascript/Directory.md)
-* [第一章——下载](chapter1/README.md)
-  * [下载1](chapter1/section1.md)
-  * [下载2](chapter1/section2.md)
-* [第二章——安装](chapter2/README.md)
-  * [安装1](chapter2/section1.md)
-  * [安装2](chapter2/section2.md)
+* [百度前端学院](baidu/README.md)
+  * [热身任务](baidu/pre-task.md)
 
