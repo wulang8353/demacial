@@ -55,11 +55,32 @@
 
 ![task3-1](/assets/IFEE/pre-task/task3-2.png)
 
-“device-toolbar” ： 这里可以调节内容大小，可以直接定义成iPone、iPad大小的分辨路
+“device-toolbar” ： 可以直接定义成iPone、iPad大小的分辨路。这里直接输入521即可
 
 ![task3-2](/assets/IFEE/pre-task/task3-1.png)
 
-2>
+2> 在控制台输入`document.body.clientHeight` 可以得到内容高度。然后将密码锁改成得到的高度，即可
+
+![task3-2](/assets/IFEE/pre-task/task3-3.png)
+
+每个数字之间的高度为-40px，对照下表，将得到的高度一一对应后，将对应的top值填入到`n1、n2、n3`的top值中即可。
+```
+密码值 top值:
+1 -40
+2 -100
+3 -160
+4 -220
+5 -280
+6 -340
+7 -400
+8 -460
+9 -520
+```
+
+## 第三关
+
+
+
 
 
 
