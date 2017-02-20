@@ -1,12 +1,6 @@
+
+
 ## 第一关
-
-
-
-![task1](/assets/IFEE/pre-task/task1.png)
-
-基本上这类题目的标准答案都会是一种比较具有对称性的图片。
-
-## 第二关
 
 使用开发者工具，键盘按下`F12`或者同时按下`Crtl+shift+i`
 
@@ -43,7 +37,7 @@
     
 `atob()`函数能够解码通过base-64编码的字符串数据。相反地，`atob()`函数能够从二进制数据“字符串”创建一个base-64编码的ASCII字符
 
-## 第三关
+## 第二关
 
 **题目含义**：当前窗口的高度值 = 密码锁
 
@@ -59,9 +53,9 @@
 
 ![task3-2](/assets/IFEE/pre-task/task3-1.png)
 
-2> 在控制台输入`document.body.clientHeight` 可以得到内容高度。然后将密码锁改成得到的高度，即可
+2> 在控制台输入`document.body.clientHeight` 可以得到窗口高度。然后将密码锁改成得到的高度，即可
 
-![task3-2](/assets/IFEE/pre-task/task3-3.png)
+![task3-3](/assets/IFEE/pre-task/task3-3.png)
 
 每个数字之间的高度为-40px，对照下表，将得到的高度一一对应后，将对应的top值填入到`n1、n2、n3`的top值中即可。
 ```
@@ -79,8 +73,14 @@
 
 ## 第三关
 
+![task4](/assets/IFEE/pre-task/task4.png)
+
+我这里是慢慢调整的，用到的是CSS3的`transform`属性: `transform: rotateY(180deg)  rotateZ(20deg) 
+
+## 第四关
 
 
+`
 
 
 
