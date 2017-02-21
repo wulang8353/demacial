@@ -11,9 +11,8 @@
         }
     },
    "plugins": [
-        "search",
-        "-lunr",
-        "search-jieba",
+        "-search",
+        "search-pro@1.0.7",
         "sharing",
         "advanced-emoji",
         "github",
