@@ -1,11 +1,6 @@
 {
  
-  "plugins": ["toggle-chapters"],
-    "pluginsConfig": {
-        "myPlugin": {
-            "message": "Hello World"
-        }
-     }
+  "title" : "Gitbook Use"
 
    
 }
