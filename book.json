@@ -47,11 +47,6 @@
     },
     "level_number": false,
     "collapsible_menu": false,
-    "variables": {
-        "title": "前端开发笔记",
-        "theme": "theme-green",
-        "copyright": "Copyright 2015-2017 niefee/胡"
-    },
     "title": "前端开发笔记",
     "links": {
         "sidebar": {
