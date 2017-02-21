@@ -57,10 +57,6 @@
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
-         "toc": {
-            "addClass": true,
-            "className": "toc"
-        },
         "baidu": {
             "token" : "ff100361cdce95dd4c8fb96b4009f7bc"
         },
