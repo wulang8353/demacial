@@ -13,7 +13,8 @@
         "theme-comscore",
          "github" ,
         "splitter",
-        "tbfed-pagefooter"
+        "tbfed-pagefooter",
+        "atoc"
     ],
     "pluginsConfig": {
         "editlink": {
