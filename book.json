@@ -1,4 +1,11 @@
 {
+    "title" : "study",
+    "description" : "2017年情人节开始记录，前端水好深，就算裸泳，我也非得学会咯"
+,
+    "author" : "walter",
+    "generator": "site",
+    "language" : "zh-hans",
+    "gitbook" : "2.6.4",
    "plugins": [
         "editlink",
         "sitemap",
@@ -46,6 +53,11 @@
             ]
         }
     },
+    "tbfed-pagefooter": {
+        "copyright":"Copyright &copy zhangjikai.com 2015",
+        "modify_label": "该文件修订时间：",
+        "modify_format": "YYYY-MM-DD HH:mm:ss"
+    },
     "level_number": false,
     "collapsible_menu": false,
     "links": {
@@ -53,11 +65,6 @@
             "交友平台": "https://github.com/wulang8353"
         }
     },
-  "tbfed-pagefooter": {
-        "copyright":"Copyright &copy zhangjikai.com 2015",
-        "modify_label": "该文件修订时间：",
-        "modify_format": "YYYY-MM-DD HH:mm:ss"
-    },
-    "description": "2017年情人节开始记录，前端水好深，就算裸泳，我也非得学会咯"
+ 
    
 }
