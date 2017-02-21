@@ -28,8 +28,7 @@
         "toc",
         "edit-link",
         "back-to-top-button",
-        "splitter",
-
+        "splitter"
     ],
     "pluginsConfig": {
         "github": {
