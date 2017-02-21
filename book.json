@@ -11,7 +11,6 @@
         }
     },
    "plugins": [
-        "disqus",
         "-search",
         "search-pro@1.0.7",
         "advanced-emoji@0.1.5",
@@ -33,9 +32,6 @@
         "back-to-top-button@0.1.0"
     ],
     "pluginsConfig": {
-        "disqus": {
-            "shortName": "gitbookuse"
-        },
         "github": {
             "url": "https://github.com/zhangjikai/gitbook-use"
         },
