@@ -36,19 +36,16 @@
             "addClass": true,
             "className": "toc"
         },
-        "sharing": {
+         "sharing": {
             "weibo": true,
             "facebook": true,
             "twitter": true,
             "google": false,
             "instapaper": false,
-            "vk": false,
+             "vk": false,
             "all": [
-                "facebook",
-                "google",
-                "twitter",
-                "weibo",
-                "instapaper"
+                "facebook", "google", "twitter",
+                "weibo", "instapaper"
             ]
         },
    
