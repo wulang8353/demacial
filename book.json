@@ -24,11 +24,11 @@
             "url": "https://github.com/wulang8353"
         },
         "sitemap": {
-            "hostname": "https://github.com/Niefee/My-study-records"
+            "hostname": "https://github.com/wulang8353/demacial"
         },
         "toc": {
-        "addClass": true,
-        "className": "toc"
+            "addClass": true,
+            "className": "toc"
         },
         "sharing": {
             "weibo": true,
