@@ -19,10 +19,10 @@
     "pluginsConfig": {
         "editlink": {
             "base": "https://github.com/Niefee/My-study-records/tree/master",
-            "label": "编辑本页"
+            "label": "Github地址"
         },
-          "github": {
-        "url": "https://github.com/zhangjikai"
+        "github": {
+        "url": "https://github.com/wulang8353"
         },
         "sitemap": {
             "hostname": "https://github.com/Niefee/My-study-records"
