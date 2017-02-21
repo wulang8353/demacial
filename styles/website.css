@@ -1,8 +1,8 @@
 /* CSS for website */
 
-p.comments-section code {
-    background: #f9f2f4;
-    color: #c7254e;
+h1 , h2{
+    border-bottom: 1px solid #EFEAEA;
+    padding-bottom: 3px;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal {
