@@ -11,8 +11,9 @@
         }
     },
    "plugins": [
-        "-search",
-        "search-pro",
+        "search",
+        "-lunr",
+        "search-jieba",
         "sharing",
         "advanced-emoji",
         "github",
@@ -28,7 +29,8 @@
         "toc",
         "edit-link",
         "back-to-top-button",
-        "splitter"
+        "splitter",
+        "theme-comscore"
     ],
     "pluginsConfig": {
         "github": {
