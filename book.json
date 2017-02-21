@@ -28,7 +28,9 @@
         "toc",
         "edit-link",
         "back-to-top-button",
-        "splitter"
+        "splitter",
+        "3-ba",
+        "theme-comscore"
     ],
     "pluginsConfig": {
         "github": {
@@ -50,7 +52,9 @@
                 "weibo", "instapaper"
             ]
         },
-
+        "3-ba": {
+            "token": "ee48b5ad6a7a7c96fc00b8cd4c2a93e8"
+        },
         "tbfed-pagefooter": {
             "copyright":"Copyright &copy walter 2017",
             "modify_label": "该文件修订时间：",
