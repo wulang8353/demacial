@@ -1,7 +1,59 @@
 {
  
-  "title" : "Gitbook Use",
-  "author" : "wulang"
-
+   "plugins": [
+        "editlink",
+        "sitemap",
+        "sharing",
+        "toggle-chapters",
+        "splitter",
+        "advanced-emoji",
+        "search",
+        "-lunr",
+        "search-jieba",
+        "3-ba",
+        "theme-comscore"
+    ],
+    "pluginsConfig": {
+        "editlink": {
+            "base": "https://github.com/Niefee/My-study-records/tree/master",
+            "label": "编辑本页"
+        },
+        "sitemap": {
+            "hostname": "https://github.com/Niefee/My-study-records"
+        },
+        "3-ba": {
+            "token": "ee48b5ad6a7a7c96fc00b8cd4c2a93e8"
+        },
+        "sharing": {
+            "weibo": true,
+            "facebook": true,
+            "twitter": true,
+            "google": false,
+            "instapaper": false,
+            "vk": false,
+            "all": [
+                "facebook",
+                "google",
+                "twitter",
+                "weibo",
+                "instapaper"
+            ]
+        }
+    },
+    "level_number": false,
+    "collapsible_menu": false,
+    "variables": {
+        "title": "前端开发笔记",
+        "theme": "theme-green",
+        "copyright": "Copyright 2015-2017 niefee/胡"
+    },
+    "title": "前端开发笔记",
+    "links": {
+        "sidebar": {
+            "既见君子，云胡不喜": "https://github.com/Niefee"
+        },
+        "gitbook": false
+    },
+    "description": "这个是关于前端知识的记录，从2015年8月30日开始至今，一直记录着我在前端学习方面的知识与问题。其中可能有纰漏，但若我发现了，会即使纠正的。"
    
 }
