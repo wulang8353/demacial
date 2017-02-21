@@ -12,9 +12,9 @@
     },
    "plugins": [
         "-search",
-        "search-pro@1.0.7",
+        "search-pro",
         "sharing",
-        "advanced-emoji@0.1.5",
+        "advanced-emoji",
         "github",
         "emphasize",
         "anchors",
@@ -24,10 +24,10 @@
         "expandable-chapters",
         "baidu",
         "toggle-chapters",
-        "sitemap@1.0.2",
+        "sitemap",
         "toc",
         "edit-link",
-        "back-to-top-button@0.1.0",
+        "back-to-top-button",
         "splitter"
     ],
     "pluginsConfig": {
