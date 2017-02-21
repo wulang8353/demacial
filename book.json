@@ -6,7 +6,7 @@
     "generator": "site",
     "language" : "zh-hans",
     "gitbook" : "2.6.4",
-   "plugins": [
+    "plugins": [
         "editlink",
         "sitemap",
         "sharing",
@@ -14,10 +14,9 @@
         "splitter",
         "advanced-emoji",
         "search",
-        "-lunr",
         "search-jieba",
         "theme-comscore",
-         "github" ,
+        "github" ,
         "splitter",
         "tbfed-pagefooter",
         "toc"
