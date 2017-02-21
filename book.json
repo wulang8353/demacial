@@ -11,7 +11,8 @@
         "-lunr",
         "search-jieba",
         "3-ba",
-        "theme-comscore"
+        "theme-comscore",
+         "github" 
     ],
     "pluginsConfig": {
         "editlink": {
