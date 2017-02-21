@@ -6,6 +6,11 @@
     "generator": "site",
     "language" : "zh-hans",
     "gitbook" : "2.6.4",
+    "links": {
+    "sidebar": {
+        "交友平台": "https://github.com/wulang8353"
+        }
+    },
     "plugins": [
         "editlink",
         "sitemap",
@@ -47,16 +52,5 @@
                 "facebook", "google", "twitter",
                 "weibo", "instapaper"
             ]
-        },
-   
-   
-    "level_number": false,
-    "collapsible_menu": false,
-    "links": {
-        "sidebar": {
-            "交友平台": "https://github.com/wulang8353"
-        }
-    },
- 
-   
+        },     
 }
