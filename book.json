@@ -19,6 +19,9 @@
             "base": "https://github.com/Niefee/My-study-records/tree/master",
             "label": "编辑本页"
         },
+          "github": {
+        "url": "https://github.com/zhangjikai"
+        },
         "sitemap": {
             "hostname": "https://github.com/Niefee/My-study-records"
         },
