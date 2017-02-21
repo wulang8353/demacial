@@ -1,6 +1,11 @@
 {
  
-  
+  "plugins": ["toggle-chapters"],
+    "pluginsConfig": {
+        "myPlugin": {
+            "message": "Hello World"
+        }
+     }
 
    
 }
