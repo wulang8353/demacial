@@ -9,7 +9,6 @@
         "search",
         "-lunr",
         "search-jieba",
-        "3-ba",
         "theme-comscore",
          "github" ,
         "splitter",
@@ -18,17 +17,14 @@
     ],
     "pluginsConfig": {
         "editlink": {
-            "base": "https://github.com/Niefee/My-study-records/tree/master",
-            "label": "Github地址"
+            "base": "https://github.com/wulang8353/demacial/tree/master",
+            "label": "Edit"
         },
         "github": {
-        "url": "https://github.com/wulang8353"
+            "url": "https://github.com/wulang8353"
         },
         "sitemap": {
             "hostname": "https://github.com/Niefee/My-study-records"
-        },
-        "3-ba": {
-            "token": "ee48b5ad6a7a7c96fc00b8cd4c2a93e8"
         },
         "toc": {
         "addClass": true,
@@ -52,12 +48,10 @@
     },
     "level_number": false,
     "collapsible_menu": false,
-    "title": "前端开发笔记",
     "links": {
         "sidebar": {
-            "既见君子，云胡不喜": "https://github.com/Niefee"
-        },
-        "gitbook": false
+            "交友平台": "https://github.com/wulang8353"
+        }
     },
   "tbfed-pagefooter": {
         "copyright":"Copyright &copy zhangjikai.com 2015",
