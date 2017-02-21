@@ -43,7 +43,6 @@
             "cutWordLib": "nodejieba",
             "defineWord": ["gitbook-use"]
          },
-
         "sharing": {
             "weibo": true,
             "facebook": true,
