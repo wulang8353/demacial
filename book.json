@@ -7,7 +7,7 @@
     "gitbook" : "2.6.4",
     "links" : {
         "sidebar" : {
-            "Home" : "https://zhangjikai.com"
+            "同性交友平台" : "https://github.com/wulang8353"
         }
     },
    "plugins": [
@@ -28,12 +28,9 @@
         "codeblock-filename",
         "baidu",
         "sitemap@1.0.2",
-        "donate",
-        "local-video",
         "toc",
         "edit-link",
         "back-to-top-button@0.1.0"
-
     ],
     "pluginsConfig": {
         "disqus": {
@@ -61,7 +58,7 @@
         },
 
         "tbfed-pagefooter": {
-            "copyright":"Copyright &copy zhangjikai.com 2017",
+            "copyright":"Copyright &copy walter 2017",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
@@ -70,21 +67,11 @@
             "token" : "ff100361cdce95dd4c8fb96b4009f7bc"
         },
         "sitemap": {
-            "hostname": "https://gitbook.zhangjikai.com"
+            "hostname": "https://github.com/wulang8353/demacial"
         },
-
-        "donate": {
-          "wechat": "https://zhangjikai.com/resource/weixin.png",
-          "alipay": "https://zhangjikai.com/resource/alipay.png",
-          "title": "",
-          "button": "赏",
-          "alipayText": "支付宝打赏",
-          "wechatText": "微信打赏"
-        },
-
          "edit-link": {
                 "base": "https://github.com/zhangjikai/gitbook-use/edit/master",
-                "label": "Edit This Page"
+                "label": "编辑本页"
          }
 
     }
