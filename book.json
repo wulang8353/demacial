@@ -15,9 +15,7 @@
         "search-pro@1.0.7",
         "advanced-emoji@0.1.5",
         "github",
-        "ace",
         "emphasize",
-        "katex",
         "anchors",
         "include-codeblock",
         "mermaid",
@@ -29,7 +27,8 @@
         "sitemap@1.0.2",
         "toc",
         "edit-link",
-        "back-to-top-button@0.1.0"
+        "back-to-top-button@0.1.0",
+        "splitter"
     ],
     "pluginsConfig": {
         "github": {
