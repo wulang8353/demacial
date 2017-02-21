@@ -1,5 +1,4 @@
 {
- 
    "plugins": [
         "editlink",
         "sitemap",
@@ -12,7 +11,8 @@
         "search-jieba",
         "3-ba",
         "theme-comscore",
-         "github" 
+         "github" ,
+        "splitter"
     ],
     "pluginsConfig": {
         "editlink": {
