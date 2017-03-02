@@ -33,7 +33,7 @@
     ],
     "pluginsConfig": {
         "github": {
-            "url": "https://github.com/zhangjikai/gitbook-use"
+            "url": "https://github.com/wulang8353"
         },
         "search-pro": {
             "cutWordLib": "nodejieba",
