@@ -6,7 +6,7 @@
 要是不留下点了什么，
 岂不是白瞎了吗？
 
-——就跟谈恋爱一样 `单身会上瘾`:smile: 愿我努力那么大 :white_check_mark: :smirk:，内容那么多。 :innocent: :tropical_fish:
+——就跟谈恋爱一样 `单身会上瘾`愿我努力那么大 :white_check_mark: :smirk:，内容那么多。 :innocent: :tropical_fish:
 
 
 >[GitHub地址](https://github.com/wulang8353)
