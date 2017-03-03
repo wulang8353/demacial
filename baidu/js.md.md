@@ -128,7 +128,9 @@ content.onclick = function(event){
 }
 </srcipt>
 ```
-这个方法在取值的时候是通过`input.value`，这里不方便对取到的值进行更一步的删选，所以用一个取值函数每次调用即可如下：
+这个方法在取值的时候是通过`input.value`，这里不方便对取到的值进行更一步的限定
+同时，涉及到很多传参，耦合的比较紧，最好解耦
+如下：
 ````
 var btn = document.getElementById("button");
 var input = document.getElementById("input");
@@ -143,6 +145,19 @@ function getValue(){
     }esle {
         return (+value)
         //  我们从输入框取到的值都会是字符串类型，可以通过一元加操作符强制转换成Number类型
+        //  每次调用函数时候都可以得到输入的值
     }
 }
+
+// 将每次点击传到数组中的传入到列表中
+
+function insertValue = function (){
+    var html = '';
+    for(var i = 0;i<list.length;i++){
+        html += '<li data-index = "' + i + '">'+ list[i]+'</li>'
+    }
+    content.innerHTML = html
+}
+
+
 ````
