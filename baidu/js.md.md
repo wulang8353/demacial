@@ -149,16 +149,7 @@ function getValue(){
     }
 }
 
-// 将每次点击传到数组中的传入到列表中
-function insertValue = function (){
-    var html = '';
-    for(var i = 0;i<list.length;i++){
-        html += '<li data-index = "' + i + '">'+ list[i]+'</li>'
-    }
-    content.innerHTML = html
-}
-
-// 为按钮绑定事件,通过一个函数处理多个事件时，使用其type属性
+// 通过一个函数处理多个事件时，使用其type属性
 function buttonHandle(id){
     switch (id) {
         case 'addLeft':
@@ -178,5 +169,28 @@ function buttonHandle(id){
     }   
 }
 
+
+// 将每次点击传到数组中的传入到列表中
+function render= function (){
+    var html = '';
+    for(var i = 0;i<list.length;i++){
+        html += '<li data-index = "' + i + '">'+ list[i]+'</li>'
+    }
+    content.innerHTML = html
+}
+
+// 为按钮绑定事件，可以在一开始就绑定.根绝冒泡原理，给li和button绑定事件，只需要在外层绑定事件即可
+function init() {
+    var button= document.getElementById('button');
+    button.addEventListener('click', function (event) {
+        buttonHandle(event.target.id);
+    });
+    arrayList.addEventListener('click', function (event) {
+        var index = parseInt(event.target.dataset.index);
+        array.splice(index, 1);
+        render();
+    });
+}
+init();
 
 ````
