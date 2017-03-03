@@ -86,7 +86,6 @@ function btnRightIn() {
     } else {
         alert("请输入数字哦")
     }
-
 }
 
 function btnLeftOut() {
@@ -107,5 +106,42 @@ function btnRightOut() {
     }
 }
 
+// 将数组中的值插入到列表中
+function insertValue(arr){
+var length = arr.length;
+
+for (var i=0; i<length;i++){
+    var node = document.createElement("p");
+    node.innerHTML = arr[i];
+    content.appndChild(node);
+    node.setAttribute("class",node);
+    node.setAttribute("flag",i);
+    }
+}
+
+// 当点击列表中的元素时，绑定相应事件
+content.onclick = function(event){
+    var flag = event.target.attribute("flag");
+    this.removeChilde(event.target);
+    list.splice(flag,1);   // 在数组中将点击的元素删掉，否则再次插入的时候，数组长度就因为没有少1而出错
+    return list            // 必须返回数组
+}
 </srcipt>
 ```
+这个方法在取值的时候是通过`input.value`，这里不方便对取到的值进行更一步的删选，所以用一个取值函数每次调用即可如下：
+````
+var btn = document.getElementById("button");
+var input = document.getElementById("input");
+var content = document.getElementById("content");
+var list = []; 
+
+// 每次点击产生事件的时候，都会将取到的值放入数组中，所以可对数组进行限定
+function getValue(){
+    var value = input.value;
+    if(value == '' && isNaN(value)){
+       alert('请输入正确的数值');  
+    }esle {
+        return value
+    }
+}
+````
