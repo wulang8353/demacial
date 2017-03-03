@@ -51,10 +51,10 @@ btn.onclick = function(event){
     var event = event || window.event;
     var target = event.target || event.srcElement;
     
-    // 当标签名是按钮时，通过判断id名，绑定对应的时间
+    // 当标签名是按钮时，通过判断id名，绑定对应的事件
     if(target.tagName == "BUTTON"){ 
         switch(target.id){
-            case "btnLeftIn":
+        case "btnLeftIn":
             btnLeftIn();
             break;
         case "btnRightIn":
