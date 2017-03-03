@@ -150,7 +150,6 @@ function getValue(){
 }
 
 // 将每次点击传到数组中的传入到列表中
-
 function insertValue = function (){
     var html = '';
     for(var i = 0;i<list.length;i++){
@@ -159,5 +158,24 @@ function insertValue = function (){
     content.innerHTML = html
 }
 
+// 为按钮绑定事件
+function buttonHandle(id){
+    switch (id) {
+        case 'addLeft':
+            getValue() && array.unshift(getValue()) && render();
+            break;
+        case 'addRight':
+            getValue() && array.push(getValue()) && render();
+            break;
+        case 'delLeft':
+            alert('已经在数组中删除数值' + array.shift());
+            render()
+            break;
+        case 'delRight':
+            alert('已经在数组中删除数值' + array.pop());
+            render();
+            break;
+    }   
+}
 
 ````
