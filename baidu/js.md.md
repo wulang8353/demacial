@@ -155,14 +155,14 @@ function buttonHandle(id){
         case 'addLeft':
             getValue() && array.unshift(getValue()) && render(); // getValue取值正确才能继续执行
             break;
-        case 'addRight':
+        case 'btnLeftIn':
             getValue() && array.push(getValue()) && render();
             break;
-        case 'delLeft':
+        case 'btnLeftOut':
             alert('已经在数组中删除数值' + array.shift());
             render()
             break;
-        case 'delRight':
+        case 'btnRightOut':
             alert('已经在数组中删除数值' + array.pop());
             render();
             break;
