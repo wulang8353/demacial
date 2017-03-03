@@ -141,7 +141,7 @@ function getValue(){
     if(value == '' && isNaN(value)){
        alert('请输入正确的数值');  
     }esle {
-        return +value
+        return (+value)
     }
 }
 ````
