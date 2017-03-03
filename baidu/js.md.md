@@ -158,7 +158,7 @@ function insertValue = function (){
     content.innerHTML = html
 }
 
-// 为按钮绑定事件
+// 为按钮绑定事件,通过一个函数处理多个事件时，使用其type属性
 function buttonHandle(id){
     switch (id) {
         case 'addLeft':
