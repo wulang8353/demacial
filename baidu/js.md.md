@@ -70,42 +70,42 @@ if(target.tagName == "BUTTON"){
 }}
 
 // 各个函数
-    function btnLeftIn() {
-        if (!isNaN(input.value)) {
-            list.unshift(input.value);
-            insertValue(list);
-        } else {
-            alert("请输入数字哦")
-        }
+function btnLeftIn() {
+    if (!isNaN(input.value)) {
+        list.unshift(input.value);
+        insertValue(list);
+    } else {
+        alert("请输入数字哦")
+    }
+}
+
+function btnRightIn() {
+    if (!isNaN(input.value)) {
+        list.push(input.value);
+        insertValue(list);
+    } else {
+        alert("请输入数字哦")
     }
 
-    function btnRightIn() {
-        if (!isNaN(input.value)) {
-            list.push(input.value);
-            insertValue(list);
-        } else {
-            alert("请输入数字哦")
-        }
+}
 
+function btnLeftOut() {
+    if (list.length) {
+        list.shift();
+        insertValue(list)
+    } else {
+        alert("没有值啦")
     }
+}
 
-    function btnLeftOut() {
-        if (list.length) {
-            list.shift();
-            insertValue(list)
-        } else {
-            alert("没有值啦")
-        }
+function btnRightOut() {
+    if (list.length) {
+        list.pop();
+        insertValue(list)
+    } else {
+        alert("没有值啦")
     }
-
-    function btnRightOut() {
-        if (list.length) {
-            list.pop();
-            insertValue(list)
-        } else {
-            alert("没有值啦")
-        }
-    }
+}
 
 </srcipt>
 ```
