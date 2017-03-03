@@ -162,7 +162,7 @@ function insertValue = function (){
 function buttonHandle(id){
     switch (id) {
         case 'addLeft':
-            getValue() && array.unshift(getValue()) && render();
+            getValue() && array.unshift(getValue()) && render(); // getValue取值正确才能继续执行
             break;
         case 'addRight':
             getValue() && array.push(getValue()) && render();
@@ -177,5 +177,6 @@ function buttonHandle(id){
             break;
     }   
 }
+
 
 ````
