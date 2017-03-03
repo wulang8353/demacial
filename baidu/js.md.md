@@ -47,7 +47,7 @@ var content = document.getElementById("content");
 var list = [];   
     
 // 为各个按钮绑定事件——事件委托
-btn.onclick = function(event){
+    btn.onclick = function(event){
     var event = event || window.event;
     var target = event.target || event.srcElement;
     
