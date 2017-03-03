@@ -18,6 +18,7 @@
 * 每次插入子节点的时候，直接定义一个删除函数（这样做会创建很多函数，影响内存）
 
 **内存和性能（事件委托）**：
+
 {%  type= "#EC6149" em %}事件处理程序的数量将直接影响到页面整体的运行性能{% endem %}
 
 1、 每个函数都是对象，都会占用内存
@@ -28,3 +29,48 @@
 
 解决方案：**事件委托**
 
+```
+<input type="text" id="input" placeholder="请输入数值">
+<span id="button">
+    <button id='btnLeftIn'>左侧入</button>
+    <button id='btnRightIn'>右侧入</button>
+    <button id='btnLeftOut'>左侧出</button>
+    <button id='btnRightOut'>右侧出</button>
+</span>
+<div id="content">
+
+<script>
+
+var btn = document.getElementById("button");
+var input = document.getElementById("input");
+var content = document.getElementById("content");
+var list = [];   
+    
+// 为各个按钮绑定事件——事件委托
+btn.onclick = function(event){
+    var event = event || window.event;
+    var target = event.target || event.srcElement;
+    
+    // 当标签名是按钮时，通过判断id名，绑定对应的时间
+    if(target.tagName == "BUTTON"){ 
+        switch(target.id){
+            case "btnLeftIn":
+            btnLeftIn();
+            break;
+        case "btnRightIn":
+            btnRightIn();
+            break;
+        case "btnLeftOut":
+            btnLeftOut();
+            break;
+        case "btnRightOut":
+            btnRightOut();
+            break;    
+        }
+    }
+}
+
+
+
+</srcipt>
+```
