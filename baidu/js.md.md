@@ -1,5 +1,5 @@
 * [基础一](#基础一)
-    * [html5](#HTML5自定义属性-dataset)
+    * [HTML5 自定义属性-dataset](#HTML5自定义属性-dataset)
 
 # 基础一
 
@@ -197,4 +197,37 @@ init();
 
 ````
 ## HTML5自定义属性-dataset
+
+在HTML5中，使用前端`data-`就可以自定义属性，然后这个属性会存放在`dataset`这个对象中，通过`dataset[属性名]`就可以直接调用，尤其是在有多个自定义属性
+```
+<div id="day2-meal-expense" 
+  data-drink="coffee" 
+  data-food="sushi" 
+  data-meal="lunch">¥20.12
+</div>
+
+var expenseday2 = document.getElementById('day2-meal-expense');  
+var typeOfDrink = expenseday2.dataset.drink; // coffee
+
+expense = document.getElementById('day2-meal-expense').dataset;  // 取到所有自定义属性
+
+// 将所有自定义属性值（键值对的形式）放入数组中
+chartInput = [];
+for (var item in expense) {
+  chartInput.push(expense[item]);
+}
+
+delete expenseday2.dataset.meal;  // 删除属性
+expenseday2.dataset.dessert = 'icecream';// 添加属性
+
+// 确定浏览器是否支持，特性检测（设置属性）
+
+if(expenseday2.dataset) {
+  expenseday2.dataset.dessert = 'icecream';
+} else {
+  expenseday2.setAttribute('data-dessert', 'icecream');
+}
+
+```
+
 [张鑫旭-dataset](http://www.zhangxinxu.com/wordpress/2011/06/html5%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7%E5%AF%B9%E8%B1%A1dataset%E7%AE%80%E4%BB%8B/)    
