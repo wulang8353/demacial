@@ -195,4 +195,4 @@ function init() {
 init();
 
 ````
-## HTML5新特性： data-set
+## HTML5新特性： dataset
