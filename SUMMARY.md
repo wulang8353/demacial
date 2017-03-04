@@ -8,6 +8,6 @@
 * [百度前端学院](baidu/README.md)
   * [热身任务](baidu/热身.md)
   * [JS入门.md](baidu/js.md.md)
-  * [JS基础.md](baidu/js.md.md)
+  * [JS基础.md](baidu/基础.md)
 * [Node](node/README.md)
 
