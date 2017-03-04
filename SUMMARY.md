@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Focus on concepts ,not synatx ](focus-on-concepts-not-synatx.md)
+* [自我审视](focus-on-concepts-not-synatx.md)
 * [Javascript](javascript/Directory.md)
   * [正则表达式](javascript/正则.md)
   * [实用脚本手册](实用脚本手册.md)
