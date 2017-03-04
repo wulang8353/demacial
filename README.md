@@ -8,7 +8,7 @@
 
 > [GitHub地址](https://github.com/wulang8353)
 >
-> [GitBook电子笔记](https://www.gitbook.com/@wulang8353)
+> [GitBook电子笔记](https://wulang8353.gitbooks.io/demacial/content/)
 >
 > [freeCodeCamp](https://www.freecodecamp.cn/wulang8353)
 
