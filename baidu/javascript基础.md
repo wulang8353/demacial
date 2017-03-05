@@ -11,7 +11,7 @@
 点击"右侧出"，读取并删除队列又侧第一个元素，并弹窗显示元素中数值；
 >点击队列中任何一个元素，则该元素会被从队列中删除
 
-[基础1](assets/IFEE/js基础/基础1)
+> ![基础1](../assets/IFEE/js基础/基础1.jpg)
 
 
 两种思路：
@@ -131,8 +131,8 @@ content.onclick = function(event){
 }
 </srcipt>
 ```
-这个方法在取值的时候是通过`input.value`，这里不方便对取到的值进行更一步的限定
-同时，涉及到很多传参，耦合的比较紧，最好解耦
+通过`input.value`方法进行取值，并不太方便对取到的值进行更一步的限定。
+同时，涉及到很多传参，耦合程度比较大，最好解耦
 如下：
 ````
 var btn = document.getElementById("button");
@@ -147,18 +147,18 @@ function getValue(){
        alert('请输入正确的数值');  
     }esle {
         return (+value)
-        //  我们从输入框取到的值都会是字符串类型，可以通过一元加操作符强制转换成Number类型
+        //  我们从输入框取到的值都会是字符串类型，可以通过一元加操作符（调用Number()方法）强制转换成Number类型
         //  每次调用函数时候都可以得到输入的值
     }
 }
 
-// 通过一个函数处理多个事件时，使用其type属性
+// 通过一个函数处理多个事件时，通过switch方法匹配每个按钮的id属性
 function buttonHandle(id){
     switch (id) {
-        case 'addLeft':
+        case 'btnLeftin':
             getValue() && array.unshift(getValue()) && render(); // getValue取值正确才能继续执行
             break;
-        case 'btnLeftIn':
+        case 'btnRightIn':
             getValue() && array.push(getValue()) && render();
             break;
         case 'btnLeftOut':
