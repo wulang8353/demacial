@@ -27,7 +27,7 @@
 
 2、 内存中的对象越多，性能也就越差
 
-3、 必须先指定所有事件处理程序而导致的DOM访问此，延迟交互就绪时间  
+3、 必须先指定所有事件处理程序而导致的DOM访问，延迟交互就绪时间  
 
 解决方案：**事件委托**
 
@@ -111,7 +111,7 @@ function btnRightOut() {
 // 将数组中的值插入到列表中
 function insertValue(arr){
 var length = arr.length;
-
+content.innerHTML = ''; // 先让列表的内容为空，否则每次插值的时候会保留上一次的内容
 for (var i=0; i<length;i++){
     var node = document.createElement("p");
     node.innerHTML = arr[i];
