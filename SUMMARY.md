@@ -7,6 +7,6 @@
   * [实用脚本手册](javascript/实用脚本手册.md)
 * [百度前端学院](baidu/README.md)
   * [热身任务](baidu/热身.md)
-  * [Javascript基础.md](baidu/javascript基础.md)
+  * [Javascript基础](baidu/javascript基础.md)
 * [Node](node/README.md)
 
