@@ -29,12 +29,11 @@ Flex布局的出现使得任何容器的盒模型的操作变得更简单，提�
   * [align-items-交叉轴的对齐方式](#align-items)
   * [align-content-多根轴线对齐方式](#align-content)
 * [项目属性](#项目属性)
-  * [flex-direction-主轴的方向](#flex-direction)
-  * [flex-wrap—换行](#flex-wrap)
-  * [flex-flow-以上两种属性的简写](#flex-wrap)
-  * [justify-content-主轴上的对齐方式](#justify-content)
-  * [align-items-交叉轴的对齐方式](#align-items)
-  * [align-content-多根轴线对齐方式](#align-content)
+  * [order-排列顺序](#order)
+  * [flex-grow—放大](#flex-grow)
+  * [flex-shrink-缩小比例](#flex-shrink)
+  * [flex-basis-原本大小](#flex-basi)
+  * [align-self-独自对齐](#align-self)
 
 
 ### flex-direction
