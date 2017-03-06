@@ -216,7 +216,3 @@ Flex布局的出现使得任何容器的盒模型的操作变得更简单，提�
 
 ![flex8](/assets/CSS/flex布局/flex8.jpg)
 
-
-
-
-###
