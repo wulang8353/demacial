@@ -26,4 +26,4 @@ Flex布局的出现使得盒模型的操作变得更简单，提供了极大的�
 * [flex-wrap—换行](#flex-wrap)
 * [justify-content-主轴上的对齐方式](#justify-content)
 * [align-items-交叉轴的对齐方式](#align-items)
-* [align-content](#align-content)
+* [align-content-多根轴线对齐方式](#align-content)
