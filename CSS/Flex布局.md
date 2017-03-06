@@ -20,14 +20,14 @@ Flex布局的出现使得任何容器的盒模型的操作变得更简单，提�
     * cross end   ：交叉轴结束的位置
     * cross size   : 单个项目（子元素）占据的交叉轴空间
 
-## 特性语法
-
-* [flex-direction-主轴的方向](#flex-direction)
-* [flex-wrap—换行](#flex-wrap)
-* [flex-flow-以上两种属性的简写](#flex-wrap)
-* [justify-content-主轴上的对齐方式](#justify-content)
-* [align-items-交叉轴的对齐方式](#align-items)
-* [align-content-多根轴线对齐方式](#align-content)
+## 容器属性
+* [容器属性](#容器属性)
+  * [flex-direction-主轴的方向](#flex-direction)
+  * [flex-wrap—换行](#flex-wrap)
+  * [flex-flow-以上两种属性的简写](#flex-wrap)
+  * [justify-content-主轴上的对齐方式](#justify-content)
+  * [align-items-交叉轴的对齐方式](#align-items)
+  * [align-content-多根轴线对齐方式](#align-content)
 
 ### flex-direction
 
@@ -36,6 +36,7 @@ Flex布局的出现使得任何容器的盒模型的操作变得更简单，提�
 > .box {
   flex-direction: row | row-reverse | column | column-reverse;
 }
+
 > row（默认值）：主轴为水平方向，从左到右
 
 >row-reverse：主轴为水平方向，从右到左
@@ -48,7 +49,7 @@ Flex布局的出现使得任何容器的盒模型的操作变得更简单，提�
 
 {% em %}默认情况下，项目都排在一条线。flex-wrap属性定义，如果一条轴线排不下，如何换行{% endem %}
 
-.box{
+> .box{
   flex-wrap: nowrap | wrap | wrap-reverse;
 }
 > nowrap（默认）：不换行。
@@ -109,7 +110,7 @@ Flex布局的出现使得任何容器的盒模型的操作变得更简单，提�
 
 {% em %}align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用{% endem %}
 
-.box {
+> .box {
   align-content: flex-start | flex-end | center | space-between | space-around | stretch;
 }
 
@@ -138,10 +139,15 @@ Flex布局的出现使得任何容器的盒模型的操作变得更简单，提�
 ![flex4](/assets/CSS/flex布局/flex4.jpg)
 
 > flex-start：与交叉轴的起点对齐。
+
 > flex-end：与交叉轴的终点对齐。
+
 > center：与交叉轴的中点对齐。
+
 > space-between：与交叉轴两端对齐，轴线之间的间隔平均分布。
+
 > space-around：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。
+
 > stretch（默认值）：轴线占满整个交叉轴。
 
 
