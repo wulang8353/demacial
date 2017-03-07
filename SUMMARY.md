@@ -13,5 +13,5 @@
 * [CSS（3）](css3.md)
   * [Flex布局](CSS/Flex布局.md)
 * [ES6](ES6/README.md)
-  * [迭代器、for-of](ES6/迭代器.md)
+  * [循环](ES6/循环.md)
 
