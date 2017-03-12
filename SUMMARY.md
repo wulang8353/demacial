@@ -12,6 +12,7 @@
     * [排序算法](javascript/常用算法/排序算法.md)
 * [CSS（3）](css3.md)
   * [Flex布局](CSS/Flex布局.md)
+  * [相对、绝对定位](CSS/定位.md)
 * [ES6](ES6/README.md)
   * [循环](ES6/循环.md)
 
