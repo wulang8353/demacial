@@ -12,7 +12,7 @@
     * [排序算法](javascript/常用算法/排序算法.md)
 * [CSS（3）](css3.md)
   * [Flex布局](CSS/Flex布局.md)
-  * 浮动和定位
+  * [浮动](CSS/浮动.md)
   * [样式合集](CSS/样式合集/README.md)
     * [高度自动相等](CSS/样式合集/高度自动相等.md)
     * [对话框](CSS/样式合集/对话框样式.md)
