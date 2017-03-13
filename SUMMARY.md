@@ -13,6 +13,8 @@
 * [CSS（3）](css3.md)
   * [Flex布局](CSS/Flex布局.md)
   * 浮动和定位
+  * [样式合集](CSS/样式合集/README.md)
+    * [高度自动相等](CSS/样式合集/高度自动相等.md)
 * [ES6](ES6/README.md)
   * [循环](ES6/循环.md)
 
