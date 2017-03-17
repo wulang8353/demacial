@@ -73,7 +73,7 @@ database.users.forEach(  // database.users中人遍历
 对IE6-IE8进行仿真扩展
 
 ```
-// this=数组本身，因为是数组调用
+// this=实例，因为是数组调用
 if(typeof Array.prototype.forEach !="function"){
   Array.prototype.forEach = function(fn,context){
     for(var i = 0,length = this.length;i++){
