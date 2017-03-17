@@ -36,10 +36,10 @@ $.each([],function(index,value,array){
 ```
 var sum = 0;
 
-[1,2,3,4,5].forEach(v,i,array){
+[1,2,3,4,5].forEach(function(v,i,array){
  console.log(v);
  sum +=v
-}
+})
 alert(sum) //10
 ```
 
@@ -66,11 +66,25 @@ database.users.forEach(  // database.users中人遍历
   database               // 上下文参数，使用database代替上面的this，否则就是全局对象代替
 );
 
-// 结果：
 // 你好，张含韵
 // 抱歉，江一燕，你不是本家人
 // 抱歉，李小璐，你不是本家
 ```
+对IE6-IE8进行仿真扩展
+
+```
+// this=数组本身，因为是数组调用
+if(typeof Array.prototype.forEach !="function"){
+  Array.prototype.forEach = function(fn,context){
+    for(var i = 0,length = this.length;i++){
+      if(typeof fun ==="function" && object.prototype.hasOwnProperty.call(this,i)){
+        fn.call(context,this[i],i,this);
+      }
+    }
+  }
+}
+```
+
 
 
 
