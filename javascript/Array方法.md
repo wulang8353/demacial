@@ -30,4 +30,61 @@ $.each([],function(index,value,array){
  ...
 })
 ```
+第1个和第2个参数正好是相反的，类似有`map()`和`$.map()`
+
+数组求和：
+```
+var sum = 0;
+
+[1,2,3,4,5].forEach(v,i,array){
+ console.log(v);
+ sum +=v
+}
+alert(sum) //10
+```
+
+`forEach`函数接受一个必须的回调函数的同时，还可以接受一个可选的**上下文参数**(改变回调函数中this的指向)
+
+```
+var database = {
+  users: ["张含韵", "江一燕", "李小璐"],
+  sendEmail: function (user) {
+    if (this.isValidUser(user)) {
+      console.log("你好，" + user);
+    } else {
+      console.log("抱歉，"+ user +"，你不是本家人");	
+    }
+  },
+  isValidUser: function (user) {
+    return /^张/.test(user);
+  }
+};
+
+// 给每个人法邮件
+database.users.forEach(  // database.users中人遍历
+  database.sendEmail,    // 回调函数，发送邮件
+  database               // 上下文参数，使用database代替上面标红的this
+);
+
+// 结果：
+// 你好，张含韵
+// 抱歉，江一燕，你不是本家人
+// 抱歉，李小璐，你不是本家
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
