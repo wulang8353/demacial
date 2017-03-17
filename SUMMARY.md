@@ -8,8 +8,9 @@
 * [Javascript](javascript/README.md)
   * [正则表达式](javascript/正则.md)
   * [实用脚本手册](javascript/实用脚本手册.md)
-  * 常用算法
+  * [常用算法](javascript/.md)
     * [排序算法](javascript/常用算法/排序算法.md)
+  * [Array方法](javascript/Array方法.md)
 * [CSS（3）](css3.md)
   * [Flex布局](CSS/Flex布局.md)
   * [浮动](CSS/浮动.md)
