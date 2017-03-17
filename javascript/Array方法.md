@@ -13,12 +13,21 @@
 ```
 // 以forEach()为例
 if(typeof Array.prototype.forEach  != "function"){
- Array.prototype.forEach = function(){...}
+ Array.prototype.forEach = function(){...} 
 }
 ```
-
 # ES5
 ## forEach()
 
+```
+// js-forEach
+[].forEach(function(value,index,array){
+ ...
+})
 
+// jQuery—$.each()
+$.each([],function(index,value,array){
+ ...
+})
+```
 
