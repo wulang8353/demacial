@@ -63,7 +63,7 @@ var database = {
 // 给每个人法邮件
 database.users.forEach(  // database.users中人遍历
   database.sendEmail,    // 回调函数，发送邮件
-  database               // 上下文参数，使用database代替上面标红的this
+  database               // 上下文参数，使用database代替上面的this，否则就是全局对象代替
 );
 
 // 结果：
