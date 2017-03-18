@@ -90,6 +90,7 @@ if(typeof Array.prototype.forEach !="function"){
 
 ## map
 
+* 新数组
 * 返回一个由原数组中的每个元素调用一个指定方法后的**返回值组成的新数组**
 
 ```
@@ -135,6 +136,7 @@ if(typeof Array.prototype.map !="function"){
 ```
 ## filter
 
+* 新数组
 * 指数组filter后，**返回过滤后的新数组**,并且当回调函数返回的布尔值为true时，才会添加到新的数组中
 
 ```
@@ -347,8 +349,8 @@ function init (arr) {
     return newArr;
 }
 
-init([1, [2], [3, [[4]]]]);
-
+init([1, [2], [3, [[4]]]]); // 1,2,3,4
+init([1, [], [3, [[4]]]]);  // 1,3,4
 ```
 
 
