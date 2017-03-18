@@ -145,8 +145,11 @@ var arrayFilter = data.filter(function(item) {
 console.log(arrayFilter); // [1, 2, 3]
 
 // 弱等于== true/false
-// 对IE6-IE8进行仿真扩展
+```
 
+对IE6-IE8进行仿真扩展
+
+```
 if (typeof Array.prototype.filter != "function") {
   Array.prototype.filter = function (fn, context) {
     var arr = [];
@@ -159,7 +162,23 @@ if (typeof Array.prototype.filter != "function") {
     return arr;
   };
 }
+```
 
+## some
+
+* some意指“某些”，指是否“某些项”合乎条件,至少一个满足就返回true不再继续执行
+
+```
+var scores = [5,6,7,8];
+var current = 7
+
+function high (score){
+  return score > current;
+}
+
+if(scores.some(high)){
+  alter("满足要求")
+}
 ```
 
 
