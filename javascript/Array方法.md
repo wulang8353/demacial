@@ -278,23 +278,78 @@ if (typeof Array.prototype.lastIndexOf != "function") {
 }
 ```
 
+## reduce
+
+* 迭代器
 
 
+```
+array.reduce(callback[, initialValue])
+```
+
+callback函数接受4个参数：之前值、当前值、索引值以及数组本身。initialValue参数可选，表示初始值。若指定，则当作最初使用的previous值；如果缺省，则使用数组的第一个元素作为previous初始值，同时current往后排一位，相比有initialValue值少一次迭代。
+
+```
+var sum = [1, 2, 3, 4].reduce(function (previous, current, index, array) {
+  return previous + current;
+});
+
+console.log(sum); // 10
+
+// 因为initialValue不存在，因此一开始的previous值等于数组的第一个元素。
+// 从而current值在第一次调用的时候就是2.
+// 最后两个参数为索引值index以及数组本身array.
+```
+
+循环过程：
+
+```
+// 初始设置
+previous = initialValue = 1, current = 2
+
+// 第一次迭代
+previous = (1 + 2) =  3, current = 3
+
+// 第二次迭代
+previous = (3 + 3) =  6, current = 4
+
+// 第三次迭代
+previous = (6 + 4) =  10, current = undefined (退出)
+```
+有了`reduce`，我们可以轻松实现二维数组的扁平化：
 
 
+// 二维数组扁平化
+```
+var matrix = [
+  [1, 2],
+  [3, 4],
+  [5, 6]
+];
+var flatten = matrix.reduce(function (previous, current) {
+  return previous.concat(current);
+});
 
+console.log(flatten); // [1, 2, 3, 4, 5, 6]
+```
 
+// 多维数组扁平化
+```
+function init (arr) {
+    var newArr = [];
+    if (arr instanceof Array) {
+        arr.forEach(function (value) {
+            newArr = newArr.concat(init(value));
+        });
+    } else {
+        newArr.push(arr);
+    }
+    return newArr;
+}
 
+init([1, [2], [3, [[4]]]]);
 
-
-
-
-
-
-
-
-
-
+```
 
 
 
