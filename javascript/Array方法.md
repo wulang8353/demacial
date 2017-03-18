@@ -183,6 +183,8 @@ if(scores.some(high)){
 对IE6-IE8进行仿真扩展
 
 ```
+// js是弱类型语言，所以!会自动转换类型为boolean，两个叹号就等于Boolean('obj'),如果是一个object类型的变量，那只有未定义即等于undefined时才会为false，这个实际是用来判断obj是否存在的
+
 if (typeof Array.prototype.some != "function") {
   Array.prototype.some = function (fn, context) {
 	var passed = false;
@@ -190,6 +192,7 @@ if (typeof Array.prototype.some != "function") {
    	  for (var k = 0, length = this.length; k < length; k++) {
 		  if (passed === true) break;
 		  passed = !!fn.call(context, this[k], k, this);
+		  // 判断对象是否存在，存在就为true
 	  }
     }
 	return passed;
