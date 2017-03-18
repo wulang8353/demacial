@@ -192,7 +192,7 @@ if (typeof Array.prototype.some != "function") {
    	  for (var k = 0, length = this.length; k < length; k++) {
 		  if (passed === true) break;
 		  passed = !!fn.call(context, this[k], k, this);
-		  // 判断对象是否存在，存在就为true
+		  // ！！ = boolean转型函数
 	  }
     }
 	return passed;
