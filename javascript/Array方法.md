@@ -19,6 +19,8 @@ if(typeof Array.prototype.forEach  != "function"){
 # ES5
 ## forEach
 
+* forEach为数组中的每个元素执行一次回调函数，**不会返回新的数组**
+
 ```
 // js-forEach
 [].forEach(function(value,index,array){
@@ -88,6 +90,8 @@ if(typeof Array.prototype.forEach !="function"){
 
 ## map
 
+* 返回一个由原数组中的每个元素调用一个指定方法后的**返回值组成的新数组**
+
 ```
 基本用法与forEach()类似
 [].map(function(value, index, array) {
@@ -114,7 +118,9 @@ var emails = users.map(function (user) { return user.email; });
 console.log(emails.join(","));// 1@email.com, 2@email.com, 3@email.com
 ```
 对IE6-IE8进行仿真扩展
+
 ```
+// this=实例
 if(typeof Array.prototype.map !="function"){
   Array.prototype.map = function (fn,context){
     var arr = [];
@@ -127,9 +133,32 @@ if(typeof Array.prototype.map !="function"){
   }
 }
 ```
+## filter
 
+* 指数组filter后，**返回过滤后的新数组**,并且当回调函数返回的布尔值为true时，才会添加到新的数组中
 
+```
+var data = [0, 1, 2, 3];
+var arrayFilter = data.filter(function(item) {
+    return item;
+});
+console.log(arrayFilter); // [1, 2, 3]
 
+// 弱等于== true/false
+// 对IE6-IE8进行仿真扩展
+if (typeof Array.prototype.filter != "function") {
+  Array.prototype.filter = function (fn, context) {
+    var arr = [];
+    if (typeof fn === "function") {
+       for (var k = 0, length = this.length; k < length; k++) {
+          fn.call(context, this[k], k, this) && arr.push(this[k]);
+       }
+    }
+    return arr;
+  };
+}
+
+```
 
 
 
