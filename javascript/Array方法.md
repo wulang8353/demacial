@@ -1,3 +1,7 @@
+* [ES6](#ES6)
+  * [Array.from](#Array.from)
+  * [Array.of](#Array.of)
+
 * [ES5](#ES5)
  * [forEach](#forEach)
  * [map](#map)
@@ -7,6 +11,13 @@
  * [indexOf](#indexOf)
  * [lastIndexOf](#lastIndexOf)
  * [reduce](#reduce)
+
+# ES6
+
+## Array.from
+
+
+
 
 
 对于IE6~IE8等浏览器，可以在Array原型上进行扩展
