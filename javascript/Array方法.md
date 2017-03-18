@@ -146,6 +146,7 @@ console.log(arrayFilter); // [1, 2, 3]
 
 // 弱等于== true/false
 // 对IE6-IE8进行仿真扩展
+
 if (typeof Array.prototype.filter != "function") {
   Array.prototype.filter = function (fn, context) {
     var arr = [];
