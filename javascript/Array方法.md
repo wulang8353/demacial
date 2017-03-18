@@ -223,7 +223,7 @@ if (typeof Array.prototype.some != "function") {
 	var passed = true;
 	if (typeof fn === "function") {
    	  for (var k = 0, length = this.length; k < length; k++) {
-		  if (passed === true) break;
+		  if (passed === false) break;
 		  passed = !!fn.call(context, this[k], k, this);
 	  }
     }
