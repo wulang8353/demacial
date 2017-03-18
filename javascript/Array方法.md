@@ -153,6 +153,7 @@ if (typeof Array.prototype.filter != "function") {
     if (typeof fn === "function") {
        for (var k = 0, length = this.length; k < length; k++) {
           fn.call(context, this[k], k, this) && arr.push(this[k]);
+          // context.fn执行后返回真 && 将通过的值传到数组中
        }
     }
     return arr;
