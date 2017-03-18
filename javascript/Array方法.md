@@ -196,6 +196,41 @@ if (typeof Array.prototype.some != "function") {
   };
 }
 ```
+## every
+
+* every需要每一项都满足才会返回true
+
+```
+var scores = [5,6,7,8];
+var current = 7
+
+function high (score){
+  return score > current;
+}
+
+if(scores.some(high)){
+  alter("满足要求")
+}else{
+  alert("不满足")
+}
+
+```
+对IE6-IE8进行仿真扩展
+
+```
+if (typeof Array.prototype.some != "function") {
+  Array.prototype.some = function (fn, context) {
+	var passed = true;
+	if (typeof fn === "function") {
+   	  for (var k = 0, length = this.length; k < length; k++) {
+		  if (passed === true) break;
+		  passed = !!fn.call(context, this[k], k, this);
+	  }
+    }
+	return passed;
+  };
+}
+
 
 
 
