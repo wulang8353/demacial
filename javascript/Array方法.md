@@ -183,7 +183,9 @@ if(scores.some(high)){
 对IE6-IE8进行仿真扩展
 
 ```
-// js是弱类型语言，所以!会自动转换类型为boolean，两个叹号就等于Boolean('obj'),如果是一个object类型的变量，那只有未定义即等于undefined时才会为false，这个实际是用来判断obj是否存在的
+// js是弱类型语言，所以!会自动转换类型为boolean，两个叹号就等于Boolean('obj')
+// 如果是一个object类型的变量，那只有未定义即等于undefined时才会为false，
+// 这个实际是用来判断obj是否存在
 
 if (typeof Array.prototype.some != "function") {
   Array.prototype.some = function (fn, context) {
@@ -233,6 +235,48 @@ if (typeof Array.prototype.some != "function") {
 	return passed;
   };
 }
+```
+
+## indexOf
+对IE6-IE8进行仿真扩展
+
+```
+if (typeof Array.prototype.indexOf != "function") {
+  Array.prototype.indexOf = function (searchElement, fromIndex) {
+    var index = -1;
+    fromIndex = fromIndex * 1 || 0;
+
+    for (var k = 0, length = this.length; k < length; k++) {
+      if (k >= fromIndex && this[k] === searchElement) {
+          index = k;
+          break;
+      }
+    }
+    return index;
+  };
+}
+```
+
+
+## lastIndexOf
+对IE6-IE8进行仿真扩展
+
+```
+if (typeof Array.prototype.lastIndexOf != "function") {
+  Array.prototype.lastIndexOf = function (searchElement, fromIndex) {
+    var index = -1, length = this.length;
+    fromIndex = fromIndex * 1 || length - 1;
+
+    for (var k = length - 1; k > -1; k-=1) {
+        if (k <= fromIndex && this[k] === searchElement) {
+            index = k;
+            break;
+        }
+    }
+    return index;
+  };
+}
+```
 
 
 
