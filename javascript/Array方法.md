@@ -17,7 +17,7 @@ if(typeof Array.prototype.forEach  != "function"){
 }
 ```
 # ES5
-## forEach()
+## forEach
 
 ```
 // js-forEach
@@ -84,6 +84,58 @@ if(typeof Array.prototype.forEach !="function"){
   }
 }
 ```
+
+
+## map
+
+```
+[].map(function(value, index, array) {
+    // ...
+});
+
+// 例一
+var data = [1, 2, 3, 4];
+var arrayOfSquares = data.map(function (item) {
+  return item * item;
+});
+
+alert(arrayOfSquares); // 1, 4, 9, 16
+
+// 例二
+var users = [
+  {name: "张含韵", "email": "1@email.com"},
+  {name: "江一燕",   "email": "2@email.com"},
+  {name: "李小璐",  "email": "3@email.com"}
+];
+
+var emails = users.map(function (user) { return user.email; });
+
+console.log(emails.join(","));// 1@email.com, 2@email.com, 3@email.com
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
