@@ -113,7 +113,20 @@ var emails = users.map(function (user) { return user.email; });
 
 console.log(emails.join(","));// 1@email.com, 2@email.com, 3@email.com
 ```
-
+对IE6-IE8进行仿真扩展
+```
+if(typeof Array.prototype.map !="function"){
+  Array.prototype.map = function (fn,context){
+    var arr = [];
+    if(typeof fn === "function"){
+      fo(rvar k = 0,length=this.length;k<length;k++){
+        arr.push(fn.call(context,this[k],k,this));
+      }
+    }
+    return arr;
+  }
+}
+```
 
 
 
