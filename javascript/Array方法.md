@@ -89,6 +89,7 @@ if(typeof Array.prototype.forEach !="function"){
 ## map
 
 ```
+基本用法与forEach()类似
 [].map(function(value, index, array) {
     // ...
 });
