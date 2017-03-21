@@ -16,10 +16,6 @@
 
 ## Array.from
 
-
-
-
-
 对于IE6~IE8等浏览器，可以在Array原型上进行扩展
 ```
 // 以forEach()为例
