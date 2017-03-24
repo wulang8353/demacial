@@ -10,6 +10,7 @@
   * [实用脚本手册](javascript/实用脚本手册.md)
   * [常用算法](javascript/常用算法/README.md)
     * [排序算法](javascript/常用算法/排序算法.md)
+    * 删除重复
   * [Array方法](javascript/Array方法.md)
   * [ES6](ES6/README.md)
     * [循环](ES6/循环.md)
