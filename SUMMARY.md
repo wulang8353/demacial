@@ -15,6 +15,7 @@
   * [ES6](ES6/README.md)
     * [循环](ES6/循环.md)
   * [宽高概念总结](javascript/宽高.md)
+  * [作用域链](javascript/作用域链.md)
 * [CSS（3）](CSS/README.md)
   * [Flex布局](CSS/Flex布局.md)
   * [浮动](CSS/浮动.md)
