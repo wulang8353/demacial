@@ -163,12 +163,15 @@ fs.writeFile(filename, 'hello', function() {
     * callback : 回调
     
     console.log(arguments);
-    // { '0': null }  并创建了文件2.txt，内容为 hello  
+    // { '0': null }  
+    // 并创建了文件2.txt，内容为 hello  
 })
 
-/*fs.appendFile(filename, '-leo', function() {
- console.log(arguments);
- })*/
+fs.appendFile(filename, '-leo', function() {
+     console.log(arguments);
+     // { '0': null }
+     // 内容为 hello-leo  
+ })
 
 
 fs.exists( filename, function(isExists) {
