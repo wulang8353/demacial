@@ -49,9 +49,8 @@ fs.open('1.txt', 'r', function(err, fd) {
 ### fs.read
 
 > read() 异步读取文件 
-> 
 > readSync() 同步读取
-
+> 将读取到的数据存入缓冲对象buffer中，原文件不变
 
 ```
 var fs = require('fs');
