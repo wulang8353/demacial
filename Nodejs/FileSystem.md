@@ -151,15 +151,19 @@ fs.open('1.txt', 'r+', function(err, fd) {
 ```
 var fs = require('fs');
 
-var filename = '2.txt';
-
 /*
 * 向一个指定的文件中写入数据，如果该文件不存在，则新建，如果存在则新的内容会覆盖原有的文件内容
 * */
 
-/*fs.writeFile(filename, 'miaov', function() {
+fs.writeFile(filename, 'hello', function() {
+
+    fs.writeFile(filename, data,  callback)
+    * fd : 文件名
+    * data: 写入的数据
+    * callback : 回调
+    
     console.log(arguments);
-})*/
+})
 
 /*fs.appendFile(filename, '-leo', function() {
  console.log(arguments);
