@@ -64,6 +64,7 @@ fs.open('1.txt', 'r', function(err, fd) {
     } else {     
         /*
         * fs.read(fd, buffer, offset, length, position, callback)
+        *   读取不影响原来文件
         *   fd : 通过open方法成功打开一个文件返回的编号
         *   buffer : buffer对象  数据写入的缓冲区
         *   offset : 缓冲区buffer中的写入偏移量
@@ -91,8 +92,7 @@ fs.open('1.txt', 'r', function(err, fd) {
             console.log( newBf );
             // <Buffer 61 62 63 64 35 36 37 38 39> 
             //  text内容：abcd
-            
-            // 读取不影响原来文件
+
         } );
     }
 });
@@ -112,6 +112,7 @@ fs.open('1.txt', 'r+', function(err, fd) {
 
     /*
     * 当我们要对打开的文件进行写操作的时候，打开文件的模式应该是  读写方式r+
+    * 将定义在buffer中的数据写入到文件中
     *
     * fs.write(fd, buffer, offset, length[, position], callback)
     *   fd : 打开的文件
