@@ -107,6 +107,7 @@ fs.open('1.txt', 'r', function(err, fd) {
 ```
 var fs = require('fs');
 
+1 截取原文件中的数据
 // 1.text 默认内容：abcd
 fs.open('1.txt', 'r+', function(err, fd) {
 
@@ -117,9 +118,9 @@ fs.open('1.txt', 'r+', function(err, fd) {
     * fs.write(fd, buffer, offset, length[, position], callback)
     *   fd : 打开的文件
     *   buffer : 存入数据的缓冲对象
-    *   offset : buffer对象中要写入的数据的起始位置
+    *   offset : buffer对象中数据的起始位置
     *   length : 要写入的buffer数据的长度
-    *   position : fd中的起始位置  中间填充空格
+    *   position : 操作文件fd中的起始位置  超出填充空格
     *   callback : 回调
     *        err
     *        len:buffer的长度
