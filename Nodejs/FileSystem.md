@@ -154,7 +154,7 @@ var fs = require('fs');
 /*
 * 向一个指定的文件中写入数据，如果该文件不存在，则新建，如果存在则新的内容会覆盖原有的文件内容
 * */
-
+var filename = '2.txt';
 fs.writeFile(filename, 'hello', function() {
 
     fs.writeFile(filename, data,  callback)
@@ -163,6 +163,7 @@ fs.writeFile(filename, 'hello', function() {
     * callback : 回调
     
     console.log(arguments);
+    // { '0': null }  并创建了文件2.txt，内容为 hello  
 })
 
 /*fs.appendFile(filename, '-leo', function() {
