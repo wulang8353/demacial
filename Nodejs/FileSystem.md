@@ -88,6 +88,7 @@ fs.open('1.txt', 'r', function(err, fd) {
             // 4
             console.log( newBf );
             // <Buffer 61 62 63 64 35 36 37 38 39> 
+            //  text内容：abcd
         } );
     }
 });
@@ -102,6 +103,7 @@ fs.open('1.txt', 'r', function(err, fd) {
 ```
 var fs = require('fs');
 
+// 1.text 默认内容：abcd
 fs.open('1.txt', 'r+', function(err, fd) {
 
     /*
@@ -125,15 +127,14 @@ fs.open('1.txt', 'r+', function(err, fd) {
 
         var bf = new Buffer('123');
 
-        fs.write( fd, bf, 1, 2, 5, function() {
+        fs.write( fd, bf, 0, 3, 0, function() {
             console.log(arguments);
+            // { '0': null, '1': 2, '2': <Buffer 31 32 33> }
         } );
-
+        //   text内容：abcd 12
+        
         // fs.write( fd, '1234', 5, 'utf-8' );
         //
-        // fs.close( fd, function() {
-        // } );
     }
-
 });
 ```
