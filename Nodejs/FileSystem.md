@@ -12,11 +12,15 @@
 
 ### fs.open
 
+> open() 异步打开文件 
+> 
+> openSync() 同步打开
+
 ```
 var fs = require('fs');
 
 /*
-* fs.open(path, flags, [mode], callback)  | openSync()
+* fs.open(path, flags, [mode], callback)  | 
 *   path : 要打开的文件的路径 默认同一目录下某个文件
 *   flags : 打开文件的方式 — 读/写 r:只读 r+ 可读写
 *   mode : 设置文件的模式 读/写/执行  4/2/1
@@ -43,3 +47,48 @@ fs.open('1.txt', 'r', function(err, fd) {
 ```
 
 ### fs.read
+
+> read() 异步读取文件 
+> 
+> readSync() 同步读取
+
+
+```
+var fs = require('fs');
+
+fs.open('1.txt', 'r', function(err, fd) {
+
+    if (err) {
+        console.log('文件打开失败');
+    } else {
+
+        //读取文件
+        /*
+        * fs.read(fd, buffer, offset, length, position, callback)
+        *   fd : 通过open方法成功打开一个文件返回的编号
+        *   buffer : buffer对象
+        *   offset : 新的内容添加到buffer中的起始位置
+        *   length ： 添加到buffer中内容的长度
+        *   position ：读取的文件中的起始位置
+        *   callback : 回调
+        *       err
+        *       len:buffer的长度
+        *       buffer对象
+        * */
+
+        var bf1 = new Buffer('123456789');
+
+        console.log(bf1);
+
+        fs.read( fd, bf1, 0, 4, null, function( err, len, newBf ) {
+
+            console.log( bf1 );
+            console.log( len );
+            console.log( newBf );
+
+        } );
+
+    }
+
+});
+```
