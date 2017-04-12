@@ -89,6 +89,8 @@ fs.open('1.txt', 'r', function(err, fd) {
             console.log( newBf );
             // <Buffer 61 62 63 64 35 36 37 38 39> 
             //  text内容：abcd
+            
+            // 读取不影响原来文件
         } );
     }
 });
