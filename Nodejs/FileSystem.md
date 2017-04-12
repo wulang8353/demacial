@@ -66,7 +66,7 @@ fs.open('1.txt', 'r', function(err, fd) {
         * fs.read(fd, buffer, offset, length, position, callback)
         *   fd : 通过open方法成功打开一个文件返回的编号
         *   buffer : buffer对象  数据写入的缓冲区
-        *   offset : 缓冲区写入的写入偏移量
+        *   offset : 缓冲区buffer中的写入偏移量
         *   length ： 要从文件中读取的字节数
         *   position ：读取的文件中的起始位置
         *   callback : 回调
@@ -88,9 +88,51 @@ fs.open('1.txt', 'r', function(err, fd) {
             // 4
             console.log( newBf );
             // <Buffer 61 62 63 64 35 36 37 38 39> 
+        } );
+    }
+});
+```
 
+### fs.write()
+
+> write() 异步写入文件 
+> writeSync() 同步写入
+>如果文件存在，该方法写入的内容会覆盖旧的文件内容。
+
+```
+var fs = require('fs');
+
+fs.open('1.txt', 'r+', function(err, fd) {
+
+    /*
+    * 当我们要对打开的文件进行写操作的时候，打开文件的模式应该是  读写方式r+
+    *
+    * fs.write(fd, buffer, offset, length[, position], callback)
+    *   fd : 打开的文件
+    *   buffer : 存入数据的缓冲对象
+    *   offset : buffer对象中要写入的数据的起始位置
+    *   length : 要写入的buffer数据的长度
+    *   position : fd中的起始位置  中间填充空格
+    *   callback : 回调
+    *        err
+    *        len:buffer的长度
+    *        buffer对象
+    * */
+
+    if (err) {
+        console.log('打开文件失败')
+    } else {
+
+        var bf = new Buffer('123');
+
+        fs.write( fd, bf, 1, 2, 5, function() {
+            console.log(arguments);
         } );
 
+        // fs.write( fd, '1234', 5, 'utf-8' );
+        //
+        // fs.close( fd, function() {
+        // } );
     }
 
 });
