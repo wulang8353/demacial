@@ -84,8 +84,10 @@ fs.open('1.txt', 'r', function(err, fd) {
 
             console.log( bf1 );
             // <Buffer 61 62 63 64 35 36 37 38 39>
+            
             console.log( len );
             // 4
+            
             console.log( newBf );
             // <Buffer 61 62 63 64 35 36 37 38 39> 
             //  text内容：abcd
