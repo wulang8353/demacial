@@ -118,8 +118,8 @@ fs.open('1.txt', 'r+', function(err, fd) {
     * fs.write(fd, buffer, offset, length[, position], callback)
     *   fd : 打开的文件
     *   buffer : 存入数据的缓冲对象
-    *   offset : buffer对象中数据的起始位置
-    *   length : 要写入的buffer数据的长度
+    *   offset : 写入buffer数据的起始位置
+    *   length : 写入buffer数据的长度
     *   position : 操作文件fd中的起始位置  超出填充空格
     *   callback : 回调
     *        err
