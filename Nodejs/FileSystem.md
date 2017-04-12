@@ -17,7 +17,7 @@ var fs = require('fs');
 
 /*
 * fs.open(path, flags, [mode], callback)  | openSync()
-*   path : 要打开的文件的路径
+*   path : 要打开的文件的路径 默认同一目录下
 *   flags : 打开文件的方式 — 读/写 r:只读 r+ 可读写
 *   mode : 设置文件的模式 读/写/执行  4/2/1
 *   callback : 回调
