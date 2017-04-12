@@ -61,8 +61,6 @@ fs.open('1.txt', 'r', function(err, fd) {
     if (err) {
         console.log('文件打开失败');
     } else {
-
-        //读取文件
         /*
         * fs.read(fd, buffer, offset, length, position, callback)
         *   fd : 通过open方法成功打开一个文件返回的编号
@@ -78,13 +76,17 @@ fs.open('1.txt', 'r', function(err, fd) {
 
         var bf1 = new Buffer('123456789');
 
-        console.log(bf1);
+        console.log(bf1); 
+        // 
 
         fs.read( fd, bf1, 0, 4, null, function( err, len, newBf ) {
 
             console.log( bf1 );
+            //
             console.log( len );
+            //
             console.log( newBf );
+            //
 
         } );
 
