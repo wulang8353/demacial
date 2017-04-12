@@ -133,11 +133,11 @@ fs.open('1.txt', 'r+', function(err, fd) {
 
         var bf = new Buffer('123');
 
-        fs.write( fd, bf, 0, 3, 0, function() {
+        fs.write( fd, bf, 0, 3, 5, function() {
             console.log(arguments);
             // { '0': null, '1': 2, '2': <Buffer 31 32 33> }
         } );
-        //   text内容：abcd 12
+        //   text内容：abcd 123
         
         // fs.write( fd, '1234', 5, 'utf-8' );
         //
