@@ -107,7 +107,6 @@ fs.open('1.txt', 'r', function(err, fd) {
 ```
 var fs = require('fs');
 
-1 截取原文件中的数据
 // 1.text 默认内容：abcd
 fs.open('1.txt', 'r+', function(err, fd) {
 
@@ -133,14 +132,17 @@ fs.open('1.txt', 'r+', function(err, fd) {
 
         var bf = new Buffer('123');
 
+        // 1 对字符串截取添加
         fs.write( fd, bf, 0, 3, 5, function() {
             console.log(arguments);
             // { '0': null, '1': 2, '2': <Buffer 31 32 33> }
         } );
         //   text内容：abcd 123
         
+        // 2 直接将数据写入到文件中
         // fs.write( fd, '1234', 5, 'utf-8' );
-        //
+        // text 默认内容：abcd
+        // text内容：abcd 1234
     }
 });
 ```
