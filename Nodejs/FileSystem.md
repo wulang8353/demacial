@@ -56,6 +56,7 @@ fs.open('1.txt', 'r', function(err, fd) {
 ```
 var fs = require('fs');
 
+// 1.text 默认：abcd
 fs.open('1.txt', 'r', function(err, fd) {
 
     if (err) {
@@ -77,12 +78,12 @@ fs.open('1.txt', 'r', function(err, fd) {
         var bf1 = new Buffer('123456789');
 
         console.log(bf1); 
-        // 
+        // <Buffer 31 32 33 34 35 36 37 38 39>
 
         fs.read( fd, bf1, 0, 4, null, function( err, len, newBf ) {
 
             console.log( bf1 );
-            //
+            // <Buffer 61 62 63 64 35 36 37 38 39>
             console.log( len );
             //
             console.log( newBf );
