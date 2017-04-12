@@ -56,38 +56,38 @@ fs.open('1.txt', 'r', function(err, fd) {
 ```
 var fs = require('fs');
 
-// 1.text 默认：abcd
+// 1.text 默认内容：abcd
 fs.open('1.txt', 'r', function(err, fd) {
 
     if (err) {
         console.log('文件打开失败');
-    } else {
+    } else {     
         /*
         * fs.read(fd, buffer, offset, length, position, callback)
         *   fd : 通过open方法成功打开一个文件返回的编号
-        *   buffer : buffer对象
-        *   offset : 新的内容添加到buffer中的起始位置
-        *   length ： 添加到buffer中内容的长度
+        *   buffer : buffer对象  数据写入的缓冲区
+        *   offset : 缓冲区写入的写入偏移量
+        *   length ： 要从文件中读取的字节数
         *   position ：读取的文件中的起始位置
         *   callback : 回调
         *       err
-        *       len:buffer的长度
-        *       buffer对象
-        * */
+        *       len: 被读取文件的长度 fd => 1.text1
+        *       buffer: 缓冲区对象
+        * *
 
         var bf1 = new Buffer('123456789');
 
         console.log(bf1); 
         // <Buffer 31 32 33 34 35 36 37 38 39>
 
-        fs.read( fd, bf1, 0, 4, null, function( err, len, newBf ) {
+        fs.read( fd, bf1, 0, bf1.length, null, function( err, len, newBf ) {
 
             console.log( bf1 );
             // <Buffer 61 62 63 64 35 36 37 38 39>
             console.log( len );
             // 4
             console.log( newBf );
-            // <Buffer 61 62 63 64 35 36 37 38 39>
+            // <Buffer 61 62 63 64 35 36 37 38 39> 
 
         } );
 
