@@ -167,13 +167,14 @@ fs.writeFile(filename, 'hello', function() {
     // 并创建了文件2.txt，内容为 hello  
 })
 
+// 在原有文件的基础上追加新内容(不存在也会重新创界)
 fs.appendFile(filename, '-leo', function() {
      console.log(arguments);
      // { '0': null }
      // 内容为 hello-leo  
  })
 
-
+// 检查指定路径的文件是否存在
 fs.exists( filename, function(isExists) {
     //console.log(isExists);
 
