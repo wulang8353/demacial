@@ -95,6 +95,7 @@ fs.watch(filedir, function(ev, file) {
            if (f) {
                var info = fs.statSync(filedir + '/' + f)
                // 同步stat，传入文件名，返回值就是所有参数
+               // 生产文件格式 ./content/source/ f(文件名)
 
                if (info.mode == 33206) {  // 将类型是文件的数据存入
                    arr.push(filedir + '/' + f);
