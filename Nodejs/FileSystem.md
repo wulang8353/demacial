@@ -154,6 +154,7 @@ var fs = require('fs');
 /*
 * 向一个指定的文件中写入数据，如果该文件不存在，则新建，如果存在则新的内容会覆盖原有的文件内容
 * */
+
 var filename = '2.txt';
 fs.writeFile(filename, 'hello', function() {
 
@@ -176,7 +177,7 @@ fs.appendFile(filename, '-leo', function() {
 
 // 检查指定路径的文件是否存在
 fs.exists( filename, function(isExists) {
-    //console.log(isExists);
+    //console.log(isExists);  返回Boolean值
 
     if (!isExists) {
         fs.writeFile(filename, 'miaov', function(err) {
