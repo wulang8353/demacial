@@ -202,7 +202,7 @@ fs.exists( filename, function(isExists) {
 
 } );
 
-/*
+// 同步处理，且没有函数没有返回值
 if ( !fs.existsSync(filename) ) {
     fs.writeFileSync(filename, 'miaov');
     console.log('新文件创建成功');
@@ -210,5 +210,5 @@ if ( !fs.existsSync(filename) ) {
     fs.appendFileSync(filename, '-leo')
     console.log('新内容追加成功')
 }
-*/
+
 ```
