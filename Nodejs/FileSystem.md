@@ -215,7 +215,7 @@ if ( !fs.existsSync(filename) ) {
 
 ### file.readFile
 
-> 直接读取文件数据
+> 直接读取文件的全部内容
 
 ```
 var fs = require('fs');
