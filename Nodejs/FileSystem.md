@@ -254,6 +254,11 @@ fs.rename('2.txt', '2.new.txt', function() {
 
 // 状态信息查看
 fs.stat('2.new.txt', function() {
+    fs.stat(filename[, options],callback)
+    * filename: 文件名
+    * callback : 回调
+        err 
+        info 文件的信息，包括mode
     console.log(arguments);
 })
 ```
@@ -300,8 +305,6 @@ fs.mkdir('./1', function() {
 
 // 遍历文件类型
 fs.readdir('../FileSystem', function(err, fileList) {
-
-    //console.log(fileList);
 
     fileList.forEach(function(f) {
 
