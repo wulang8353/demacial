@@ -18,6 +18,7 @@
     * [循环](ES6/循环.md)
   * [Nodejs](node/README.md)
     * [FileSystem](Nodejs/FileSystem.md)
+    * [前端项目自动化](Nodejs/auto.md)
 * [CSS（3）](CSS/README.md)
   * [Flex布局](CSS/Flex布局.md)
   * [浮动](CSS/浮动.md)
