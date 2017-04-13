@@ -9,6 +9,17 @@
 
 >    任何异常都会被立即抛出。 可以使用 try/catch 来处理异常，或让它们往上冒泡
      **操作阻塞后续代码执行**
+     
+ * [文件系统模块](#文件系统模块)
+     * [fs.open](#fs.open)
+     * [fs.read](#fs.read)
+     * [fs.write](#fs.write)
+     * [fs.writeFile](#fs.writeFile)
+     * [fs.readFile](#fs.readFile)
+     * [fs.watch](#fs.watch)
+     * [dir文件夹](#dir文件夹)
+
+
 
 ### fs.open
 
@@ -286,7 +297,6 @@ fs.watch(filename, function(ev, fn) {
     } else {
         console.log('....');
     }
-
 });
 ```
 ### dir文件夹
@@ -305,12 +315,9 @@ fs.mkdir('./1', function() {
 
 // 遍历文件类型
 fs.readdir('../FileSystem', function(err, fileList) {
-
     fileList.forEach(function(f) {
 
         fs.stat(f, function(err, info) {
-            //console.log(arguments);
-
             switch (info.mode) {
                 case 16822:
                     console.log( '[文件夹] ' + f );
