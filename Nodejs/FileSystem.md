@@ -214,20 +214,20 @@ if ( !fs.existsSync(filename) ) {
 ```
 
 ### file.readFile
+
 > 直接读取文件数据
+
 ```
 var fs = require('fs');
 
 // 1.text 原内容 hello
-/*
 fs.readFile('1.txt', function(err, data) {
-
     fs.readFile(filename, model, callback)
     * filename: 文件名
     * model: 模式
     * callback : 回调
         err
-        data 文件中的数据以Buffer形式
+        data 字符编码未指定，则返回原始的 buffer
 
     // console.log(arguments);
     // { '0': null, '1': <Buffer 68 65 6c 6c 6f> }
@@ -237,24 +237,26 @@ fs.readFile('1.txt', function(err, data) {
     } else {
         console.log( data.toString() ); // hello
     }
+});
 
-});*/
-
-/*fs.unlink('2.txt', function(err) {
+// 删除文件
+fs.unlink('2.txt', function(err) {
     if (err) {
         console.log('删除失败');
     } else {
         console.log('删除成功');
     }
-})*/
+})
 
-/*fs.rename('2.txt', '2.new.txt', function() {
+// 重命名
+fs.rename('2.txt', '2.new.txt', function() {
     console.log(arguments);
-})*/
+})
 
-/*fs.stat('2.new.txt', function() {
+// 
+fs.stat('2.new.txt', function() {
     console.log(arguments);
-})*/
+})
 
 
 
