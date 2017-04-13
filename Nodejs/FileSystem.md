@@ -304,12 +304,11 @@ fs.watch(filename, function(ev, fn) {
 ```
 var fs = require('fs');
 
-/*
-* fs.mkdir(path, [mode], callback)
-* */
-
 // 创建一个当前目录的文件夹
 fs.mkdir('./1', function() {
+    
+    fs.mkdir(path, [mode], callback)
+    
     console.log(arguments);
 });
 
