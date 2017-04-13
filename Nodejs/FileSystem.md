@@ -256,7 +256,35 @@ fs.rename('2.txt', '2.new.txt', function() {
 fs.stat('2.new.txt', function() {
     console.log(arguments);
 })
+```
 
+### fs.watch
 
+> 监听文件\文件夹状态变化
 
 ```
+var fs = require('fs');
+
+var filename = '2.new.txt';
+
+fs.watch(filename, function(ev, fn) {
+    fs.watch(filename[, options][, listener])
+    *options <String> | <Object>
+      persistent <Boolean> 指明如果文件正在被监视，进程是否应该继续运行。默认 = true
+      recursive <Boolean> 指明是否全部子目录应该被监视.默认 = false
+      encoding <String> 指定用于传给监听器的文件名的字符编码。默认 = 'utf8'
+    * listener <Function>
+        eventType  rename | change
+        filename   触发事件的文件的名称
+    if (fn) {
+        console.log(fn + ' 发生了改变');
+    } else {
+        console.log('....');
+    }
+
+});
+```
+
+
+
+
