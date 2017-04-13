@@ -5,7 +5,7 @@
 ```
 var projectData = {
 
-    'name' : 'miaov',
+    'name' : 'hello',
     'fileData' : [
         {
             'name' : 'css',
@@ -30,7 +30,7 @@ var projectData = {
 
 var fs = require('fs');
 
-if ( projectData.name ) {
+if ( projectData.name ) {            // 确定文件名
     fs.mkdirSync(projectData.name);
 
     var fileData = projectData.fileData;
@@ -39,7 +39,8 @@ if ( projectData.name ) {
 
         fileData.forEach(function(f) {
 
-            f.path = projectData.name + '/' + f.name;
+            // 生成路径 hello/name
+            f.path = projectData.name + '/' + f.name; 
 
             f.content = f.content || '';
 

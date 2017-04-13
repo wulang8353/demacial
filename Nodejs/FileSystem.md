@@ -292,6 +292,7 @@ fs.watch(filename, function(ev, fn) {
     * listener <Function>
         eventType  rename | change
         filename   触发事件的文件的名称
+        
     if (fn) {
         console.log(fn + ' 发生了改变');
     } else {
