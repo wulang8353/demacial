@@ -277,6 +277,8 @@ fs.stat('2.new.txt', function() {
 ### fs.watch
 
 > 监听文件\文件夹状态变化
+> 当filename是文件类型，监控文件的变化
+> 当filename是文件夹类型，需要调用fs.readdir()遍历出里面所有的文件
 
 ```
 var fs = require('fs');
