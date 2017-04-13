@@ -222,9 +222,8 @@ var fs = require('fs');
 
 // 1.text 原内容 hello
 fs.readFile('1.txt', function(err, data) {
-    fs.readFile(filename, model, callback)
+    fs.readFile(filename[, options],callback)
     * filename: 文件名
-    * model: 模式
     * callback : 回调
         err
         data 字符编码未指定，则返回原始的 buffer
