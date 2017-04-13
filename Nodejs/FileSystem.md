@@ -324,11 +324,8 @@ fs.readdir('../FileSystem', function(err, fileList) {
                     console.log( '[其他类型] ' + f );
                     break;
             }
-
         });
-
     });
-
 })
 ```
 
