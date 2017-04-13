@@ -252,7 +252,7 @@ fs.rename('2.txt', '2.new.txt', function() {
     console.log(arguments);
 })
 
-// 
+// 状态信息查看
 fs.stat('2.new.txt', function() {
     console.log(arguments);
 })
