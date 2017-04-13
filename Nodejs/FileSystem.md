@@ -102,8 +102,7 @@ fs.open('1.txt', 'r', function(err, fd) {
 > write() 异步写入文件 
 > writeSync() 同步写入
 > 如果文件存在，该方法写入的内容会覆盖旧的文件内容。
-> 针对打开的文件进行操作(需要传入fd)
-
+> **针对打开的文件进行操作(需要传入fd)**
 
 ```
 var fs = require('fs');
@@ -149,6 +148,8 @@ fs.open('1.txt', 'r+', function(err, fd) {
 ```
 
 ### fs.writeFile
+
+> 对文件进行写入(可以直接创建文件，无需fd)
 
 ```
 var fs = require('fs');
