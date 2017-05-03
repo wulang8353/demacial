@@ -23,6 +23,7 @@
   * [事件](javascript/事件/README.md)
     * [事件处理程序](javascript/事件/事件处理程序.md)
     * [事件对象](javascript/事件/事件对象.md)
+    * [事件委托](javascript/事件/事件委托.md)
 * [CSS（3）](CSS/README.md)
   * [Flex布局](CSS/Flex布局.md)
   * [浮动](CSS/浮动.md)
