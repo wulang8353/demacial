@@ -18,13 +18,30 @@ markdown：  语法解析生成模块
 .
 |-- db                               // 数据库存储目录
 |-- models                           // 数据库模型文件目录
-|-- node_modules                     // 启动，打包，部署，自动化构建
-|-- public                           // 程序打包配置
+|   |-- Category                     // 种类
+|   |-- Content                      // 内容
+|   |-- User                         // 用户
+|-- node_modules                     // 依赖包
+|-- public                           // 静态文件
+|   |-- css                          // 各种css文件
+|   |-- fontAwersome                 // 字体文件
+|   |-- font                         // 字体文件
+|   |-- imgs                         // 各种图片
+|   |-- js                           // 各种js文件
 |-- routers                          // 代理服务器配置
+|   |-- admin                        // 管理员路由以及功能逻辑
+|   |-- api                          // 通用逻辑
+|   |-- main                         // 前端路由以及功能逻辑
 |-- schemas                          // 代理服务器配置
-|-- views                            // 代理服务器配置
+|   |-- categories                   // 分类的表结构
+|   |-- Contents                     // 内容的表结构
+|   |-- users                        // 用户的表结构
+|-- views                            // 页面组件
+|   |-- admain                       // 管理员页面
+|   |-- main                         // 主页页面
+|-- .gitnore                         // git配置文件
 |-- app.js                           // 入口文件
 |-- README.md                        // 项目说明
-|-- package.json                     // 配置项目相关信息，通过执行 npm init 命令创建
+|-- package.json                     // 配置项目相关信息
 .
 ```
