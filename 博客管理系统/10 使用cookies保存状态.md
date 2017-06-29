@@ -64,6 +64,6 @@ router.post('/user/login', function(req, res) {
 });
 ```
 
-当点击登陆时，会生成cookies保存在req中，可以在请求头重看到
+当点击登陆时，会生成cookies保存在req中，可以在请求头中看到
 
 
