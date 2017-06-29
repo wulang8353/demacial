@@ -13,12 +13,13 @@
 var Cookies = require('cookies'); //加载模块
 ...
 
-// cookies设置,app.use中间件的存在使得用户访问后都会调用该方法
+// cookies设置,app.use中间件的存在使得用户访问后都会调用该方法,并且可以在模板引擎swig中直接调用改数据
 app.use( function (req, res, next) {
     req.cookies = new Cookies(req, res);
 
     // 解析用户的登陆信息
-    req.userInfo = {}; // 自定义属性，为了存cookies
+    // 
+    req.userInfo = {};
     if (req.cookies.get('userInfo')) {
         try {
             req.userInfo = JSON.parse(req.cookies.get('userInfo'));
