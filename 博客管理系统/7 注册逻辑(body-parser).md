@@ -20,6 +20,9 @@ app.use( bodyParse.urlencoded({extended: true})); // 在req对象上绑定一个
 * 在/router/api.js 中处理请求数据的逻辑
 
 ```
+var express = require('express');
+var router = express.Router();
+
 //统一返回格式
 var responseData;
 
