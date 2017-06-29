@@ -50,6 +50,7 @@ router.post('/user/login', function(req, res) {
 
 
     // 设置cookies,第一个对象要保存的对象名，第二参数保存字符串存入到userInfo中
+    // 数据会保存在req.cookies中
     req.cookies.set('userInfo', JSON.stringify({ 
         _id: userInfo._id,                       
         username: userInfo.username
