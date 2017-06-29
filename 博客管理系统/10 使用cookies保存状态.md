@@ -43,6 +43,8 @@ app.use( function (req, res, next) {
 * 创建Cookies
 
 ```
+// index.js
+
 /*
  * 登录
  * */
@@ -62,6 +64,6 @@ router.post('/user/login', function(req, res) {
 });
 ```
 
-
+当点击登陆时，会生成cookies保存在req中
 
 
