@@ -75,9 +75,27 @@ router.post('/user/register', function(req, res, next) {
     res.json(responseData);
     return;
 });
-
-
 ```
+输入用户名和密码后，点击注册，就可以在运行的node窗口中看到信息
+![](/博客管理系统/img/body-parser2.jpg)
+
+![](/博客管理系统/img/body-parser1.jpg)
+
+
+![](/博客管理系统/img/body-parser11.jpg)
+
+![](/博客管理系统/img/body-parser3.jpg)
+
+![](/博客管理系统/img/body-parser4.jpg)
+
+![](/博客管理系统/img/body-parser5.jpg)
+
+
+
+
+
+
+
 
 
 
