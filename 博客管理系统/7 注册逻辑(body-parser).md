@@ -2,6 +2,12 @@
 
 ** [body-parser](https://github.com/expressjs/body-parser) 中间件，专门处理http请求的数据**
 
+整理下思路：
+首先由main.js中的express.Router()定位到页面路径并渲染，然后在页面上点击注册 -> 
+根据head导入的index.js找到ajax请求的url ->
+由api中express.Router()定位到请求的url
+
+
 * 在app.js中调用body-parse
 
 ```
@@ -10,8 +16,6 @@ var bodyParse = require('body-parser'); // 用来处理POST提交过来的数据
 // bodyParse设置
 app.use( bodyParse.urlencoded({extended: true})); // 在req对象上绑定一个body属性，得到发送过来的数据对象
 ```
-
-
 * 在/router/api.js 中处理请求数据的逻辑
 
 ```
