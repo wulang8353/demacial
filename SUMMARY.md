@@ -47,4 +47,6 @@
   * [8 基于数据库的验证](博客管理系统/8 基于数据库的验证.md)
   * [9 登陆模块](博客管理系统/9 登陆模块.md)
   * [10 使用cookies](博客管理系统/10 使用cookies保存状态.md)
+* [基于Aliyun服务器的NodeJS线上部署](aliyunnodejs.md)
+  * [1 选购域名](aliyunnodejs/.md)
 
