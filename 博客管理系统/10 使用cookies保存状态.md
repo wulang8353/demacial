@@ -32,9 +32,9 @@ app.use( function (req, res, next) {
     }
 
     // console.log( req.cookies.get('userInfo') );
-    // JSON是字符串类型 {"_id":"58fa0872ef1c5e4c085baf5e","username":"test"}
+    // 字符串类型 {"_id":"58fa0872ef1c5e4c085baf5e","username":"test"}
     // console.log( JSON.parse(req.cookies.get('userInfo')));
-    // 这里是对象类型   { _id: '58fa0872ef1c5e4c085baf5e', username: 'test' }
+    // 对象类型   { _id: '58fa0872ef1c5e4c085baf5e', username: 'test' }
 
 });
 ```
