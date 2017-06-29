@@ -7,6 +7,7 @@
 2 根据head导入的index.js找到ajax请求的url ->
 3 由api中express.Router()定位到请求的url，并进行逻辑验证
 
+**express.Router()处理有关url方面的逻辑(页面、http)，通过Body-parser处理http中请求的数据**
 
 * 在app.js中调用body-parse
 
