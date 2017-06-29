@@ -3,9 +3,9 @@
 ** [body-parser](https://github.com/expressjs/body-parser) 中间件，专门处理http请求的数据**
 
 整理下思路：
-首先由main.js中的express.Router()定位到页面路径并渲染，然后在页面上点击注册 -> 
-根据head导入的index.js找到ajax请求的url ->
-由api中express.Router()定位到请求的url
+1 首先由main.js中的express.Router()定位到页面路径并渲染，然后在页面上点击注册 -> 
+2 根据head导入的index.js找到ajax请求的url ->
+3 由api中express.Router()定位到请求的url，并进行逻辑验证
 
 
 * 在app.js中调用body-parse
