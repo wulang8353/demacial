@@ -84,7 +84,7 @@ router.post('/user/register', function(req, res, next) {
 ![](/博客管理系统/img/body-parser5.jpg)
 
 
-当未输入用户名的时候，控制台network显示用户名不能为空
+当未输入用户名的时候，显示用户名不能为空
 ![](/博客管理系统/img/body-parser11.jpg)
 
 ![](/博客管理系统/img/body-parser4.jpg)
