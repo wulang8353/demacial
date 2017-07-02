@@ -50,4 +50,5 @@
 * [NodeJS项目线上部署](aliyunnodejs.md)
   * [1 选购域名、服务器及备案](aliyunnodejs/1 选购域名.md)
   * [2 远程登陆服务器](aliyunnodejs/2 远程登陆服务器.md)
+  * [3 增强安全等级](aliyunnodejs/3 增强安全等级.md)
 
