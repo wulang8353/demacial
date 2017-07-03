@@ -52,4 +52,5 @@
   * [2 远程登陆服务器](aliyunnodejs/2 远程登陆服务器.md)
   * [3 增强安全等级](aliyunnodejs/3 增强安全等级.md)
   * [4  搭建 Nodejs 生产环境](aliyunnodejs/4  搭建 Nodejs 生产环境.md)
+  * [5 配置Nginx实现反向代理](aliyunnodejs/5 配置Nginx实现反向代理.md)
 
