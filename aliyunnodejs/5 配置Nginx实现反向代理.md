@@ -9,8 +9,17 @@
 ![](/aliyunnodejs/imgs/Nginx 反向代理2.jpg)
 
 进入到Nginx目录下，进入到conf.d中
-![](/aliyunnodejs/imgs/Nginx 反向代理4.jpg)
+ls 查看文件夹中的文件
+这里有我原来创建的一个3000.conf不需要管它
+新建另外一个配置文件conf
+命名规则： <项目名>-com-<port>.conf
+![](/aliyunnodejs/imgs/Nginx 反向代理6.jpg)
 
+将以下代码输入进去
+
+```
+```
+![](/aliyunnodejs/imgs/Nginx 反向代理1-1.jpg)
 
 ![](/aliyunnodejs/imgs/Nginx 反向代理3.jpg)
 
@@ -18,8 +27,7 @@
 
 ![](/aliyunnodejs/imgs/Nginx 反向代理5.jpg)
 
-![](/aliyunnodejs/imgs/Nginx 反向代理6.jpg)
-
+11
 ![](/aliyunnodejs/imgs/Nginx 反向代理7.jpg)
 
 ![](/aliyunnodejs/imgs/Nginx 反向代理8.jpg)

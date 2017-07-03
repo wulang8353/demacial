@@ -94,23 +94,4 @@ console.log('server running on http://112.74.179.8.:8082/')
 2 通过外网在80端口访问而不是这里的8082端口  - Nginx
 ``` 
 
-upstream umac {
-  server 127.0.0.1:8082;
-}
-
-server {
-  listen 80;
-  server_name 112.74.179.8;
-
-  location / {
-     proxy_set_header X-Real-IP $remote_addr;
-     proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
-     proxy_set_header Host $http_host;
-     proxy_set_header X-Nginx-Proxy true;
-
-     proxy_pass http://umac;
-     proxy_redirect off;
-  }
-}
-
 
