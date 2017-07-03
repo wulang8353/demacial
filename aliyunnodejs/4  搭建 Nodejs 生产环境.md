@@ -72,18 +72,18 @@ console.log('server running on http://112.74.179.8.:8082/')
 
 **神器：PM2**
 
-pm2 start app.js // 运行app.js
+**pm2 start app.js** // 运行app.js
 现在我们就算关闭窗口，浏览器也可以直接访问得到网页啦
 ![](/aliyunnodejs/imgs/Node生产环境14.jpg)
 
 刷新页面！
 ![](/aliyunnodejs/imgs/Node生产环境13.jpg)
 
-pm2 list    // 这台服务器上正在运行的所有Node服务
-pm2 show app // 查看正在运行的某个Node程序(这里是app.js)
+**pm2 list**  // 这台服务器上正在运行的所有Node服务
+**pm2 show app** // 查看正在运行的某个Node程序(这里是app.js)
 ![](/aliyunnodejs/imgs/Node生产环境15.jpg)
 
-pm2 logs
+**pm2 logs**  // 当前的实时日志
 ![](/aliyunnodejs/imgs/Node生产环境16.jpg)
 
 
