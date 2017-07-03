@@ -19,3 +19,35 @@
 ![](/aliyunnodejs/imgs/Node生产环境5.jpg)
 
 指定服务器使用该版本
+nvm use v6.9.5 (指定使用版本)
+nvm alias default v6.9.5 (指定默认版本)
+![](/aliyunnodejs/imgs/Node生产环境6.jpg)
+
+
+
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+ npm --registry=https://registry.npm.taobao.org install -g npm
+ 
+  npm --registry=https://registry.npm.taobao.org install -g cnpm
+  
+  npm i pm2 webpack gulp grunt-cli -g
+  
+  npm --registry=https://registry.npm.taobao.org install -g pm2 webpack gulp grunt-cli -g
+
+const http = require('http')
+
+http.createServer(function(req, res){
+  res.writeHead(200,{'Content-Type': 'text/plain'})
+  res.end('我就是力量的化身！')
+}).listen(80)
+
+console.log('server running on http://112.74.179.8/')
+
+
+## 静态站点
+
+静态站点稳定提供对外的web服务
+
+
+通过外网在80端口访问
