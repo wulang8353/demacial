@@ -79,8 +79,8 @@ pm2 start app.js // 运行app.js
 刷新页面！
 ![](/aliyunnodejs/imgs/Node生产环境13.jpg)
 
-pm2 list    // 这台服务器上正在运行的素有Node服务
-pm2 show app // 查看正在
+pm2 list    // 这台服务器上正在运行的所有Node服务
+pm2 show app // 查看正在运行的某个Node程序(这里是app.js)
 ![](/aliyunnodejs/imgs/Node生产环境15.jpg)
 
 pm2 logs
