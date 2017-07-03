@@ -37,7 +37,7 @@ npm --registry=https://registry.npm.taobao.org install -g pm2 webpack gulp grunt
 根路径下创建一个app.js文件:
 sudo vi app.js
 
-复制粘贴以下内容
+app.js复制粘贴以下内容
 ```
 const http = require('http')
 
