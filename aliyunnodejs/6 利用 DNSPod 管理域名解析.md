@@ -9,9 +9,9 @@
       如果是在虚拟空间，就会出现和其他网站是在同一台服务器上，公用着同一个IP地址
       这意味着存在着这样一种情况，当同一台服务器的其他的网站因为不良信息被降权，则自己的网站受到牵连而一样被降级
 
-## 利用 DNSPod 管理域名解析
+## 利用 DNSPod [DNSPod](https://www.dnspod.cn/) 管理域名解析
 
-[DNSPod](https://www.dnspod.cn/)
+
 
 进入到阿里云的控制台，找到域名
 ![](/aliyunnodejs/imgs/利用 DNSPod 管理域名解析1.jpg)
@@ -28,5 +28,6 @@
 确认后，提示修改成功，一般会在2小时内生效
 ![](/aliyunnodejs/imgs/利用 DNSPod 管理域名解析6.jpg)
 
+进入到[DNSPod](https://www.dnspod.cn/)网站，创建账号后，进入到控制条
 ![](/aliyunnodejs/imgs/利用 DNSPod 管理域名解析5.jpg)
 
