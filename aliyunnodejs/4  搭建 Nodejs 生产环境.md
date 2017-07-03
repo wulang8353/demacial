@@ -44,12 +44,13 @@ const http = require('http')
 http.createServer(function(req, res){
 res.writeHead(200,{'Content-Type': 'text/plain'})
 res.end('我就是力量的化身！')
-}).listen(80)
+}).listen(8082)
 
-console.log('server running on http://112.74.179.8/')
+console.log('server running on http://,username.:8082/')
 ```
 
-![](/aliyunnodejs/imgs/Node生产环境9.jpg)
+保存退出后执行  node app.js
+
 
 ![](/aliyunnodejs/imgs/Node生产环境10.jpg)
 
