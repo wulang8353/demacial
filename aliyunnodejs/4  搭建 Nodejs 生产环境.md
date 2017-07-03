@@ -66,6 +66,12 @@ console.log('server running on http://112.74.179.8.:8082/')
 刷新页面即可访问成功！
 ![](/aliyunnodejs/imgs/Node生产环境13.jpg)
 
+**但是当我们按住ctrl+c退出node运行，或者关闭窗口时候再次访问网站则出现错误！**
+
+原因在于，通过node app.js运行的生命周期有限，不能稳定地提供对外的Web服务
+
+**神器：PM2**
+
 ![](/aliyunnodejs/imgs/Node生产环境14.jpg)
 
 ![](/aliyunnodejs/imgs/Node生产环境15.jpg)
