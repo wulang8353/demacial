@@ -43,8 +43,7 @@ server {
 通过 sudo nginx -t 检测配置文件是否出错
 ![](/aliyunnodejs/imgs/Nginx 反向代理3.jpg)
 
-
-
+检查正确后，重启Nginx
 ![](/aliyunnodejs/imgs/Nginx 反向代理5.jpg)
 
 11
