@@ -34,7 +34,7 @@ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo s
 npm --registry=https://registry.npm.taobao.org install -g pm2 webpack gulp grunt-cli -g
 ![](/aliyunnodejs/imgs/Node生产环境8.jpg)
 
-根路径下创建一个app.js文件:
+用户根路径下创建一个app.js文件:
 sudo vi app.js
 
 app.js复制粘贴以下内容
