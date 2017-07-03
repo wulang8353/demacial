@@ -72,6 +72,8 @@ console.log('server running on http://112.74.179.8.:8082/')
 
 **神器：PM2**
 
+pm2 start app.js // 运行app.js
+现在我们就算关闭窗口，浏览器也可以直接访问得到网页
 ![](/aliyunnodejs/imgs/Node生产环境14.jpg)
 
 ![](/aliyunnodejs/imgs/Node生产环境15.jpg)
