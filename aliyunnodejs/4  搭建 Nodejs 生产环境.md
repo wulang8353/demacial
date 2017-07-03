@@ -23,7 +23,8 @@ nvm use v6.9.5 (指定使用版本)
 nvm alias default v6.9.5 (指定默认版本)
 ![](/aliyunnodejs/imgs/Node生产环境6.jpg)
 
-
+安装npm（taobao源）
+![](/aliyunnodejs/imgs/Node生产环境7.jpg)
 
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
