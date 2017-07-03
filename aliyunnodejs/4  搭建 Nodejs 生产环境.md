@@ -17,3 +17,5 @@
 
 安装指定的Node版本 v6.9.5，这里安装时间较长
 ![](/aliyunnodejs/imgs/Node生产环境5.jpg)
+
+指定服务器使用该版本
