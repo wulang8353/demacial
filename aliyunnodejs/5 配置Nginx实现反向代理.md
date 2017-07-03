@@ -24,7 +24,7 @@ upstream umac {
 
 server {
     listen 80;
-    server_name 112.74.179.8;
+    server_name 112.74.179.8; // 自己的ip地址
     
     location / {
         proxy_set_header X-Real-IP $remote_addr;
