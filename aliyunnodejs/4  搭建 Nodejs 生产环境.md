@@ -43,7 +43,7 @@ const http = require('http')
 
 http.createServer(function(req, res){
 res.writeHead(200,{'Content-Type': 'text/plain'})
-res.end('我就是力量的化身！')
+res.end('There is a fire starting in my heart')
 }).listen(8082)
 
 console.log('server running on http://112.74.179.8.:8082/')
@@ -63,6 +63,7 @@ console.log('server running on http://112.74.179.8.:8082/')
 退出保存后，重载配置
 ![](/aliyunnodejs/imgs/Node生产环境12.jpg)
 
+刷新页面即可访问成功！
 ![](/aliyunnodejs/imgs/Node生产环境13.jpg)
 
 ![](/aliyunnodejs/imgs/Node生产环境14.jpg)
