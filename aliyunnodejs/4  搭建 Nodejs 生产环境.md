@@ -73,23 +73,22 @@ console.log('server running on http://112.74.179.8.:8082/')
 **神器：PM2**
 
 pm2 start app.js // 运行app.js
-现在我们就算关闭窗口，浏览器也可以直接访问得到网页
+现在我们就算关闭窗口，浏览器也可以直接访问得到网页啦
 ![](/aliyunnodejs/imgs/Node生产环境14.jpg)
 
+刷新页面！
+![](/aliyunnodejs/imgs/Node生产环境13.jpg)
+
+pm2 ist 
 ![](/aliyunnodejs/imgs/Node生产环境15.jpg)
 
+pm2 show app
 ![](/aliyunnodejs/imgs/Node生产环境16.jpg)
 
 
-  
-  
- 
+```
+静态站点需要满足以下两个条件:
 
-
-
-## 静态站点
-
-静态站点稳定提供对外的web服务
-
-
-通过外网在80端口访问
+1 稳定提供对外的web服务  -> pm2
+2 通过外网在80端口访问  - Nginx
+``` 
