@@ -24,17 +24,38 @@ nvm alias default v6.9.5 (指定默认版本)
 ![](/aliyunnodejs/imgs/Node生产环境6.jpg)
 
 安装npm（taobao源）
+npm --registry=https://registry.npm.taobao.org install -g npm
+
+安装完npm以后需要执行以下操作用来指定监控数目
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 ![](/aliyunnodejs/imgs/Node生产环境7.jpg)
 
-echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+安装Node所需的包(主要是pm2)
+npm --registry=https://registry.npm.taobao.org install -g pm2 webpack gulp grunt-cli -g
+![](/aliyunnodejs/imgs/Node生产环境8.jpg)
 
- npm --registry=https://registry.npm.taobao.org install -g npm
+
+
+![](/aliyunnodejs/imgs/Node生产环境9.jpg)
+
+![](/aliyunnodejs/imgs/Node生产环境10.jpg)
+
+![](/aliyunnodejs/imgs/Node生产环境11.jpg)
+
+![](/aliyunnodejs/imgs/Node生产环境12.jpg)
+
+![](/aliyunnodejs/imgs/Node生产环境13.jpg)
+
+![](/aliyunnodejs/imgs/Node生产环境14.jpg)
+
+![](/aliyunnodejs/imgs/Node生产环境15.jpg)
+
+![](/aliyunnodejs/imgs/Node生产环境16.jpg)
+
+
+  
+  
  
-  npm --registry=https://registry.npm.taobao.org install -g cnpm
-  
-  npm i pm2 webpack gulp grunt-cli -g
-  
-  npm --registry=https://registry.npm.taobao.org install -g pm2 webpack gulp grunt-cli -g
 
 const http = require('http')
 
