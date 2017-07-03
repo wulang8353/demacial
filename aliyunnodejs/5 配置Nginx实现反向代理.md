@@ -53,6 +53,7 @@ server {
 ![](/aliyunnodejs/imgs/Nginx 反向代理13.jpg)
 
 往下可以找到http中的server_tokens，改为off，退出保存
+(隐藏nginx在响应头中的详细信息)
 ![](/aliyunnodejs/imgs/Nginx 反向代理12.jpg)
 
 sudo service nginx reload重载nginx
