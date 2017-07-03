@@ -41,17 +41,15 @@ server {
 ![](/aliyunnodejs/imgs/Nginx 反向代理1-1.jpg)
 
 通过 sudo nginx -t 检测配置文件是否出错
-![](/aliyunnodejs/imgs/Nginx 反向代理3.jpg)
+![](/aliyunnodejs/imgs/Nginx 反向代理8.jpg)
 
 检查正确后，重启Nginx
+这时候打开浏览器直接访问ip地址的80端口就可以得到页面了
+![](/aliyunnodejs/imgs/Nginx 反向代理9.jpg)
+
 ![](/aliyunnodejs/imgs/Nginx 反向代理5.jpg)
 
 11
-![](/aliyunnodejs/imgs/Nginx 反向代理7.jpg)
-
-![](/aliyunnodejs/imgs/Nginx 反向代理8.jpg)
-
-![](/aliyunnodejs/imgs/Nginx 反向代理9.jpg)
 
 ![](/aliyunnodejs/imgs/Nginx 反向代理10.jpg)
 
