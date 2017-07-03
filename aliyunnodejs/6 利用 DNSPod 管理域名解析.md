@@ -25,6 +25,8 @@
 将下图所示的两段非万网DNS（这里是DNSPod）填入到下方两栏中，点击确认
 ![](/aliyunnodejs/imgs/利用 DNSPod 管理域名解析4.jpg)
 
+确认后，提示修改成功，一般会在2小时内生效
+![](/aliyunnodejs/imgs/利用 DNSPod 管理域名解析6.jpg)
+
 ![](/aliyunnodejs/imgs/利用 DNSPod 管理域名解析5.jpg)
 
-![](/aliyunnodejs/imgs/利用 DNSPod 管理域名解析6.jpg)
