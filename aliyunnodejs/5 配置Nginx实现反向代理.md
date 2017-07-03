@@ -49,7 +49,6 @@ server {
 **这时候打开浏览器直接访问ip地址的80端口就可以得到页面了**
 ![](/aliyunnodejs/imgs/Nginx 反向代理10.jpg)
 
-
 进入到上一层路径、如果所示，然后进入到nginx.conf修改配置
 ![](/aliyunnodejs/imgs/Nginx 反向代理13.jpg)
 
