@@ -34,7 +34,20 @@ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo s
 npm --registry=https://registry.npm.taobao.org install -g pm2 webpack gulp grunt-cli -g
 ![](/aliyunnodejs/imgs/Node生产环境8.jpg)
 
+根路径下创建一个app.js文件:
+sudo vi app.js
 
+复制粘贴以下内容
+```
+const http = require('http')
+
+http.createServer(function(req, res){
+res.writeHead(200,{'Content-Type': 'text/plain'})
+res.end('我就是力量的化身！')
+}).listen(80)
+
+console.log('server running on http://112.74.179.8/')
+```
 
 ![](/aliyunnodejs/imgs/Node生产环境9.jpg)
 
@@ -57,14 +70,6 @@ npm --registry=https://registry.npm.taobao.org install -g pm2 webpack gulp grunt
   
  
 
-const http = require('http')
-
-http.createServer(function(req, res){
-  res.writeHead(200,{'Content-Type': 'text/plain'})
-  res.end('我就是力量的化身！')
-}).listen(80)
-
-console.log('server running on http://112.74.179.8/')
 
 
 ## 静态站点
