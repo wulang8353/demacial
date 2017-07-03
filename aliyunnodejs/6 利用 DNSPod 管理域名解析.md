@@ -28,6 +28,6 @@
 确认后，提示修改成功，一般会在2小时内生效
 ![](/aliyunnodejs/imgs/利用 DNSPod 管理域名解析6.jpg)
 
-进入到[DNSPod](https://www.dnspod.cn/)网站，创建账号后，进入到控制条
+进入到[DNSPod](https://www.dnspod.cn/)网站，创建账号后，进入到控制台
 ![](/aliyunnodejs/imgs/利用 DNSPod 管理域名解析5.jpg)
 
