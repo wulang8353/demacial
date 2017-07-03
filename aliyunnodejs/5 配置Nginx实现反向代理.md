@@ -8,10 +8,13 @@
 安装Nginx
 ![](/aliyunnodejs/imgs/Nginx 反向代理2.jpg)
 
+进入到Nginx目录下，进入到conf.d中
+![](/aliyunnodejs/imgs/Nginx 反向代理4.jpg)
+
 
 ![](/aliyunnodejs/imgs/Nginx 反向代理3.jpg)
 
-![](/aliyunnodejs/imgs/Nginx 反向代理4.jpg)
+
 
 ![](/aliyunnodejs/imgs/Nginx 反向代理5.jpg)
 
