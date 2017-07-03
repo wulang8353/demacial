@@ -53,13 +53,18 @@ server {
 进入到上一层路径、如果所示，然后进入到nginx.conf修改配置
 ![](/aliyunnodejs/imgs/Nginx 反向代理13.jpg)
 
+往下可以找到http中的server_tokens，改为off，退出保存
 ![](/aliyunnodejs/imgs/Nginx 反向代理12.jpg)
 
+sudo service nginx reload重载nginx
+![](/aliyunnodejs/imgs/Nginx 反向代理14.jpg)
+
+打开浏览器，找到112.74.179.8(ip地址)的请求信息，在响应头重可以看到nginx
 ![](/aliyunnodejs/imgs/Nginx 反向代理11.jpg)
 
 
 
 
 
-![](/aliyunnodejs/imgs/Nginx 反向代理14.jpg)
+
 
