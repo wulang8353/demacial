@@ -19,7 +19,7 @@ ls 查看文件夹中的文件
 
 ```
 upstream umac {
-    server 127.0.0.1:8082;
+    server 127.0.0.1:8082; // 这里就是刚才配置端口
 }
 
 server {
@@ -37,6 +37,7 @@ server {
     }
 }
 ```
+最终效果如下图:
 ![](/aliyunnodejs/imgs/Nginx 反向代理1-1.jpg)
 
 ![](/aliyunnodejs/imgs/Nginx 反向代理3.jpg)
