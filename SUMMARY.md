@@ -53,4 +53,5 @@
   * [3 增强安全等级](aliyunnodejs/3 增强安全等级.md)
   * [4  搭建 Nodejs 生产环境](aliyunnodejs/4  搭建 Nodejs 生产环境.md)
   * [5 配置Nginx实现反向代理](aliyunnodejs/5 配置Nginx实现反向代理.md)
+  * [6 利用 DNSPod 管理域名解析](aliyunnodejs/6 利用 DNSPod 管理域名解析.md)
 
