@@ -40,6 +40,7 @@ server {
 最终效果如下图:
 ![](/aliyunnodejs/imgs/Nginx 反向代理1-1.jpg)
 
+通过 sudo nginx -t 检测配置文件是否出错
 ![](/aliyunnodejs/imgs/Nginx 反向代理3.jpg)
 
 
