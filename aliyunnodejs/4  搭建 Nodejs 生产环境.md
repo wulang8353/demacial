@@ -53,11 +53,14 @@ console.log('server running on http://112.74.179.8.:8082/')
 
 ![](/aliyunnodejs/imgs/Node生产环境1-1.jpg)
 
-在浏览器输入地址，即可访问
+在浏览器输入地址，但出现问题！！！
+原来在于我们设置防火墙的时候没有给8082端口权限！
 ![](/aliyunnodejs/imgs/Node生产环境10.jpg)
 
+重开一个窗口，编辑iptables配置文件
 ![](/aliyunnodejs/imgs/Node生产环境11.jpg)
 
+退出保存后，重载配置
 ![](/aliyunnodejs/imgs/Node生产环境12.jpg)
 
 ![](/aliyunnodejs/imgs/Node生产环境13.jpg)
