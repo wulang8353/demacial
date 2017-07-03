@@ -11,4 +11,20 @@
 
 ## 利用 DNSPod 管理域名解析
 
-(DNSPod )[https://www.dnspod.cn/]
+[DNSPod](https://www.dnspod.cn/)
+
+进入到阿里云的控制台，找到域名
+![](/aliyunnodejs/imgs/利用 DNSPod 管理域名解析1.jpg)
+
+点击通过备案的域名尾部的管理
+![](/aliyunnodejs/imgs/利用 DNSPod 管理域名解析2.jpg)
+
+点击DNS修改后，点击右边的修改域名DNS
+![](/aliyunnodejs/imgs/利用 DNSPod 管理域名解析3.jpg)
+
+将下图所示的两段非万网DNS（这里是DNSPod）填入到下方两栏中，点击确认
+![](/aliyunnodejs/imgs/利用 DNSPod 管理域名解析4.jpg)
+
+![](/aliyunnodejs/imgs/利用 DNSPod 管理域名解析5.jpg)
+
+![](/aliyunnodejs/imgs/利用 DNSPod 管理域名解析6.jpg)
