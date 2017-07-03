@@ -28,7 +28,12 @@
 确认后，提示修改成功，一般会在1小时内生效
 ![](/aliyunnodejs/imgs/利用 DNSPod 管理域名解析6.jpg)
 
-进入到[DNSPod](https://www.dnspod.cn/)网站，创建账号后，进入到控制台
-填写域名，点击确认
+进入到[DNSPod](https://www.dnspod.cn/)网站，创建账号后，进入到控制台，填写域名，点击确认
+
 ![](/aliyunnodejs/imgs/利用 DNSPod 管理域名解析5.jpg)
 
+给域名配置解析规则
+![](/aliyunnodejs/imgs/利用 DNSPod 管理域名解析7.jpg)
+
+主机记录填写www / umac，也就是可以通过www.域名.com / umac.域名.com进行访问
+![](/aliyunnodejs/imgs/利用 DNSPod 管理域名解析8.jpg)
