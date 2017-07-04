@@ -81,8 +81,10 @@ express-demo-backup： 指定打包当前路径下的哪一个文件
 ```
 ![](/aliyunnodejs/imgs/服务器连接MongoDB5.jpg)
 
+打包文件存放在mongDB/bin中
 ![](/aliyunnodejs/imgs/服务器连接MongoDB6.jpg)
 
+进入到服务器中，在根路径下新建一个dbbackup文件，专门用来存放数据库文件
 ![](/aliyunnodejs/imgs/服务器连接MongoDB7.jpg)
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB8.jpg)
