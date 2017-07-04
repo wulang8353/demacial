@@ -50,5 +50,24 @@
 
 ## 向服务器导入完整数据
 
+![](/aliyunnodejs/imgs/服务器连接MongoDB1.jpg)
+
+![](/aliyunnodejs/imgs/服务器连接MongoDB2.jpg)
+
+![](/aliyunnodejs/imgs/服务器连接MongoDB3.jpg)
+
+![](/aliyunnodejs/imgs/服务器连接MongoDB4.jpg)
+
+![](/aliyunnodejs/imgs/服务器连接MongoDB5.jpg)
+
+![](/aliyunnodejs/imgs/服务器连接MongoDB6.jpg)
+
+![](/aliyunnodejs/imgs/服务器连接MongoDB7.jpg)
+
+![](/aliyunnodejs/imgs/服务器连接MongoDB8.jpg)
+
+![](/aliyunnodejs/imgs/服务器连接MongoDB9.jpg)
+
+
 
 
