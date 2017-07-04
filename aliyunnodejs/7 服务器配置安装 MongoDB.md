@@ -161,6 +161,7 @@ mongorestore --host 127.0.0.1:19999: 像服务器数据库的19999端口中存�
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB16.jpg)
 
+上传到服务器的dbbackup文件夹中
 ![](/aliyunnodejs/imgs/服务器连接MongoDB17.jpg)
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB18.jpg)
