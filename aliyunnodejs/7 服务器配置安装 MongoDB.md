@@ -37,11 +37,14 @@
 ![](/aliyunnodejs/imgs/服务器配置安装MongoDB6.2.jpg)
 
 修改内容如 mongodb connect中所示
-![](/aliyunnodejs/imgs/服务器配置安装MongoDB5.2.jpg)
+![](/aliyunnodejs/imgs/服务器配置安装MongoDB6.3.jpg)
 
 保存后，重载防火墙配置文件
 ![](/aliyunnodejs/imgs/服务器配置安装MongoDB5.1.jpg)
 
+因为修改了默认端口，所以 通过  mongo --port 19999 连接数据库
+![](/aliyunnodejs/imgs/服务器配置安装MongoDB6.5.jpg)
 
+![](/aliyunnodejs/imgs/服务器配置安装MongoDB6.6.jpg)
 
 
