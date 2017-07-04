@@ -112,8 +112,10 @@ mongorestore --host 127.0.0.1:19999: 像服务器数据库的19999端口中存�
 ```
 ![](/aliyunnodejs/imgs/服务器连接MongoDB11.jpg)
 
+操作成功后，登陆到端口号为19999的数据库中
 ![](/aliyunnodejs/imgs/服务器连接MongoDB12.jpg)
 
+进行数据的查看
 ![](/aliyunnodejs/imgs/服务器连接MongoDB13.jpg)
 
 
