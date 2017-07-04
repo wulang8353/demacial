@@ -210,9 +210,10 @@ mongodb数据库一般有以下4点特性
 回到根路径，进入到mongod.conf 配置文件
 ![](/aliyunnodejs/imgs/服务器连接MongoDB27.jpg)
 
-向下删掉security前面的#, 然后输入代码，创建验证授权需求
+向下删掉security前面的#, 然后输入代码，创建需要验证的需求
 ![](/aliyunnodejs/imgs/服务器连接MongoDB28.jpg)
 
+重启mongod服务
 ![](/aliyunnodejs/imgs/服务器连接MongoDB29.jpg)
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB30.jpg)
