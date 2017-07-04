@@ -50,7 +50,7 @@
 
 ## 向服务器导入完整数据
 
-进入到MongDB/bin中(要在本地电脑上启动Mongodb的服务哦)
+进入到mongDB/bin中(要在本地电脑上启动Mongodb的服务哦)
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB1.jpg)
 
@@ -66,7 +66,8 @@
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB2.jpg)
 
-导出数据库
+导出数据库后，存放在mongDB/bin中
+
 ![](/aliyunnodejs/imgs/服务器连接MongoDB3.jpg)
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB4.jpg)
