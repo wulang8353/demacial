@@ -15,5 +15,5 @@
 第三步： 更新本地包
 ![](/aliyunnodejs/imgs/服务器配置安装MongoDB3.jpg)
 
-第四步： 安装Mongodb依赖包
+第四步： 安装Mongodb依赖包(需要一定时间)
 ![](/aliyunnodejs/imgs/服务器配置安装MongoDB4.jpg)
