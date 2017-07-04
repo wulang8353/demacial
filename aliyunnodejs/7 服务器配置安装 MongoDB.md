@@ -23,6 +23,12 @@
 通过sudp service mongod start 开启Mongod服务即可
 ![](/aliyunnodejs/imgs/服务器配置安装MongoDB5.0.jpg)
 
+数据库默认端口是27017，为提高安全起见，修改默认端口
+![](/aliyunnodejs/imgs/服务器配置安装MongoDB6.0.jpg)
+
+向下找到net对象中的port,这里默认端口修改成19999
+![](/aliyunnodejs/imgs/服务器配置安装MongoDB6.1.jpg)
+
 
 由于防火墙的设置，未允许本地连接27017这个端口，所以需要在iptables中进行修改
 通过sudo vi /etc/iptables/up.rules 进入到配置文件修改，然后退出保存
