@@ -51,13 +51,18 @@
 ## 向服务器导入完整数据
 
 进入到MongDB/bin中(要在本地电脑上启动Mongodb的服务哦)
+
 ![](/aliyunnodejs/imgs/服务器连接MongoDB1.jpg)
 
 在这里执行git bash
 ```
+在这里执行git bash
+
 ./mongodump -h 127.0.0.1:27017 -d express-demo -o express-demo-backup
 ./mongodump：表示执行当前路径下的mongodump程序，用来导出数据库
-
+-h 127.0.0.1:27017 ： 指定本地上数据库默认27017端口
+-d express-demo： 导出数据库所在文件的文件名express-demo
+-o express-demo-backup 上一个文件express-demo存放在express-demo-backup这个文件名的文件中
 ```
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB2.jpg)
