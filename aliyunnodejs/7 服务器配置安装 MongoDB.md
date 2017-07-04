@@ -20,6 +20,9 @@
 
 ## 服务器开启MongoDB
 
-开启Mongod服务
+通过sudp service mongod start 开启Mongod服务即可
+![](/aliyunnodejs/imgs/服务器配置安装MongoDB5.0.jpg)
+
 
 由于防火墙的设置，未允许本地连接27017这个端口，所以需要在iptables中进行修改
+
