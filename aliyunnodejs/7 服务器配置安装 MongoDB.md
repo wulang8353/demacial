@@ -207,9 +207,10 @@ mongodb数据库一般有以下4点特性
 创建express-demo数据库的管理员express_deomo_runnner
 ![](/aliyunnodejs/imgs/服务器连接MongoDB26.jpg)
 
-回到根路径，进入到mongod.conf的配置文件
+回到根路径，进入到mongod.conf 配置文件
 ![](/aliyunnodejs/imgs/服务器连接MongoDB27.jpg)
 
+向下删掉security前面的#, 然后输入diamante
 ![](/aliyunnodejs/imgs/服务器连接MongoDB28.jpg)
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB29.jpg)
