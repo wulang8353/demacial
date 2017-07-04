@@ -177,8 +177,10 @@ mongoimport --host 127.0.0.1:1999: 导入某个表到服务器的数据库中
 通过mongo --port 19999 进入到服务器的数据库中的movies表中
 ![](/aliyunnodejs/imgs/服务器连接MongoDB19.jpg)
 
+查看moives表的内容，导入成功！
 ![](/aliyunnodejs/imgs/服务器连接MongoDB20.jpg)
 
+**删除**  express-demo数据库
 ![](/aliyunnodejs/imgs/服务器连接MongoDB21.jpg)
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB22.jpg)
