@@ -54,7 +54,6 @@
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB1.jpg)
 
-在这里执行git bash
 ```
 在这里执行git bash
 
