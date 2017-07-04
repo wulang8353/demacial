@@ -61,7 +61,7 @@
 ./mongodump：表示执行当前路径下的mongodump程序，用来导出数据库
 -h 127.0.0.1:27017 ： 指定本地上数据库默认27017端口
 -d express-demo： 指定在27017端口中数据库名为express-demo的数据
--o express-demo-backup 存放在express-demo-backup这个文件名的文件中
+-o express-demo-backup 将数据存放在express-demo-backup这个文件名的文件中
 ```
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB2.jpg)
