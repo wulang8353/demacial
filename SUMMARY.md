@@ -54,4 +54,5 @@
   * [4  搭建 Nodejs 生产环境](aliyunnodejs/4  搭建 Nodejs 生产环境.md)
   * [5 配置Nginx实现反向代理](aliyunnodejs/5 配置Nginx实现反向代理.md)
   * [6 利用 DNSPod 管理域名解析](aliyunnodejs/6 利用 DNSPod 管理域名解析.md)
+  * [7 服务器配置安装 MongoDB](aliyunnodejs/7 服务器配置安装 MongoDB.md)
 
