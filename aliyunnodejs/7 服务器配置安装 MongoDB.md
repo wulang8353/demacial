@@ -95,6 +95,7 @@ express-demo-backup： 指定打包当前路径下的哪一个文件
 ```
 scp -P 39999 ./express-demo-backup.tar.gz umac@112.74.179.8:/home/umac/dbbackup/
 scp -P 39999 ./express-demo-backup.tar.gz 上传打包文件至指定ip地址的39999端口
+/home/umac/dbbackup/： 目标路径为根路径下的dbbackup文件夹中
 ```
 ![](/aliyunnodejs/imgs/服务器连接MongoDB9.jpg)
 
