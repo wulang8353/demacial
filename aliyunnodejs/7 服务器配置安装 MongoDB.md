@@ -187,3 +187,6 @@ mongoimport --host 127.0.0.1:1999: 导入某个表到服务器的数据库中
 ![](/aliyunnodejs/imgs/服务器连接MongoDB22.jpg)
 
 ## 向服务器的数据库添加权限
+
+mongodb没有默认的管理员权限
+切换到admin数据库，向其中添加的账号才是管理员账号
