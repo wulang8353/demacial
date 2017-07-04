@@ -29,6 +29,10 @@
 向下找到net对象中的port,这里默认端口修改成19999
 ![](/aliyunnodejs/imgs/服务器配置安装MongoDB6.1.jpg)
 
+退出保存后重启服务
+![](/aliyunnodejs/imgs/服务器配置安装MongoDB6.2.0.jpg)
+
+![](/aliyunnodejs/imgs/服务器配置安装MongoDB6.2.jpg)
 
 由于防火墙的设置，未允许本地连接27017这个端口，所以需要在iptables中进行修改
 通过sudo vi /etc/iptables/up.rules 进入到配置文件修改，然后退出保存
