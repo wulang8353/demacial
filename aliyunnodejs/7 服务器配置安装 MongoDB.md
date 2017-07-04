@@ -145,6 +145,7 @@ mongorestore --host 127.0.0.1:19999: 像服务器数据库的19999端口中存�
 通过页面操作，往数据库中添加movies的数据
 ![](/aliyunnodejs/imgs/服务器连接MongoDB14.jpg)
 
+添加完成后，在数据库中显示
 ![](/aliyunnodejs/imgs/服务器连接MongoDB15.jpg)
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB16.jpg)
