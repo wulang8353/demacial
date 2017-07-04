@@ -56,6 +56,8 @@ rm -rf 删除目录
 
 ## 向服务器导入完整数据
 
+    ./mongodump 是导出整个数据库
+
 进入到mongDB/bin中(要在本地电脑上启动Mongodb的服务哦)
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB1.jpg)
@@ -138,3 +140,4 @@ mongorestore --host 127.0.0.1:19999: 像服务器数据库的19999端口中存�
 
 ## 向服务器的已有数据库导入一个或者多个单表
 
+    mongexport 导出某个数据库中的某个表
