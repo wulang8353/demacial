@@ -28,7 +28,7 @@
 通过sudo vi /etc/iptables/up.rules 进入到配置文件修改，然后退出保存
 ![](/aliyunnodejs/imgs/服务器配置安装MongoDB5.2.jpg)
 
-
+保存后，重载防火墙配置文件
 ![](/aliyunnodejs/imgs/服务器配置安装MongoDB5.1.jpg)
 
 
