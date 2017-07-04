@@ -204,6 +204,14 @@ mongodb数据库一般有以下4点特性
 创建express-demo数据库的管理员express_deomo_runnner
 ![](/aliyunnodejs/imgs/服务器连接MongoDB25.jpg)
 
+```
+roles: [{role: 'readWrite', db: 'express-demo'}]
+
+role: 'readWrite'  -> 表示该管理员能够使用的功能为，可读可写
+db: 'express-demo' -> 表示该管理员能够管理的数据库名称
+```
+
+
 创建express-demo数据库的管理员express_deomo_wheel，该管理员只负责读取，不能修改
 ![](/aliyunnodejs/imgs/服务器连接MongoDB26.jpg)
 
