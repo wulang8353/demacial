@@ -149,6 +149,16 @@ mongorestore --host 127.0.0.1:19999: 像服务器数据库的19999端口中存�
 ![](/aliyunnodejs/imgs/服务器连接MongoDB15.jpg)
 
 在本地命令行中，导出在movies这个表中的数据
+
+```
+./mongoexport -d express-demo -c movies -o ./movie-add.json
+./mongoexpor
+-d express-demo
+-c movies 
+-o ./movie-add.json
+
+```
+
 ![](/aliyunnodejs/imgs/服务器连接MongoDB16.jpg)
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB17.jpg)
