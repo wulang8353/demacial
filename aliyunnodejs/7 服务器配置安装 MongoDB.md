@@ -222,5 +222,6 @@ mongodb数据库一般有以下4点特性
 db.auth('express_deomo_runnner', '密码'),验证express-demo这个数据库的管理员信息
 ![](/aliyunnodejs/imgs/服务器连接MongoDB31.jpg)
 
+成功后即可正常操作
 ![](/aliyunnodejs/imgs/服务器连接MongoDB32.jpg)
 
