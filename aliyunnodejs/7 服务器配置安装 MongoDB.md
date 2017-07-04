@@ -107,7 +107,7 @@ mongorestore --host 127.0.0.1:19999 -d express-demo ./dbbackup/express-demo-back
 
 mongorestore --host 127.0.0.1:19999: 像服务器数据库的19999端口中存入数据
 -d express-demo： 存入数据到 文件名为express-demo的库中
-/dbbackup/express-demo-backup/express-demo/
+/dbbackup/express-demo-backup/express-demo/ 指定存放数据的路径
 
 ```
 ![](/aliyunnodejs/imgs/服务器连接MongoDB11.jpg)
