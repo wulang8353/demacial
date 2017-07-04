@@ -164,6 +164,14 @@ mongorestore --host 127.0.0.1:19999: 像服务器数据库的19999端口中存�
 上传到服务器的dbbackup文件夹中
 ![](/aliyunnodejs/imgs/服务器连接MongoDB17.jpg)
 
+```
+mongoimport --host 127.0.0.1:1999 -d express-demo -c movies ./movie-add.json
+mongoimport --host 127.0.0.1:1999: 导入某个表到服务器的数据库中
+-d express-demo 指定数据库名
+-c movies   指定表名
+./movie-add.json  指定导入的文件
+```
+
 ![](/aliyunnodejs/imgs/服务器连接MongoDB18.jpg)
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB19.jpg)
