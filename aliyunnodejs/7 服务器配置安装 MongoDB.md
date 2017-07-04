@@ -70,6 +70,7 @@
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB3.jpg)
 
+进入到express-demo文件中，可以看到导出的所以数据
 ![](/aliyunnodejs/imgs/服务器连接MongoDB4.jpg)
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB5.jpg)
