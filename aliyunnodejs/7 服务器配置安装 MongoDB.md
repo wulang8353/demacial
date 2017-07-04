@@ -152,8 +152,8 @@ mongorestore --host 127.0.0.1:19999: 像服务器数据库的19999端口中存�
 
 ```
 ./mongoexport -d express-demo -c movies -o ./movie-add.json
-./mongoexpor
--d express-demo
+./mongoexpor  导出某个数据库中的某个表
+-d express-demo 指定某个数据库
 -c movies 
 -o ./movie-add.json
 
