@@ -25,4 +25,12 @@
 
 
 由于防火墙的设置，未允许本地连接27017这个端口，所以需要在iptables中进行修改
+通过sudo vi /etc/iptables/up.rules 进入到配置文件修改，然后退出保存
+![](/aliyunnodejs/imgs/服务器配置安装MongoDB5.2.jpg)
+
+
+![](/aliyunnodejs/imgs/服务器配置安装MongoDB5.1.jpg)
+
+
+
 
