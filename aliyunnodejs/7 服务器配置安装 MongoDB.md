@@ -6,10 +6,14 @@
 
 [MongoDB官方安装教程](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
 
+第一步：登陆到服务器，将命令直接粘贴到命令行中
 ![](/aliyunnodejs/imgs/服务器配置安装MongoDB1.jpg)
 
+第二步：根据服务器Ubuntu版本进行选择，这里选择的14.04版本
 ![](/aliyunnodejs/imgs/服务器配置安装MongoDB2.jpg)
 
+第三步： 更新本地包
 ![](/aliyunnodejs/imgs/服务器配置安装MongoDB3.jpg)
 
+第四步： 安装Mongodb依赖包
 ![](/aliyunnodejs/imgs/服务器配置安装MongoDB4.jpg)
