@@ -45,6 +45,7 @@
 因为修改了默认端口，所以 通过  mongo --port 19999 连接数据库
 ![](/aliyunnodejs/imgs/服务器配置安装MongoDB6.5.jpg)
 
+图下表示成功连接MongoDB数据库
 ![](/aliyunnodejs/imgs/服务器配置安装MongoDB6.6.jpg)
 
 
