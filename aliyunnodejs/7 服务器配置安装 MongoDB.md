@@ -87,7 +87,7 @@ express-demo-backup： 指定打包当前路径下的哪一个文件
 进入到服务器中，在根路径下新建一个dbbackup文件夹，专门用来存放数据库
 ![](/aliyunnodejs/imgs/服务器连接MongoDB7.jpg)
 
-在根路径下通过ls可以看到已经创建dbbackup文件
+在根路径下通过ls可以看到已经创建dbbackup文件夹
 ![](/aliyunnodejs/imgs/服务器连接MongoDB8.jpg)
 
 回到本地命令行，将本地数据库上传到服务器指定路径中
