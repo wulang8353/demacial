@@ -189,11 +189,13 @@ mongoimport --host 127.0.0.1:1999: 导入某个表到服务器的数据库中
 ## 向服务器的数据库添加权限
 
 mongodb数据库一般有以下4点特性
+
     1 mongodb没有默认的管理员权限
     2 切换到admin数据库，向其中添加的账号才是管理员账号
     3 用户只能在用户所在的数据中登陆
     4 管理员可以管理所有数据库，但是要通过admin数据库认证后
 
+创建admin下的管理员
 ![](/aliyunnodejs/imgs/服务器连接MongoDB23.jpg)
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB24.jpg)
