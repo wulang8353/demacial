@@ -201,10 +201,10 @@ mongodb数据库一般有以下4点特性
 给admin_owner授权  db.auth('admin_owner', '密码')
 ![](/aliyunnodejs/imgs/服务器连接MongoDB24.jpg)
 
-创建express-demo数据库的管理员express_deomo_wheel，该管理员只负责读取，不能修改
+创建express-demo数据库的管理员express_deomo_runnner
 ![](/aliyunnodejs/imgs/服务器连接MongoDB25.jpg)
 
-创建express-demo数据库的管理员express_deomo_runnner
+创建express-demo数据库的管理员express_deomo_wheel，该管理员只负责读取，不能修改
 ![](/aliyunnodejs/imgs/服务器连接MongoDB26.jpg)
 
 回到根路径，进入到mongod.conf 配置文件
@@ -216,8 +216,10 @@ mongodb数据库一般有以下4点特性
 重启mongod服务
 ![](/aliyunnodejs/imgs/服务器连接MongoDB29.jpg)
 
+进入到mongodb的数据库，然后进入到express-demo数据库中，发现不能进行操作，正是因为是未授权用户
 ![](/aliyunnodejs/imgs/服务器连接MongoDB30.jpg)
 
+db.auth('express_deomo_runnner', '密码'),验证express-demo这个数据库的管理员信息
 ![](/aliyunnodejs/imgs/服务器连接MongoDB31.jpg)
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB32.jpg)
