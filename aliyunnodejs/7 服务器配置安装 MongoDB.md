@@ -106,6 +106,9 @@ scp -P 39999 ./express-demo-backup.tar.gz 上传打包文件至指定ip地址的
 mongorestore --host 127.0.0.1:19999 -d express-demo ./dbbackup/express-demo-backup/express-demo/
 
 mongorestore --host 127.0.0.1:19999: 像服务器数据库的19999端口中存入数据
+-d express-demo： 存入数据到 文件名为express-demo的库中
+/dbbackup/express-demo-backup/express-demo/
+
 ```
 ![](/aliyunnodejs/imgs/服务器连接MongoDB11.jpg)
 
