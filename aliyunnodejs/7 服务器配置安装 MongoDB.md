@@ -50,7 +50,7 @@
 
 ## 向服务器导入完整数据
 
-进入到MongDB/bin中
+进入到MongDB/bin中(要在本地电脑上启动Mongodb的服务哦)
 ![](/aliyunnodejs/imgs/服务器连接MongoDB1.jpg)
 
 在这里执行git bash
