@@ -50,8 +50,10 @@
 
 ## 向服务器导入完整数据
 
+进入到MongDB/bin中
 ![](/aliyunnodejs/imgs/服务器连接MongoDB1.jpg)
 
+在这里执行git bash
 ![](/aliyunnodejs/imgs/服务器连接MongoDB2.jpg)
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB3.jpg)
