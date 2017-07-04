@@ -87,8 +87,15 @@ express-demo-backup： 指定打包当前路径下的哪一个文件
 进入到服务器中，在根路径下新建一个dbbackup文件，专门用来存放数据库
 ![](/aliyunnodejs/imgs/服务器连接MongoDB7.jpg)
 
+在根路径下通过ls可以看到已经创建dbbackup文件
 ![](/aliyunnodejs/imgs/服务器连接MongoDB8.jpg)
 
+回到本地命令行，将本地数据库上传到服务器指定路径中
+
+```
+scp -P 39999 ./express-demo-backup.tar.gz umac@112.74.179.8:/home/umac/dbbackup/
+scp -P 39999 ./express-demo-backup.tar.gz 上传打包文件至指定ip地址的39999端口
+```
 ![](/aliyunnodejs/imgs/服务器连接MongoDB9.jpg)
 
 
