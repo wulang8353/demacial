@@ -68,6 +68,15 @@ rm -rf 删除目录
 -h 127.0.0.1:27017 ： 指定本地上数据库默认27017端口
 -d express-demo： 指定在27017端口中数据库名为express-demo的数据
 -o express-demo-backup 将数据存放在express-demo-backup这个文件名的文件中
+
+-h：
+MongDB所在服务器地址，例如：127.0.0.1，当然也可以指定端口号：127.0.0.1:27017
+
+-d：
+需要备份的数据库实例，例如：test
+
+-o：
+备份的数据存放位置，例如：c:\data\dump，当然该目录需要提前建立，在备份完成后，系统自动在dump目录下建立一个test目录，这个目录里面存放该数据库实例的备份数据。
 ```
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB2.jpg)
