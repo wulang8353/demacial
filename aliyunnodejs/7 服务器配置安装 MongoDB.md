@@ -18,7 +18,7 @@
 第四步： 安装Mongodb依赖包(需要一定时间)
 ![](/aliyunnodejs/imgs/服务器配置安装MongoDB4.jpg)
 
-## 服务器开启MongoDB
+## 服务器连接MongoDB
 
 通过sudp service mongod start 开启Mongod服务即可
 ![](/aliyunnodejs/imgs/服务器配置安装MongoDB5.0.jpg)
