@@ -141,3 +141,23 @@ mongorestore --host 127.0.0.1:19999: 像服务器数据库的19999端口中存�
 ## 向服务器的已有数据库导入一个或者多个单表
 
     mongexport 导出某个数据库中的某个表
+    
+通过页面操作，往数据库中添加movies的数据
+![](/aliyunnodejs/imgs/服务器连接MongoDB14.jpg)
+
+![](/aliyunnodejs/imgs/服务器连接MongoDB15.jpg)
+
+![](/aliyunnodejs/imgs/服务器连接MongoDB16.jpg)
+
+![](/aliyunnodejs/imgs/服务器连接MongoDB17.jpg)
+
+![](/aliyunnodejs/imgs/服务器连接MongoDB18.jpg)
+
+![](/aliyunnodejs/imgs/服务器连接MongoDB19.jpg)
+
+![](/aliyunnodejs/imgs/服务器连接MongoDB20.jpg)
+
+![](/aliyunnodejs/imgs/服务器连接MongoDB21.jpg)
+
+![](/aliyunnodejs/imgs/服务器连接MongoDB22.jpg)
+
