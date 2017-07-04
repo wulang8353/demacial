@@ -54,6 +54,12 @@
 ![](/aliyunnodejs/imgs/服务器连接MongoDB1.jpg)
 
 在这里执行git bash
+```
+./mongodump -h 127.0.0.1:27017 -d express-demo -o express-demo-backup
+./mongodump：表示执行当前路径下的mongodump程序，用来导出数据库
+
+```
+
 ![](/aliyunnodejs/imgs/服务器连接MongoDB2.jpg)
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB3.jpg)
