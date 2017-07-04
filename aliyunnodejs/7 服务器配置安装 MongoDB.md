@@ -73,6 +73,12 @@
 进入到express-demo文件中，可以看到导出的所以数据
 ![](/aliyunnodejs/imgs/服务器连接MongoDB4.jpg)
 
+```
+tar zcvf express-demo-backup.tar.gz express-demo-backup
+tar zcvf: 打包文件
+express-demo-backup.tar.gz： 打包后文件名
+express-demo-backup： 指定打包当前路径下的哪一个文件
+```
 ![](/aliyunnodejs/imgs/服务器连接MongoDB5.jpg)
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB6.jpg)
