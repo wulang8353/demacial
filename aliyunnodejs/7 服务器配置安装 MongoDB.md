@@ -6,3 +6,10 @@
 
 [MongoDB官方安装教程](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
 
+![](/aliyunnodejs/imgs/服务器配置安装MongoDB1.jpg)
+
+![](/aliyunnodejs/imgs/服务器配置安装MongoDB2.jpg)
+
+![](/aliyunnodejs/imgs/服务器配置安装MongoDB3.jpg)
+
+![](/aliyunnodejs/imgs/服务器配置安装MongoDB4.jpg)
