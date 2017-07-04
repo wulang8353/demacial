@@ -195,9 +195,10 @@ mongodb数据库一般有以下4点特性
     3 用户只能在用户所在的数据中登陆
     4 管理员可以管理所有数据库，但是要通过admin数据库认证后
 
-创建admin下的管理员
+创建admin下的管理员admin_owner
 ![](/aliyunnodejs/imgs/服务器连接MongoDB23.jpg)
 
+给admin_owner授权  db.auth('admin_owner', '密码')
 ![](/aliyunnodejs/imgs/服务器连接MongoDB24.jpg)
 
 ![](/aliyunnodejs/imgs/服务器连接MongoDB25.jpg)
