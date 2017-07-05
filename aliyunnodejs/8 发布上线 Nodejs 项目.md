@@ -162,6 +162,7 @@ pm2 deploy ecosystem.json production setup // 通过配置文件，指定项目�
 进入到.bashrc文件中，如需图所示添加注释，退出保存
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目24.jpg)
 
+保存后，通过source .bashrc重新加载配置
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目25.jpg)
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目26.jpg)
