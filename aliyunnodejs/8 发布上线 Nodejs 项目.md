@@ -229,3 +229,5 @@ server_name: 为解析的域名规则
 3 本地发布项目，服务器自动去git仓库更新代码
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目43.jpg)
 
+这里刷新页面后就可以看到修改后的内容
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目43.jpg)
