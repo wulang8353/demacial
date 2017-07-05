@@ -153,7 +153,7 @@ pm2 deploy ecosystem.json production setup // 通过配置文件，指定项目�
 * 本地控制远端代码更新以及服务器重启
 
 ```
-
+本地修改代码 -> 上传到git仓库 -> 本地通过pm2 deploy ecosystem.json production 来通知服务器上对应的某个端口的项目，告诉它快去git仓库看看有没有更新
 ```
 
 由于在服务器端PM2是非交互式的ssh连接方式，需要修改配置文件 .bashrc
@@ -172,7 +172,7 @@ pm2 deploy ecosystem.json production setup // 通过配置文件，指定项目�
 一顿操作后，添加到git仓库
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目27.jpg)
 
-添加
+添加 pm2 deploy ecosystem.json production来发布项目
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目28.jpg)
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目29.jpg)
