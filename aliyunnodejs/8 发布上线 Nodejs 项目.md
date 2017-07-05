@@ -175,7 +175,10 @@ pm2 deploy ecosystem.json production setup // 通过配置文件，指定项目�
 添加 pm2 deploy ecosystem.json production来发布项目
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目28.jpg)
 
+通过pm2 list 查看服务器正在运行的项目
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目29.jpg)
+
+1 修改域名指向
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目30.jpg)
 
