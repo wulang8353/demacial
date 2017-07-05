@@ -24,9 +24,17 @@
 ```
 git init  // 初始化项目
 
+git add .  
+
+git commit -m 'fisrt commit'  // 第一次提交
+
 ```
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目5.jpg)
+
+```
+git remote add origin git@git.oschina.net:...(这里填写刚才在网页中复制过的ssh)
+```
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目6.jpg)
 
