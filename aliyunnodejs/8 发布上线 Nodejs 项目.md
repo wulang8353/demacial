@@ -137,13 +137,12 @@ sudo chmod 777 website 提升website文件夹的权限，**使其在非root管�
 回到本地项目中，执行pm2，将本地文件上传到服务器中
 
 ```
-pm2 deploy ecosystem.json production setup
-
-// 通过配置文件，指定项目安装到服务器的路径、端口等
+pm2 deploy ecosystem.json production setup // 通过配置文件，指定项目安装到服务器的路径、端口等
 ```
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目20.jpg)
 
+现在可以在服务器的website文件夹中看到上传成功的文件
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目21.jpg)
 
 
