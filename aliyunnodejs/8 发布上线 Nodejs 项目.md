@@ -214,4 +214,4 @@ server_name: 为解析的域名规则
 通过域名即可访问到页面
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目40.jpg)
 
-
+* 本地修改项目，服务器更新代码
