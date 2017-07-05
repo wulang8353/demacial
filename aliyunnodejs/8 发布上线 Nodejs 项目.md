@@ -19,16 +19,11 @@
 点击刚才创建的仓库，点击页面右方有一个克隆/下载，点击复制ssh
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目4.jpg)
 
-来到本地项目的命令行中，依次执行
+来到本地项目的命令行中执行
 
 ```
-git init
+git init  // 初始化项目
 
-git add .
-
-git commit -m 'fisrt commit'
-
-git remote add origin git@git.oschina.net:...(这里填写刚才在网页中复制过的ssh)
 ```
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目5.jpg)
@@ -52,7 +47,3 @@ git remote add origin git@git.oschina.net:...(这里填写刚才在网页中复�
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目14.jpg)
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目15.jpg)
-
-![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目1.jpg)
-
-![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目1.jpg)
