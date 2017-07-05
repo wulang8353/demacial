@@ -186,7 +186,9 @@ pm2 deploy ecosystem.json production setup // 通过配置文件，指定项目�
 首先确保DNSPod中含有以 www开头的域名解析规则
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目32.jpg)
 
-
+进入到服务器端的/etc/nginx/conf.d文件夹中，将原来的配置文件更换名称
+命名规则为 www-域名-端口.conf
+更换成功后通过vi 进入到文件中
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目30.jpg)
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目31.jpg)
