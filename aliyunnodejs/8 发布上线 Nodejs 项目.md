@@ -178,9 +178,10 @@ pm2 deploy ecosystem.json production setup // 通过配置文件，指定项目�
 通过pm2 list 查看服务器正在运行的项目
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目29.jpg)
 
+* 域名访问网站
 
-1 修改域名指向，可以通过域名访问网站，得到web服务
-2 修改nginx配置文件，把请求转发到服务器的3000端口(json文件中默认的是3000端口)
+    1 修改域名指向，可以通过域名访问网站，得到web服务
+    2 修改nginx配置文件，把请求转发到服务器的3000端口(json文件中默认的是3000端口)
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目30.jpg)
 
