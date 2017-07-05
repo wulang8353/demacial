@@ -82,4 +82,6 @@ git push -u origin master 上传本地文件至远程仓库中
 
 * 同步代码更新
 
-[PM2](http://pm2.keymetrics.io/docs/usage/deployment/)
+[PM2官方文档](http://pm2.keymetrics.io/docs/usage/deployment/)
+
+
