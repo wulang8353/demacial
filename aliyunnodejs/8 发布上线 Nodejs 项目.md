@@ -152,4 +152,24 @@ pm2 deploy ecosystem.json production setup // 通过配置文件，指定项目�
 
 * 本地控制远端代码更新以及服务器重启
 
+```
+```
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目23.jpg)
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目24.jpg)
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目25.jpg)
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目26.jpg)
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目27.jpg)
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目28.jpg)
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目29.jpg)
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目30.jpg)
+
+
+
 
