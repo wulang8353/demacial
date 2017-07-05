@@ -73,6 +73,7 @@ git push -u origin master 上传本地文件至远程仓库中
 先在服务器中安装git
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目13.jpg)
 
+在根路径下新建temp文件，保存从git仓库下载项目的
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目14.jpg)
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目15.jpg)
