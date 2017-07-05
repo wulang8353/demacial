@@ -1,10 +1,17 @@
 # NodeJS项目线上部署
 
+```
+本地项目
+
+git仓库
+
+```
+
 ## 向发布上线 Nodejs 项目
 
 * 创建代码托管仓库
 
-创建私有仓库，这里推荐[码云](http://git.oschina.net/)
+创建私有仓库，这里推荐[码云](http://git.oschina.net/)作为git仓库
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目1.jpg)
 
