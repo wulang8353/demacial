@@ -208,8 +208,10 @@ server_name: 为解析的域名规则
 增加3000端口的访问规则
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目38.jpg)
 
+重载防火墙配置
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目39.jpg)
 
+通过域名即可访问到页面
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目40.jpg)
 
 
