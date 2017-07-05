@@ -183,8 +183,32 @@ pm2 deploy ecosystem.json production setup // 通过配置文件，指定项目�
     1 修改域名指向，可以通过域名访问网站，得到web服务
     2 修改nginx配置文件，把请求转发到服务器的3000端口(json文件中默认的是3000端口)
 
+首先确保DNSPod中含有以 www开头的域名解析规则
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目32.jpg)
+
+
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目30.jpg)
 
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目31.jpg)
 
+
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目33.jpg)
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目34 (1).jpg)
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目34 (2).jpg)
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目35.jpg)
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目36.jpg)
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目37.jpg)
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目38.jpg)
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目39.jpg)
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目40.jpg)
 
 
