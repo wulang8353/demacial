@@ -150,3 +150,6 @@ pm2 deploy ecosystem.json production setup // 通过配置文件，指定项目�
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目21.jpg)
 
 
+* 本地控制远端代码更新，服务器重启
+
+
