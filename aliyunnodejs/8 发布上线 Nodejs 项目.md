@@ -166,6 +166,7 @@ pm2 deploy ecosystem.json production setup // 通过配置文件，指定项目�
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目25.jpg)
 
 在本地命令行，通过pm2发布项目，这时候尾部没有setup
+但是此时报错，是因为我们新增的ecosystem.json文件未上传到git仓库中
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目26.jpg)
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目27.jpg)
