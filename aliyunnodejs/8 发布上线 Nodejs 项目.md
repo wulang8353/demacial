@@ -26,7 +26,7 @@ git init  // 初始化项目
 
 git add .  
 
-git commit -m 'fisrt commit'  // 第一次提交
+git commit -m 'fisrt commit' 
 
 ```
 
@@ -34,6 +34,8 @@ git commit -m 'fisrt commit'  // 第一次提交
 
 ```
 git remote add origin git@git.oschina.net:...(这里填写刚才在网页中复制过的ssh)
+
+// 将本地项目关联到码云的仓库中
 ```
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目6.jpg)
