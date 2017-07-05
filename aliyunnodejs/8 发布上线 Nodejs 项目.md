@@ -139,7 +139,7 @@ sudo chmod 777 website 提升website文件夹的权限，**使其在非root管�
 ```
 pm2 deploy ecosystem.json production setup
 
-// 配置
+// 通过配置文件，指定项目安装到服务器的路径、端口等
 ```
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目20.jpg)
