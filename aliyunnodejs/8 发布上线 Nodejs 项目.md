@@ -191,6 +191,11 @@ pm2 deploy ecosystem.json production setup // 通过配置文件，指定项目�
 更换成功后通过vi 进入到文件中
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目30.jpg)
 
+```
+upstream webstie  与 proxy_pass http://website   对应！
+server 中的端口为json文件中的3000d端口
+server_name: 为解析的域名规则
+```
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目31.jpg)
 
 
