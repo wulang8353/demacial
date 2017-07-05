@@ -128,6 +128,7 @@ git push -u origin master 上传本地文件至远程仓库中
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目17.jpg)
 
 通过cd .. 回退到上一级，也就是 www路径下
+sudo chmod 777 website 提升website文件夹的权限，使其在非root管理员用户下，可读可写可执行
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目19.jpg)
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目20.jpg)
