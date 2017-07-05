@@ -134,7 +134,7 @@ sudo chmod 777 website 提升website文件夹的权限，**使其在非root管�
 
 由于服务器上已经按照deploy中的path配置好相关路径 /www/website
 
-回到本地项目中，执行pm2才做
+回到本地项目中，执行pm2，将本地文件上传到服务器中
 
 ```
 pm2 deploy ecosystem.json production setup
