@@ -84,4 +84,33 @@ git push -u origin master 上传本地文件至远程仓库中
 
 [PM2官方文档](http://pm2.keymetrics.io/docs/usage/deployment/)
 
-
+```
+{
+  "apps": [
+    {
+      "name": "Website",
+      "script": "app.js",
+      "env": {
+        "COMMON_VARIABLE": "true"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ],
+  "deploy": {
+    "production": {
+      "user": "你的服务器登录用户名",
+      "host": ["你的服务器 IP"],
+      "port": "你的服务器登录端口",
+      "ref": "origin/master",
+      "repo": "git@git.oschina.net:```",
+      "path": "/www/website/production",
+      "ssh_options": "StrictHostKeyChecking=no",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}
+```
