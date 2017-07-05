@@ -48,8 +48,10 @@ git merge origin/master --allow-unrelated-histories // 合并所有文件
 回车后会到以下的界面， 退出保存即可
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目7.jpg)
 
+git push -u origin master 上传本地文件至远程仓库中
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目9.jpg)
 
+来往码云的仓库中，即可发现已经上传成功
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目10.jpg)
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目11.jpg)
