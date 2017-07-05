@@ -108,7 +108,7 @@ git push -u origin master 上传本地文件至远程仓库中
     "production": {
       "user": "你的服务器登录用户名",
       "host": ["你的服务器 IP"],
-      "port": "你的服务器登录端口",
+      "port": "你的服务器登录端口", 
       "ref": "origin/master",
       "repo": "你的项目git仓库的ssh",
       "path": "/www/website/production",
@@ -134,7 +134,14 @@ sudo chmod 777 website 提升website文件夹的权限，**使其在非root管�
 
 由于服务器上已经按照deploy中的path配置好相关路径 /www/website
 
-回到本地项目中
+回到本地项目中，执行pm2才做
+
+```
+pm2 deploy ecosystem.json production setup
+
+// 配置
+```
+
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目20.jpg)
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目21.jpg)
