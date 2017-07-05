@@ -40,7 +40,13 @@ git push -u origin master 上传本地文件至远程仓库中，但是由于远
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目6.jpg)
 
 ```
-git merge origin/master --allow-unrelated-histories // 合并所有文件
+git fetch // 将远端仓库的内容下载到本地
+```
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目11.jpg)
+
+```
+git merge origin/master --allow-unrelated-histories // 合并本地文件以及下载到本地远端仓库中的文件
 ```
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目8.jpg)
@@ -54,7 +60,7 @@ git push -u origin master 上传本地文件至远程仓库中
 来往码云的仓库中，即可发现已经上传成功
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目10.jpg)
 
-![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目11.jpg)
+* 远程仓库的代码上传至服务器
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目12.jpg)
 
