@@ -195,19 +195,11 @@ pm2 deploy ecosystem.json production setup // 通过配置文件，指定项目�
 upstream webstie  与 proxy_pass http://website   对应！
 server 中的端口为json文件中的3000d端口
 server_name: 为解析的域名规则
+退出保存
 ```
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目31.jpg)
 
-
-
-![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目33.jpg)
-
-![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目34 (1).jpg)
-
-![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目34 (2).jpg)
-
-![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目35.jpg)
-
+重载nginx配置
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目36.jpg)
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目37.jpg)
