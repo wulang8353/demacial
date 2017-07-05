@@ -56,5 +56,4 @@
   * [6 利用 DNSPod 管理域名解析](aliyunnodejs/6 利用 DNSPod 管理域名解析.md)
   * [7 服务器配置安装 MongoDB](aliyunnodejs/7 服务器配置安装 MongoDB.md)
   * [8 发布上线 Nodejs 项目-1](aliyunnodejs/8 发布上线 Nodejs 项目-1.md)
-  * [9 发布上线 Nodejs 项目-2](aliyunnodejs/9 发布上线 Nodejs 项目-2.md)
 
