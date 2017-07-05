@@ -67,6 +67,7 @@ git push -u origin master 上传本地文件至远程仓库中
 
 * 远程仓库的代码上传至服务器
 
+同样将服务器的公约保存到码云中
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目12.jpg)
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目13.jpg)
