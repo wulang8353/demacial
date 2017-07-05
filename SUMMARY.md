@@ -55,5 +55,5 @@
   * [5 配置Nginx实现反向代理](aliyunnodejs/5 配置Nginx实现反向代理.md)
   * [6 利用 DNSPod 管理域名解析](aliyunnodejs/6 利用 DNSPod 管理域名解析.md)
   * [7 服务器配置安装 MongoDB](aliyunnodejs/7 服务器配置安装 MongoDB.md)
-  * [8 发布上线 Nodejs 项目](aliyunnodejs/8 发布上线 Nodejs 项目.md)
+  * [8 发布上线 Nodejs 项目-1](aliyunnodejs/8 发布上线 Nodejs 项目-1.md)
 
