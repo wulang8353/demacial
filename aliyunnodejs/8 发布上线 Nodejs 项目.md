@@ -34,10 +34,9 @@ git commit -m 'fisrt commit'
 
 ```
 git remote add origin git@git.oschina.net:...(这里填写刚才在网页中复制过的ssh)
-
 // 将本地项目关联到码云的仓库中
 ```
-
+git push -u origin master 上传本地文件至远程仓库中，但是由于远程仓库中含有创建的LICENS文件，所以上传失败
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目6.jpg)
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目7.jpg)
