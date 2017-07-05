@@ -120,3 +120,19 @@ git push -u origin master 上传本地文件至远程仓库中
   }
 }
 ```
+
+在服务器的根路径下创建www文件夹
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目16.jpg)
+
+进入到www文件中，创建website文件夹
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目17.jpg)
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目18.jpg)
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目19.jpg)
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目20.jpg)
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目21.jpg)
+
+
