@@ -84,7 +84,13 @@ git push -u origin master 上传本地文件至远程仓库中
 
 [PM2官方文档](http://pm2.keymetrics.io/docs/usage/deployment/)
 
+本地项目中需要创建一个PM2的配置文件
+
+![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目22.jpg)
+
 ```
+// ecosystem.json
+
 {
   "apps": [
     {
@@ -104,7 +110,7 @@ git push -u origin master 上传本地文件至远程仓库中
       "host": ["你的服务器 IP"],
       "port": "你的服务器登录端口",
       "ref": "origin/master",
-      "repo": "git@git.oschina.net:```",
+      "repo": "你的项目git仓库的ssh",
       "path": "/www/website/production",
       "ssh_options": "StrictHostKeyChecking=no",
       "env": {
