@@ -202,6 +202,7 @@ server_name: 为解析的域名规则
 重载nginx配置
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目36.jpg)
 
+由于设置了iptables，未允许3000端口的访问，所以现在修改防火墙配置
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目37.jpg)
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目38.jpg)
