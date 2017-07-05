@@ -180,6 +180,7 @@ pm2 deploy ecosystem.json production setup // 通过配置文件，指定项目�
 
 
 1 修改域名指向，可以通过域名访问网站，得到web服务
+2 修改nginx配置文件，把请求转发到服务器的3000端口
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目30.jpg)
 
