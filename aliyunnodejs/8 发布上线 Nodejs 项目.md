@@ -143,6 +143,8 @@ pm2 deploy ecosystem.json production setup // 通过配置文件，指定项目�
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目20.jpg)
 
 现在可以在服务器的website文件夹中看到上传成功的文件
+其中：
+current : 当前服务所运行的文件夹
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目21.jpg)
 
 
