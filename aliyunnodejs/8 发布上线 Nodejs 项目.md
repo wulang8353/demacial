@@ -165,6 +165,7 @@ pm2 deploy ecosystem.json production setup // 通过配置文件，指定项目�
 保存后，通过source .bashrc重新加载配置
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目25.jpg)
 
+在本地命令行，通过pm2发布项目，这时候尾部没有setup
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目26.jpg)
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目27.jpg)
