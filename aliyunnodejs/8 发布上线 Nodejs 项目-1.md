@@ -9,7 +9,7 @@ PM2：保证服务运行。当代码更新后，同步代码更新以及重启�
 
 ## 向发布上线 Nodejs 项目-1
 
-上传静态项目app.js
+上传并发布静态项目app.js
 ```
 const http = require('http')
 
