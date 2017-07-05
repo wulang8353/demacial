@@ -79,3 +79,7 @@ git push -u origin master 上传本地文件至远程仓库中
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目14.jpg)
 
 ![](/aliyunnodejs/imgs/向发布上线 Nodejs 项目15.jpg)
+
+* 同步代码更新
+
+[PM2](http://pm2.keymetrics.io/docs/usage/deployment/)
