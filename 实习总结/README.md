@@ -20,6 +20,8 @@
 
 目前现在前端框架由**Vue、React、Angular2**三足鼎立，就个人爱好而言，稍微说一下三者感受：
 
+> Angular的适用领域相对窄一些，React可以拓展到服务端，移动端Native部分，而Vue因为比较轻量，还能用于业务场景非常轻的页面中。
+
 * \[**Vue**\]\([https://cn.vuejs.org/v2/guide/](https://cn.vuejs.org/v2/guide/)** **\)
 
 官网介绍：Vue是一套构建用户界面的**渐进式框架 **，他与其他重量级框架不同的是，Vue 采用自底向上增量开发的设计。Vue 的核心库只关注视图层，它不仅易于上手，还便于与第三方库或既有项目整合。但我在学过React，用过angular1后，觉得它的学习成本是最低，这也就代表着上手的程度快。
@@ -43,6 +45,8 @@ Vue基于HTML、CSS进行扩展和封装，形成的自己的Vue模板，这一�
 5、HTTP请求
 
 这里推荐axios ：Promise based HTTP client for the browser and node.js.  采用ES6的Promise异步操作进行Http请求和调用本地Mock数据，还非常贴心的tranforms JSON data
+
+6、
 
 参考\([https://cn.vuejs.org/v2/guide/comparison.html\](https://cn.vuejs.org/v2/guide/comparison.html%29\)
 
