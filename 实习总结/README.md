@@ -18,7 +18,7 @@
 
 前端采用MVC框架angular，无疑会在性能上得到显著提高，其强大的双向数据绑定、依赖注入、指令复用等功能较于传统的系统而言，能减轻代码冗余程度，其次DOM操作的减少也会提高系统性能，增强用户体验。
 
-目前现在前端框架由**Vue、React、Angular2**三足鼎立，就个人爱好而言，稍微说一下三者感受：
+目前现在前端框架由**Vue、React、Angular2**三足鼎立
 
 > Angular的适用领域相对窄一些，React可以拓展到服务端，移动端Native部分，而Vue因为比较轻量，还能用于业务场景非常轻的页面中。
 
@@ -49,6 +49,8 @@ Vue基于HTML、CSS进行扩展和封装，形成的自己的Vue模板，这一�
 6、vue-cli脚手架
 
 统一项目的目录结构，这就意味着从原来各式各样的文件名中解放出来啦~通过webpack打包工具，增添了热加载，jslint，sass、less、甚至bootstrap等美好的功能。
+
+7、基于HTML、CSS、jQuery的设计框架bootstrap，基于vue的设计框架ui-element，当然也有基于react的框架anti
 
 参考\([https://cn.vuejs.org/v2/guide/comparison.html\](https://cn.vuejs.org/v2/guide/comparison.html%29\)
 
