@@ -48,7 +48,7 @@ Vue基于HTML、CSS进行扩展和封装，形成的自己的Vue模板，这一�
 
 6、vue-cli脚手架
 
-统一项目的目录结构，这就意味着从原来各式各样的文件名中解放出来啦~
+统一项目的目录结构，这就意味着从原来各式各样的文件名中解放出来啦~当然通过webpack打包工具，增添了热加载，jslint等美好的功能
 
 参考\([https://cn.vuejs.org/v2/guide/comparison.html\](https://cn.vuejs.org/v2/guide/comparison.html%29\)
 
