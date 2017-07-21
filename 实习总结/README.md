@@ -14,7 +14,7 @@
 
 ### 2、项目后端搭建
 
-## 二、项目性能分析
+## 二、框架选取
 
 前端采用MVC框架angular，无疑会在性能上得到显著提高，其强大的双向数据绑定、依赖注入、指令复用等功能较于传统的系统而言，能减轻代码冗余程度，其次DOM操作的减少也会提高系统性能，增强用户体验。
 
@@ -52,7 +52,7 @@ Vue基于HTML、CSS进行扩展和封装，形成的自己的Vue模板，这一�
 
 7、基于HTML、CSS、jQuery的设计框架bootstrap，基于vue的设计框架ui-element，当然也有基于react的设计框架antd
 
-参考\([https://cn.vuejs.org/v2/guide/comparison.html\](https://cn.vuejs.org/v2/guide/comparison.html%29%29\)\)
+参考\([https://cn.vuejs.org/v2/guide/comparison.html\](https://cn.vuejs.org/v2/guide/comparison.html%29%29%29\)
 
 ## 性能分析
 
