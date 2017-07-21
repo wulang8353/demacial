@@ -14,19 +14,14 @@
 
 ### 2、项目后端搭建
 
-
-
-
-
 ## 二、项目性能分析
 
 采用MVC框架angular，无疑会在性能上得到显著提高，其强大的双向数据绑定、依赖注入、指令复用等功能较于传统的系统而言，能减轻代码冗余程度，其次DOM操作的减少也会提高系统性能，增强用户体验。
 
 目前现在前端框架由**Vue、React、Angular2**三足鼎立，就个人爱好而言，稍微说一下三者感受：
 
-* **\(Vue\)\[https://cn.vuejs.org/v2/guide/\]**
-
-
+* **\(Vue\)\[**[https://cn.vuejs.org/v2/guide/\](https://cn.vuejs.org/v2/guide/\)**\]**
+* \[Vue\]\(**https://cn.vuejs.org/v2/guide/ **\)
 
 **Angular2**
 
