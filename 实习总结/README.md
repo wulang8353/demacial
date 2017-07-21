@@ -48,7 +48,7 @@ Vue基于HTML、CSS进行扩展和封装，形成的自己的Vue模板，这一�
 
 6、vue-cli脚手架
 
-统一项目的目录结构，这就意味着从原来各式各样的文件名中解放出来啦~通过webpack打包工具，增添了热加载，jslint，sass、less、甚至bootstrap等美好的功能。
+统一项目的目录结构，这就意味着从原来各式各样的文件名中解放出来啦~通过webpack打包工具，增添了热加载，jslint，sass、less、甚至bootstrap等美好的功能
 
 7、基于HTML、CSS、jQuery的设计框架bootstrap，基于vue的设计框架ui-element，当然也有基于react的设计框架antd
 
