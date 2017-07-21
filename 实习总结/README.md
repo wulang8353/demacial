@@ -38,9 +38,13 @@ Vue基于HTML、CSS进行扩展和封装，形成的自己的Vue模板，这一�
 
 4、强大的路由
 
-5、
+页面之间的跳转向来是一件头疼的事情，有时候想拿到路由中的参数进行某些操作的时候，层级不深的就还好，但是对于层级较深，hash值又臭又长的情况，Vue的vue-router解决了以上问题，并且它通过制定一个router对象，让页面的跳转路径清晰的对应起来，类似还有动态路由、嵌套路由等功能，大大方便对url的操作
 
-参考\(https://cn.vuejs.org/v2/guide/comparison.html\)
+5、HTTP请求
+
+Promise based HTTP client for the browser and node.js.  采用ES6的Promise异步操作进行Http请求和调用本地Mock数据
+
+参考\([https://cn.vuejs.org/v2/guide/comparison.html\](https://cn.vuejs.org/v2/guide/comparison.html\)\)
 
 * **Angular2**
 
