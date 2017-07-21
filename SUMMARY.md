@@ -43,7 +43,7 @@
   * [4 模块开发](博客管理系统/4 模块开发.md)
   * [5 数据库连接](博客管理系统/5 数据库连接.md)
   * [6 用户注册前端页面](博客管理系统/6 用户注册前端页面.md)
-  * [7 注册登陆逻辑\(body-parser\)](博客管理系统/7 注册逻辑\(body-parser\).md)
+  * [7 注册登陆逻辑\(body-parser\)](博客管理系统/7 注册逻辑%28body-parser%29.md)
   * [8 基于数据库的验证](博客管理系统/8 基于数据库的验证.md)
   * [9 登陆模块](博客管理系统/9 登陆模块.md)
   * [10 使用cookies](博客管理系统/10 使用cookies保存状态.md)
@@ -56,4 +56,6 @@
   * [6 利用 DNSPod 管理域名解析](aliyunnodejs/6 利用 DNSPod 管理域名解析.md)
   * [7 服务器配置安装 MongoDB](aliyunnodejs/7 服务器配置安装 MongoDB.md)
   * [8 发布上线 Nodejs 项目-1](aliyunnodejs/8 发布上线 Nodejs 项目-1.md)
+* [实习问题总结](实习总结/README.md)
+  * [动态生成html内容，DOM节点绑定的事件无效.md](实习总结/动态节点.md)
 
