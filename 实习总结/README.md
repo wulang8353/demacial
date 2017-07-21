@@ -46,7 +46,9 @@ Vue基于HTML、CSS进行扩展和封装，形成的自己的Vue模板，这一�
 
 这里推荐axios ：Promise based HTTP client for the browser and node.js.  采用ES6的Promise异步操作进行Http请求和调用本地Mock数据，还非常贴心的tranforms JSON data
 
-6、
+6、vue-cli脚手架
+
+统一项目的目录结构，这就意味着从原来各式各样的文件名中解放出来啦~
 
 参考\([https://cn.vuejs.org/v2/guide/comparison.html\](https://cn.vuejs.org/v2/guide/comparison.html%29\)
 
