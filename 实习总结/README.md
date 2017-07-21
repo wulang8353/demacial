@@ -4,6 +4,8 @@
 
 ### 1、项目前端搭建
 
+* 使用MVC框架angular\(指定\)，引入angular-ui-router、angular-file-save等其他ng插件
+
 * 使用Bootsrap和jQuery设计网页布局和样式处理
 
 * 前后端的数据请求交互通过Ajax完成
