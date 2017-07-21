@@ -42,9 +42,9 @@ Vue基于HTML、CSS进行扩展和封装，形成的自己的Vue模板，这一�
 
 5、HTTP请求
 
-Promise based HTTP client for the browser and node.js.  采用ES6的Promise异步操作进行Http请求和调用本地Mock数据
+这里推荐axios ：Promise based HTTP client for the browser and node.js.  采用ES6的Promise异步操作进行Http请求和调用本地Mock数据，还非常贴心的tranforms JSON data
 
-参考\([https://cn.vuejs.org/v2/guide/comparison.html\](https://cn.vuejs.org/v2/guide/comparison.html\)\)
+参考\([https://cn.vuejs.org/v2/guide/comparison.html\](https://cn.vuejs.org/v2/guide/comparison.html%29\)
 
 * **Angular2**
 
