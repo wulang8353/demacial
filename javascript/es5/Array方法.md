@@ -1,16 +1,18 @@
 * [ES6](#ES6)
+
   * [Array.from](#Array.from)
   * [Array.of](#Array.of)
 
 * [ES5](#ES5)
- * [forEach](#forEach)
- * [map](#map)
- * [filter](#filter)
- * [some](#some)
- * [every](#every)
- * [indexOf](#indexOf)
- * [lastIndexOf](#lastIndexOf)
- * [reduce](#reduce)
+
+  * [forEach](#forEach)
+  * [map](#map)
+  * [filter](#filter)
+  * [some](#some)
+  * [every](#every)
+  * [indexOf](#indexOf)
+  * [lastIndexOf](#lastIndexOf)
+  * [reduce](#reduce)
 
 # ES6
 
@@ -26,6 +28,7 @@ if(typeof Array.prototype.forEach  != "function"){
 ```
 
 # ES5
+
 ## forEach
 
 * forEach为数组中的每个元素执行一次回调函数，**不会返回新的数组**
@@ -41,9 +44,11 @@ $.each([],function(index,value,array){
  ...
 })
 ```
+
 第1个和第2个参数正好是相反的，类似有`map()`和`$.map()`
 
 数组求和：
+
 ```
 var sum = 0;
 
@@ -54,7 +59,7 @@ var sum = 0;
 alert(sum) //10
 ```
 
-`forEach`函数接受一个必须的回调函数的同时，还可以接受一个可选的**上下文参数**(改变回调函数中this的指向)
+`forEach`函数接受一个必须的回调函数的同时，还可以接受一个可选的**上下文参数**\(改变回调函数中this的指向\)
 
 ```
 var database = {
@@ -63,7 +68,7 @@ var database = {
     if (this.isValidUser(user)) {
       console.log("你好，" + user);
     } else {
-      console.log("抱歉，"+ user +"，你不是本家人");	
+      console.log("抱歉，"+ user +"，你不是本家人");    
     }
   },
   isValidUser: function (user) {
@@ -81,6 +86,7 @@ database.users.forEach(  // database.users中人遍历
 // 抱歉，江一燕，你不是本家人
 // 抱歉，李小璐，你不是本家
 ```
+
 对IE6-IE8进行仿真扩展
 
 ```
@@ -95,7 +101,6 @@ if(typeof Array.prototype.forEach !="function"){
   }
 }
 ```
-
 
 ## map
 
@@ -127,6 +132,7 @@ var emails = users.map(function (user) { return user.email; });
 
 console.log(emails.join(","));// 1@email.com, 2@email.com, 3@email.com
 ```
+
 对IE6-IE8进行仿真扩展
 
 ```
@@ -143,6 +149,7 @@ if(typeof Array.prototype.map !="function"){
   }
 }
 ```
+
 ## filter
 
 * 新数组
@@ -191,6 +198,7 @@ if(scores.some(high)){
   alter("满足要求")
 }
 ```
+
 对IE6-IE8进行仿真扩展
 
 ```
@@ -200,18 +208,19 @@ if(scores.some(high)){
 
 if (typeof Array.prototype.some != "function") {
   Array.prototype.some = function (fn, context) {
-	var passed = false;
-	if (typeof fn === "function") {
-   	  for (var k = 0, length = this.length; k < length; k++) {
-		  if (passed === true) break;
-		  passed = !!fn.call(context, this[k], k, this);
-		  // ！！ = boolean转型函数，使得返回值为布尔类型
-	  }
+    var passed = false;
+    if (typeof fn === "function") {
+         for (var k = 0, length = this.length; k < length; k++) {
+          if (passed === true) break;
+          passed = !!fn.call(context, this[k], k, this);
+          // ！！ = boolean转型函数，使得返回值为布尔类型
+      }
     }
-	return passed;
+    return passed;
   };
 }
 ```
+
 ## every
 
 * every需要每一项都满足才会返回true
@@ -229,26 +238,27 @@ if(scores.some(high)){
 }else{
   alert("不满足")
 }
-
 ```
+
 对IE6-IE8进行仿真扩展
 
 ```
 if (typeof Array.prototype.some != "function") {
   Array.prototype.some = function (fn, context) {
-	var passed = true;
-	if (typeof fn === "function") {
-   	  for (var k = 0, length = this.length; k < length; k++) {
-		  if (passed === false) break;
-		  passed = !!fn.call(context, this[k], k, this);
-	  }
+    var passed = true;
+    if (typeof fn === "function") {
+         for (var k = 0, length = this.length; k < length; k++) {
+          if (passed === false) break;
+          passed = !!fn.call(context, this[k], k, this);
+      }
     }
-	return passed;
+    return passed;
   };
 }
 ```
 
 ## indexOf
+
 对IE6-IE8进行仿真扩展
 
 ```
@@ -268,8 +278,8 @@ if (typeof Array.prototype.indexOf != "function") {
 }
 ```
 
-
 ## lastIndexOf
+
 对IE6-IE8进行仿真扩展
 
 ```
@@ -292,7 +302,6 @@ if (typeof Array.prototype.lastIndexOf != "function") {
 ## reduce
 
 * 迭代器
-
 
 ```
 array.reduce(callback[, initialValue])
@@ -327,10 +336,11 @@ previous = (3 + 3) =  6, current = 4
 // 第三次迭代
 previous = (6 + 4) =  10, current = undefined (退出)
 ```
+
 有了`reduce`，我们可以轻松实现二维数组的扁平化：
 
-
 // 二维数组扁平化
+
 ```
 var matrix = [
   [1, 2],
@@ -345,6 +355,7 @@ console.log(flatten); // [1, 2, 3, 4, 5, 6]
 ```
 
 // 多维数组扁平化
+
 ```
 function init (arr) {
     var newArr = [];
@@ -361,25 +372,6 @@ function init (arr) {
 init([1, [2], [3, [[4]]]]); // 1,2,3,4
 init([1, [], [3, [[4]]]]);  // 1,3,4
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
