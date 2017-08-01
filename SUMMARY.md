@@ -53,4 +53,5 @@
   * [ 发布上线 Nodejs 项目-1](aliyunnodejs/8 发布上线 Nodejs 项目-1.md)
 * [实习总结](实习总结/README.md)
   * [动态DOM节点绑定的事件无效](实习总结/动态节点.md)
+  * [HTML5拖拽和jQuery ui插件](实习总结/html5tuo-ye-he-jquery-ui-cha-jian.md)
 
