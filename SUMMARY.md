@@ -10,7 +10,7 @@
     * [onload](javascript/es5/onload.md)
   * [ES6](javascript/es6/README.md)
     * [循环](javascript/es6/循环.md)
-  * [Nodejs](node/README.md)
+  * [Nodejs](Nodejs/README.md)
     * [FileSystem](Nodejs/FileSystem.md)
     * [前端项目自动化](Nodejs/auto.md)
     * [nodejs适用场景](Nodejs/nodejs适用场景.md)
