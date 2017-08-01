@@ -2,9 +2,6 @@
 
 * [Introduction](README.md)
 * [自我审视](自我审视.md)
-* [百度前端学院](baidu/README.md)
-  * [热身任务](baidu/热身.md)
-  * [Javascript基础](baidu/javascript基础.md)
 * [Javascript](javascript/README.md)
   * [ES5](javascript/es5.md)
     * [Array](javascript/es5/Array方法.md)
