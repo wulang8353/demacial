@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [自我审视](自我审视.md)
 * [Javascript](javascript/README.md)
-  * [ES5](javascript/es5.md)
+  * [ES5](javascript/es5/README.md)
     * [Array](javascript/es5/Array方法.md)
     * [正则表达式](javascript/es5/正则.md)
     * [宽高概念总结](javascript/es5/宽高.md)
