@@ -52,5 +52,5 @@
   * [服务器配置安装 MongoDB](aliyunnodejs/7 服务器配置安装 MongoDB.md)
   * [ 发布上线 Nodejs 项目-1](aliyunnodejs/8 发布上线 Nodejs 项目-1.md)
 * [实习总结](实习总结/README.md)
-  * [动态生成html内容，DOM节点绑定的事件无效.md](实习总结/动态节点.md)
+  * [动态DOM节点绑定的事件无效](实习总结/动态节点.md)
 
