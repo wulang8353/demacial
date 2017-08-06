@@ -56,5 +56,5 @@
   * [HTML5拖拽和jQuery ui插件](实习总结/拖拽和排序.md)
   * [粘性定位与头部固定](实习总结/粘性定位.md)
   * [JS稀疏数组与密集数组](实习总结/稀疏数组.md)
-  * [Static Node  Vs Live Node](实习总结/querySelectorAll.md)
+  * [Static NodeList  Vs Live NodeList](实习总结/querySelectorAll.md)
 
