@@ -91,7 +91,27 @@ querySelectorAll 已被 IE 8+、FF 3.5+、Safari 3.1+、Chrome 和 Opera 10+ 良
 querySelectorAll 方法接收的参数是一个 CSS 选择符。而 getElementsBy 系列接收的参数只能是单一的className、tagName 和 name
 
 4、返回值
-querySelectorAll 返回的是一个 Static Node List，而 getElementsBy 系列的返回的是一个 Live Node List。
+querySelectorAll 返回的是一个 Static Node List，而 getElementsBy 系列的返回的是一个 Live Node List
 
 5、运行效率
-querySelector可以使用css选择符来查找节点，相比getElemnetById+getElementByTagName这样复杂的操作要简单，但是querySelector查找范围会大很多，所以在速率上querySelector是被完爆的。
+querySelector可以使用css选择符来查找节点，相比getElemnetById+getElementByTagName这样复杂的操作要简单，但是querySelector查找范围会大很多，所以在速率上querySelector是被完爆的
+
+#### 解决办法
+采用querySelector方法，返回静态Node List
+````
+var del = document.getElementsByClassName("del");
+var ul = document.getElementById("goods");
+var li = ul.querySelectorAll("li");
+
+ for(var i = 0; i<del.length; i++) {
+    ((i) => {
+      del[i].addEventListener('click', () => {
+        li[i].parentNode.removeChild(li[i])
+        console.log("i=" + i)
+        console.log("li.length= " + li.length)
+      })
+    })(i)
+  }
+
+
+````
