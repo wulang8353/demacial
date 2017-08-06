@@ -57,13 +57,28 @@ var li = ul.getElementByTagName("li")
 **getElementBy**等方法返回的是一个HTMLCollection对象，这是一个动态的Live Node List，每一次的调用都会重新对文档进行查询,更新自身Length
 **querySelectorAll**方法返回是Static Node Lis对象，是一个 li 集合的快照，对文档的任何操作都不会对其产生影响,不会更新自身Length
 
+
 实际上，HTMLCollection 和 NodeList 十分相似，都是一个动态的元素集合，每次访问都需要重新对文档进行查询。两者的本质上差别在于，HTMLCollection 是属于 Document Object Model HTML 规范，而 NodeList 属于 Document Object Model Core 规范
-
-
 ````
-var ul = document.getElementsByTagName('ul')[0],
-    lis1 = ul.childNodes,
-    lis2 = ul.children;
-console.log(lis1.toString(), lis1.length);    // "[object NodeList]" 
-console.log(lis2.toString(), lis2.length);    // "[object HTMLCollection]" 
+<ul>
+    <li>111</li>
+    <li>222</li> 
+    <li>333</li> 
+</ul>
+
+var ul=document.querySelector('ul');
+var list=ul.querySelectorAll('li'); 
+for(var i=0;i<list.length;i++){ 
+   ul.appendChild(document.createElement('li'));
+}//这个时候就创建了3个新的li，添加在ul列表上。
+ 
+console.log(list.length) //输出的结果仍然是3，不是此时li的数量6
+
+var ul=document.getElementsByTagName('ul')[0];
+var list=ul.getElementsByTagName('li');
+for(var i=0;i<5;i++){ 
+   ul.appendChild(document.createElement('li'));
+} 
+  console.log(list.length)//此时输出的结果就是3+5=8
+
 ````
