@@ -64,6 +64,6 @@ var li = ul.getElementByTagName("li")
 var ul = document.getElementsByTagName('ul')[0],
     lis1 = ul.childNodes,
     lis2 = ul.children;
-console.log(lis1.toString(), lis1.length);    // "[object NodeList]" 11
-console.log(lis2.toString(), lis2.length);    // "[object HTMLCollection]" 4
+console.log(lis1.toString(), lis1.length);    // "[object NodeList]" 
+console.log(lis2.toString(), lis2.length);    // "[object HTMLCollection]" 
 ````
