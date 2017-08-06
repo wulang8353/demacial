@@ -6,32 +6,35 @@
 
 #### 问题描述：
 
-由于框架选型使用了jQuery，所以很自然地使用$("#goods")来获取目标元素，然后使用事件委托绑定事件处理程序
+由于框架选型使用了jQuery，所以很自然地使用$()来获取目标元素，然后使用事件委托绑定事件处理程序。
+但是！我习惯性地遇到功能不太复杂的逻辑时，会试着用原生的js去复原，与是问题就来了，先放示例代码：
 ````
 <ul id="goods">
     <li>
         <div class="id">1</div>
         <div class="name">康泰</div>
+        <div class="del">删除</div>
     </li>
     <li>
         <div class="id">1</div>
-        <div class="name">泰诺</div>
+        <div class="name">泰诺</div>        
+        <div class="del">删除</div
     </li>
     <li>
         <div class="id">1</div>
-        <div class="name">阿莫西林</div>
+        <div class="name">阿莫西林</div>   
+        <div class="del">删除</div>
     </li>
 </ul>
 
-var del = document.getElementsByClassName("goods");
-var ul = document.getElementById("J_List");
+var del = document.getElementsByClassName("del");
+var ul = document.getElementById("goods");
 var li = ul.querySelectorAll("li");
 
  for(var i = 0; i<del.length; i++) {
     ((i) => {
       del[i].addEventListener('click', () => {
-        li[i].remove();
-        // li[i].parentNode.removeChild(li[i])
+        li[i].parentNode.removeChild(li[i])
         console.log(i)
         console.log(li.length)
       })
