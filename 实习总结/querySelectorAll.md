@@ -7,3 +7,19 @@
 #### 问题描述：
 
 由于框架选型使用了jQuery，所以很自然地使用$("#goods")来获取目标元素
+````
+ <ul id="goods">
+    <li>
+        <div class="id">1</div>
+        <div class="name">康泰</div>
+    </li>
+    <li>
+        <div class="id">1</div>
+        <div class="name">康泰</div>
+    </li>
+    <li>
+        <div class="id">1</div>
+        <div class="name">康泰</div>
+    </li>
+</ul>
+````
