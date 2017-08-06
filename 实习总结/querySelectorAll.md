@@ -115,3 +115,8 @@ querySelectorAll 返回的是一个 Static Node List，而 getElementsBy 系列�
 querySelector可以使用css选择符来查找节点，相比getElemnetById+getElementByTagName这样复杂的操作要简单，但是querySelector查找范围会大很多，所以在性能上querySelector是被完爆的
 
 #### 总结
+* 当使用Jquery去查询元素的时候，此时得带的jquery对象，它并不会因为DOM结构的变化而立刻发生对话，这一点和HTMLCollection对象是不同的
+
+* HTMLCollection对象也叫类数组对象，它并非Array的实例，不具备数组拥有的方法。如果基本的文档改变时，那些改变通过所有 HTMLCollection 对象会立即显示出来
+
+* DOM扩展主要是Selectors API(选择符API)和 HTML5，其中querySelectorA和querySelectorAll是electors API的两个核心方法，方便让浏览器原生支持CSS查询
