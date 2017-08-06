@@ -45,7 +45,7 @@ var li = ul.getElementByTagName("li")
     })(i)
   }
 ````
-![](/实习总结/imgs/static-1.jpg)
+![](/浙大网新实习总结/imgs/static-1.jpg)
 
 #### 解决办法
 采用querySelector方法，返回静态Node List
@@ -68,9 +68,9 @@ var li = ul.querySelectorAll("li");
 这里之所以会报错，是因为每一次调用 li都会重新对文档进行查询，数组长度会变化。
 所以每次删除后，数组长度会变化，而外层for循环的i是根据最初数组的长度进行递增的。也就存在，当删除第二项的时候，i=1,而次时的数组只有两项[泰诺、阿莫西林]，所以删除的是li[1] = 阿莫西林。
 
-![](/实习总结/imgs/static-2.jpg)
+![](/浙大网新实习总结/imgs/static-2.jpg)
 
-![](/实习总结/imgs/static-3.jpg)
+![](/浙大网新实习总结/imgs/static-3.jpg)
 
 
 #### 原理分析
