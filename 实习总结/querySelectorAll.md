@@ -35,8 +35,8 @@ var li = ul.getElementByTagName("li")
     ((i) => {
       del[i].addEventListener('click', () => {
         li[i].parentNode.removeChild(li[i])
-        console.log(i)
-        console.log(li.length)
+        console.log("i=" + i)
+        console.log("li.length= " + li.length)
       })
     })(i)
   }
