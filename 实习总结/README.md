@@ -56,7 +56,7 @@ Vue基于HTML、CSS进行扩展和封装，形成的自己的Vue模板，这一�
 
 [https://github.com/vuejs/vue-cli](https://github.com/vuejs/vue-cli)
 
-## 三、性能分析
+## 三、性能优化
 
 性能优化的一般原则有两点：
 
