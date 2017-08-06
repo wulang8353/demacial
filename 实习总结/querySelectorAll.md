@@ -111,6 +111,6 @@ querySelectorAll 方法接收的参数是一个 CSS 选择符。而 getElementsB
 4、返回值
 querySelectorAll 返回的是一个 Static Node List，而 getElementsBy 系列的返回的是一个 Live Node List
 
-5、运行效率
-querySelector可以使用css选择符来查找节点，相比getElemnetById+getElementByTagName这样复杂的操作要简单，但是querySelector查找范围会大很多，所以在速率上querySelector是被完爆的
+5、性能
+querySelector可以使用css选择符来查找节点，相比getElemnetById+getElementByTagName这样复杂的操作要简单，但是querySelector查找范围会大很多，所以在性能上querySelector是被完爆的
 
