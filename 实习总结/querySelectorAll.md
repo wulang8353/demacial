@@ -55,10 +55,8 @@ var li = ul.getElementByTagName("li")
 
 #### 原理分析
 **getElementBy**等方法返回的是一个HTMLCollection对象，这是一个动态的Live Node List，每一次的调用都会重新对文档进行查询,更新自身Length
-**querySelectorAll**方法返回是Static Node Lis对象，是一个 li 集合的快照，对文档的任何操作都不会对其产生影响,不会更新自身Length
+**querySelectorAll**方法返回是Static Node Lis对象，是一个 li 集合的快照，指选出的所有元素的数组，不会随着文档操作而改变.不会更新自身Length
 
-
-实际上，HTMLCollection 和 NodeList 十分相似，都是一个动态的元素集合，每次访问都需要重新对文档进行查询。两者的本质上差别在于，HTMLCollection 是属于 Document Object Model HTML 规范，而 NodeList 属于 Document Object Model Core 规范
 ````
 <ul>
     <li>111</li>
@@ -79,6 +77,21 @@ var list=ul.getElementsByTagName('li');
 for(var i=0;i<5;i++){ 
    ul.appendChild(document.createElement('li'));
 } 
-  console.log(list.length)//此时输出的结果就是3+5=8
 
+console.log(list.length)//此时输出的结果就是3+5=8
 ````
+**getElementBy**与**querySelectorAll**的不同之处
+1. W3C 标准
+querySelectorAll 属于 W3C 中的 Selectors API 规范。而 getElementsBy 系列则属于 W3C 的 DOM 规范 
+
+2、浏览器兼容
+querySelectorAll 已被 IE 8+、FF 3.5+、Safari 3.1+、Chrome 和 Opera 10+ 良好支持 。getElementsBy 系列，以最迟添加到规范中的 getElementsByClassName 为例，IE 9+、FF 3 +、Safari 3.1+、Chrome 和 Opera 9+ 都已经支持该方法了
+
+3、接收参数
+querySelectorAll 方法接收的参数是一个 CSS 选择符。而 getElementsBy 系列接收的参数只能是单一的className、tagName 和 name
+
+4、返回值
+querySelectorAll 返回的是一个 Static Node List，而 getElementsBy 系列的返回的是一个 Live Node List。
+
+5、运行效率
+querySelector可以使用css选择符来查找节点，相比getElemnetById+getElementByTagName这样复杂的操作要简单，但是querySelector查找范围会大很多，所以在速率上querySelector是被完爆的。
