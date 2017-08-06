@@ -107,7 +107,7 @@ Vue基于HTML、CSS进行扩展和封装，形成的自己的Vue模板，这一�
 
 ![](/浙大网新实习总结/imgs/性能优化-事件节流.jpg)
 
-（6）尽早执行操作（DOMContentLoaded,$(document).ready(...)）
+（6）尽早执行操作（DOMContentLoaded 与 $(document).ready(...)）
 
 ![](/浙大网新实习总结/imgs/性能优化-尽早操作.jpg)
 
