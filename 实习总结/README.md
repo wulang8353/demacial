@@ -80,6 +80,7 @@ Vue基于HTML、CSS进行扩展和封装，形成的自己的Vue模板，这一�
 （4）减少DOM操作，多个操作尽量合并在一起执行
 （5）事件节流
 （6）尽早执行操作（DOMContentLoaded,$(document).ready(...)）
+（7）避免使用空的src和href
 
 
 
