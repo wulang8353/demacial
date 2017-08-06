@@ -53,6 +53,17 @@ var li = ul.getElementByTagName("li")
 
 ![](/实习总结/imgs/static-3.jpg)
 
-#### 解决办法
+#### 原理分析
+**getElementBy**等方法返回的是一个HTMLCollection对象，这是一个动态的Live Node List，每一次的调用都会重新对文档进行查询,更新自身Length
+**querySelectorAll**方法返回是Static Node Lis对象，是一个 li 集合的快照，对文档的任何操作都不会对其产生影响,不会更新自身Length
+
+实际上，HTMLCollection 和 NodeList 十分相似，都是一个动态的元素集合，每次访问都需要重新对文档进行查询。两者的本质上差别在于，HTMLCollection 是属于 Document Object Model HTML 规范，而 NodeList 属于 Document Object Model Core 规范
 
 
+````
+var ul = document.getElementsByTagName('ul')[0],
+    lis1 = ul.childNodes,
+    lis2 = ul.children;
+console.log(lis1.toString(), lis1.length);    // "[object NodeList]" 11
+console.log(lis2.toString(), lis2.length);    // "[object HTMLCollection]" 4
+````
