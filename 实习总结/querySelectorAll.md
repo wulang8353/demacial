@@ -29,7 +29,7 @@
 
 var del = document.getElementsByClassName("del");
 var ul = document.getElementById("goods");
-var li = ul.querySelectorAll("li");
+var li = ul.getElementByTagName("li")
 
  for(var i = 0; i<del.length; i++) {
     ((i) => {
