@@ -15,11 +15,26 @@
     </li>
     <li>
         <div class="id">1</div>
-        <div class="name">康泰</div>
+        <div class="name">泰诺</div>
     </li>
     <li>
         <div class="id">1</div>
-        <div class="name">康泰</div>
+        <div class="name">阿莫西林</div>
     </li>
 </ul>
+
+var del = document.getElementsByClassName("user-delete");
+var ul = document.getElementById("J_List");
+var li = ul.querySelectorAll("li");
+
+ for(var i = 0; i<del.length; i++) {
+    ((i) => {
+      del[i].addEventListener('click', () => {
+        li[i].remove();
+        // li[i].parentNode.removeChild(li[i])
+        console.log(i)
+        console.log(li.length)
+      })
+    })(i)
+  }
 ````
