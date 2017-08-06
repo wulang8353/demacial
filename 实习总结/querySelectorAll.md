@@ -72,7 +72,7 @@ var li = ul.querySelectorAll("li");
 ````
 
 #### 原理分析
-**getElementBy**等方法返回的是一个HTMLCollection对象，这是一个动态的Live Node List，每一次的调用都会重新对文档进行查询,更新自身Length
+**getElementBy**等方法返回的是一个HTMLCollection对象，这是一个动态的Live Node List，每一次的调用都会重新对文档进行查询,基于DOM结构动态执行查询后的结果，因此DOM结构的变化会自动反映在Node List中
 **querySelectorAll**方法返回是Static Node Lis对象，是一个 li 集合的快照，指选出的所有元素的数组，不会随着文档操作而改变.不会更新自身Length
 
 ````
@@ -114,3 +114,4 @@ querySelectorAll 返回的是一个 Static Node List，而 getElementsBy 系列�
 5、性能
 querySelector可以使用css选择符来查找节点，相比getElemnetById+getElementByTagName这样复杂的操作要简单，但是querySelector查找范围会大很多，所以在性能上querySelector是被完爆的
 
+#### 总结
