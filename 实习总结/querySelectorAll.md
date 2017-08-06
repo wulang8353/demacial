@@ -53,6 +53,24 @@ var li = ul.getElementByTagName("li")
 
 ![](/实习总结/imgs/static-3.jpg)
 
+#### 解决办法
+采用querySelector方法，返回静态Node List
+````
+var del = document.getElementsByClassName("del");
+var ul = document.getElementById("goods");
+var li = ul.querySelectorAll("li");
+
+ for(var i = 0; i<del.length; i++) {
+    ((i) => {
+      del[i].addEventListener('click', () => {
+        li[i].parentNode.removeChild(li[i])
+        console.log("i=" + i)
+        console.log("li.length= " + li.length)
+      })
+    })(i)
+  }
+````
+
 #### 原理分析
 **getElementBy**等方法返回的是一个HTMLCollection对象，这是一个动态的Live Node List，每一次的调用都会重新对文档进行查询,更新自身Length
 **querySelectorAll**方法返回是Static Node Lis对象，是一个 li 集合的快照，指选出的所有元素的数组，不会随着文档操作而改变.不会更新自身Length
@@ -96,22 +114,3 @@ querySelectorAll 返回的是一个 Static Node List，而 getElementsBy 系列�
 5、运行效率
 querySelector可以使用css选择符来查找节点，相比getElemnetById+getElementByTagName这样复杂的操作要简单，但是querySelector查找范围会大很多，所以在速率上querySelector是被完爆的
 
-#### 解决办法
-采用querySelector方法，返回静态Node List
-````
-var del = document.getElementsByClassName("del");
-var ul = document.getElementById("goods");
-var li = ul.querySelectorAll("li");
-
- for(var i = 0; i<del.length; i++) {
-    ((i) => {
-      del[i].addEventListener('click', () => {
-        li[i].parentNode.removeChild(li[i])
-        console.log("i=" + i)
-        console.log("li.length= " + li.length)
-      })
-    })(i)
-  }
-
-
-````
