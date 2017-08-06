@@ -72,7 +72,7 @@ var li = ul.querySelectorAll("li");
 ````
 
 #### 原理分析
-**getElementBy**等方法返回的是一个HTMLCollection对象，也是一个动态的Live Node List对象，每一次的调用都会重新对文档进行查询,基于DOM结构动态执行查询后的结果，因此DOM结构的变化会自动反映在Node List中，自然会更新Length
+**getElementBy**等方法返回的是一个HTMLCollection对象，也是一个动态的Live Node List对象，每一次的调用都会重新对文档进行查询,基于DOM结构动态执行查询后的结果，因此DOM结构的变化会自动反映在Node List中，自动更新Length
 **querySelectorAll**方法返回是Static Node Lis对象，是一个 li 集合的快照，指选出的所有元素的数组，不会随着文档操作而改变.不会更新自身Length
 
 ````
