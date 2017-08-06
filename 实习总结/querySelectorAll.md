@@ -23,7 +23,7 @@
     </li>
 </ul>
 
-var del = document.getElementsByClassName("user-delete");
+var del = document.getElementsByClassName("goods");
 var ul = document.getElementById("J_List");
 var li = ul.querySelectorAll("li");
 
