@@ -6,13 +6,16 @@
 
 #### 问题描述：
 
-由于框架选型使用了jQuery，所以很自然地使用$()来获取目标元素，然后使用事件委托绑定事件处理程序。
+由于框架选型使用了jQuery，所以很自然地使用$\(\)来获取目标元素，然后使用事件委托绑定事件处理程序。  
 但是！我习惯性地遇到功能不太复杂的逻辑时，会试着用原生的js去复原。
 
-于是问题就来了： **ul.getElementByTagName("li")在遍历时，length属性每次都会重新计算，导致删除非点击的元素**
+于是问题就来了：
+
+ **ul.getElementByTagName\("li"\)在遍历时，length属性每次都会重新计算，导致删除非点击的元素**
 
 先放示例代码：
-````
+
+```
 <ul id="goods">
     <li>
         <div class="id">1</div>
@@ -44,12 +47,15 @@ var li = ul.getElementByTagName("li")
       })
     })(i)
   }
-````
+```
+
 ![](/浙大网新实习总结/imgs/static-1.jpg)
 
 #### 解决办法
+
 采用querySelector方法，返回静态Node List
-````
+
+```
 var del = document.getElementsByClassName("del");
 var ul = document.getElementById("goods");
 var li = ul.querySelectorAll("li");
@@ -63,21 +69,25 @@ var li = ul.querySelectorAll("li");
       })
     })(i)
   }
-````
+```
+
 #### 问题分析
-这里之所以会报错，是因为每一次调用 li都会重新对文档进行查询，数组长度会变化。
-所以每次删除后，数组长度会变化，而外层for循环的i是根据最初数组的长度进行递增的。也就存在，当删除第二项的时候，i=1,而次时的数组只有两项[泰诺、阿莫西林]，所以删除的是li[1] = 阿莫西林。
+
+这里之所以会报错，是因为每一次调用 li都会重新对文档进行查询，数组长度会变化。  
+所以每次删除后，数组长度会变化，而外层for循环的i是根据最初数组的长度进行递增的。也就存在，当删除第二项的时候，i=1,而次时的数组只有两项\[泰诺、阿莫西林\]，所以删除的是li\[1\] = 阿莫西林。
+
+以下是断点调试结果
 
 ![](/浙大网新实习总结/imgs/static-2.jpg)
 
 ![](/浙大网新实习总结/imgs/static-3.jpg)
 
-
 #### 原理分析
-**getElementBy**等方法返回的是一个HTMLCollection对象，也是一个动态的Live Node List对象，每一次的调用都会重新对文档进行查询,基于DOM结构动态执行查询后的结果，因此DOM结构的变化会自动反映在Node List中，自动更新Length
+
+**getElementBy**等方法返回的是一个HTMLCollection对象，也是一个动态的Live Node List对象，每一次的调用都会重新对文档进行查询,基于DOM结构动态执行查询后的结果，因此DOM结构的变化会自动反映在Node List中，自动更新Length  
 **querySelectorAll**方法返回是Static Node Lis对象，是一个 li 集合的快照，指选出的所有元素的数组，不会随着文档操作而改变.不会更新自身Length
 
-````
+```
 <ul>
     <li>111</li>
     <li>222</li> 
@@ -89,7 +99,7 @@ var list=ul.querySelectorAll('li');
 for(var i=0;i<list.length;i++){ 
    ul.appendChild(document.createElement('li'));
 }//这个时候就创建了3个新的li，添加在ul列表上。
- 
+
 console.log(list.length) //输出的结果仍然是3，不是此时li的数量6
 
 var ul=document.getElementsByTagName('ul')[0];
@@ -99,26 +109,31 @@ for(var i=0;i<5;i++){
 } 
 
 console.log(list.length)//此时输出的结果就是3+5=8
-````
-**getElementBy**与**querySelectorAll**的不同之处
-1. W3C 标准
-querySelectorAll 属于 W3C 中的 Selectors API 规范。而 getElementsBy 系列则属于 W3C 的 DOM 规范 
+```
 
-2、浏览器兼容
+**getElementBy**与**querySelectorAll**的不同之处  
+1. W3C 标准  
+querySelectorAll 属于 W3C 中的 Selectors API 规范。而 getElementsBy 系列则属于 W3C 的 DOM 规范
+
+2、浏览器兼容  
 querySelectorAll 已被 IE 8+、FF 3.5+、Safari 3.1+、Chrome 和 Opera 10+ 良好支持 。getElementsBy 系列，以最迟添加到规范中的 getElementsByClassName 为例，IE 9+、FF 3 +、Safari 3.1+、Chrome 和 Opera 9+ 都已经支持该方法了
 
-3、接收参数
+3、接收参数  
 querySelectorAll 方法接收的参数是一个 CSS 选择符。而 getElementsBy 系列接收的参数只能是单一的className、tagName 和 name
 
-4、返回值
+4、返回值  
 querySelectorAll 返回的是一个 Static Node List，而 getElementsBy 系列的返回的是一个 Live Node List
 
-5、性能
+5、性能  
 querySelector可以使用css选择符来查找节点，相比getElemnetById+getElementByTagName这样复杂的操作要简单，但是querySelector查找范围会大很多，所以在性能上querySelector是被完爆的
 
 #### 总结
+
 * 当使用Jquery去查询元素的时候，此时得带的jquery对象，它并不会因为DOM结构的变化而立刻发生对话，这一点和HTMLCollection对象是不同的
 
 * HTMLCollection对象也叫类数组对象，它并非Array的实例，不具备数组拥有的方法。如果基本的文档改变时，那些改变通过所有 HTMLCollection 对象会立即显示出来
 
-* DOM扩展主要是Selectors API(选择符API)和 HTML5，其中querySelectorA和querySelectorAll是electors API的两个核心方法，方便让浏览器原生支持CSS查询
+* DOM扩展主要是Selectors API\(选择符API\)和 HTML5，其中querySelectorA和querySelectorAll是electors API的两个核心方法，方便让浏览器原生支持CSS查询
+
+
+
