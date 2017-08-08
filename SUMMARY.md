@@ -57,6 +57,5 @@
   * [粘性定位与头部固定](浙大网新实习总结/粘性定位.md)
   * [稀疏数组与密集数组](浙大网新实习总结/稀疏数组.md)
   * [Static NodeList  Vs Live NodeList](浙大网新实习总结/Static NodeList  Vs Live NodeList.md)
-
-
+  * [URL中的查询字符串](浙大网新实习总结/URL查询字符串.md)
 
