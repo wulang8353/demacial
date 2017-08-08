@@ -53,7 +53,7 @@
   * [ 发布上线 Nodejs 项目-1](aliyunnodejs/8 发布上线 Nodejs 项目-1.md)
 * [浙大网新实习总结](浙大网新实习总结/README.md)
   * [动态DOM节点绑定的事件无效](浙大网新实习总结/动态节点.md)
-  * [HTML5拖拽和jQuery ui插件](浙大网新实习总结/拖拽和排序.md)
+  * [列表元素拖拽排序](浙大网新实习总结/拖拽和排序.md)
   * [粘性定位与头部固定](浙大网新实习总结/粘性定位.md)
   * [稀疏数组与密集数组](浙大网新实习总结/稀疏数组.md)
   * [Static NodeList  Vs Live NodeList](浙大网新实习总结/Static NodeList  Vs Live NodeList.md)
