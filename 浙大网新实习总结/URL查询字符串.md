@@ -14,41 +14,39 @@ function getUrlAttribute\(name\)
 
 {
 
-//location.search是从当前URL的?号开始的字符串，即查询字符串
+      //location.search是从当前URL的?号开始的字符串，即查询字符串
 
-var query = \(location.search.length &gt; 0 ? location.search.substring\(1\) : null\);
+      var query = \(location.search.length &gt; 0 ? location.search.substring\(1\) : null\);
 
-if\(null!=query\)
+       if\(null!=query\)
 
-{
+       {
 
-var args = new Object\( \);
+              var args = new Object\( \);
 
-var pairs = query.split\("&"\);
+              var pairs = query.split\("&"\);
 
-for\(var i = 0; i &lt; pairs.length; i++\)
+              for\(var i = 0; i &lt; pairs.length; i++\)
 
-{
+        {
 
-var pos = pairs\[i\].indexOf\("="\);
+        var pos = pairs\[i\].indexOf\("="\);
 
-if \(pos == -1\)
+        if \(pos == -1\)  continue;
 
-continue;
+        var argname = pairs\[i\].substring\(0,pos\);
 
-var argname = pairs\[i\].substring\(0,pos\);
+        var value = pairs\[i\].substring\(pos+1\);
 
-var value = pairs\[i\].substring\(pos+1\);
+        value = decodeURIComponent\(value\); // 由于url地址是经过编码的，所以需要解码
 
-value = decodeURIComponent\(value\); // 由于url地址是经过编码的，所以需要解码
+        args\[argname\] = value;
 
-args\[argname\] = value;
+        }
 
-}
+        //根据键名获取值
 
-//根据键名获取值
-
-return args\[name\];
+        return args\[name\];
 
 }
 
@@ -62,19 +60,15 @@ return null;
 
 #### encodeURI Vs encodeURIComponent
 
-\*\*为什么要编码\*\*
+**为什么要编码**
 
-1 url包含中文，浏览器无法识别，不能跳转
+*  url包含中文，浏览器无法识别，不能跳转
 
-\`\`\`\`
+`var str1 = "`[`http://www.baidu.com/s?wd=中国&rsv_spt=1&issp=1&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&inputT=2526`](http://www.baidu.com/s?wd=中国&rsv_spt=1&issp=1&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&inputT=2526)`";`
 
-var str1 = "[http://www.baidu.com/s?wd=中国&rsv\_spt=1&issp=1&rsv\_bp=0&ie=utf-8&tn=baiduhome\_pg&inputT=2526](http://www.baidu.com/s?wd=中国&rsv_spt=1&issp=1&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&inputT=2526)";
+`window.location.href=str1; // 无法跳转`
 
-window.location.href=str1; // 无法跳转
-
-\`\`\`\`
-
-2 传递参数
+* 传递参数
 
 Http协议中参数的传输是\`\`key=value\`\`这种键值对的形式，如果要传多个参数就需要用“&”符号对键值对进行分割
 
@@ -92,63 +86,63 @@ URL编码只是简单的在特殊字符的各个字节前加上%，例如，我�
 
 **encodeURI\(\)**
 
-该方法不会对 ASCII 字母和数字进行编码，也不会对这些 ASCII 标点符号进行编码 \`\`- \_ . ! ~ \* ' \( \)\`\` 。
+> 该方法不会对 ASCII 字母和数字进行编码，也不会对这些 ASCII 标点符号进行编码 \`\`- \_ . ! ~ \* ' \( \)\`\` 。
+>
+> 该方法的目的是对 URI 进行完整的编码，URI 中具有特殊含义的 ASCII 标点符号，如\`\`：;/?:@&=+$,\# \`\`也不会进行转码。
 
-该方法的目的是对 URI 进行完整的编码，URI 中具有特殊含义的 ASCII 标点符号，如\`\`：;/?:@&=+$,\# \`\`也不会进行转码。
 
-\`\`\`\`
 
-document.write\(encodeURI\("[http://www.w3school.com.cn"\)+](http://www.w3school.com.cn"%29+) "&lt;br /&gt;"\)
+`document.write(encodeURI("[`[`http://www.w3school.com.cn")+](http://www.w3school.com.cn")+`](http://www.w3school.com.cn"%29+]%28http://www.w3school.com.cn"%29+)`) "<br />")`
 
-document.write\(encodeURI\("[http://www.w3school.com.cn/My](http://www.w3school.com.cn/My) first/"\)\)
+`document.write(encodeURI("`[`http://www.w3school.com.cn/My`](http://www.w3school.com.cn/My)` first/"))`
 
-document.write\(encodeURI\(",/?:@&=+$\#"\)\)
+`document.write(encodeURI(",/?:@&=+$#"))`
 
-var str1 = encodeURI\("[http://www.baidu.com/s?wd=中国&rsv\_spt=1&issp=1&rsv\_bp=0&ie=utf-8&tn=baiduhome\_pg&inputT=2526"\](http://www.baidu.com/s?wd=中国&rsv_spt=1&issp=1&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&inputT=2526"\)\);
+`var str1 = encodeURI("[`[`http://www.baidu.com/s?wd=中国&rsv_spt=1&issp=1&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&inputT=2526"](http://www.baidu.com/s?wd=中国&rsv_spt=1&issp=1&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&inputT=2526")\`](http://www.baidu.com/s?wd=中国&rsv_spt=1&issp=1&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&inputT=2526"]%28http://www.baidu.com/s?wd=中国&rsv_spt=1&issp=1&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&inputT=2526"%29\)`);`
 
-window.location.href=str1;
+`window.location.href=str1;`
 
-//只转换域名后面的部分，包括中文，并且对,/?:@&=+$\#不处理。
+`//只转换域名后面的部分，包括中文，并且对,/?:@&=+$#不处理。`
 
-[http://www.w3school.com.cn](http://www.w3school.com.cn)
+[`http://www.w3school.com.cn`](http://www.w3school.com.cn)
 
-[http://www.w3school.com.cn/My first/](http://www.w3school.com.cn/My first/)
+[`http://www.w3school.com.cn/My first/`](http://www.w3school.com.cn/My first/)
 
-,/?:@&=+$\#
+`,/?:@&=+$#`
 
-[http://www.baidu.com/s?wd=中国&rsv\_spt=1&issp=1&rsv\_bp=0&ie=utf-8&tn=baiduhome\_pg&inputT=2526](http://www.baidu.com/s?wd=中国&rsv_spt=1&issp=1&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&inputT=2526)
+[`http://www.baidu.com/s?wd=中国&rsv_spt=1&issp=1&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&inputT=2526`](http://www.baidu.com/s?wd=中国&rsv_spt=1&issp=1&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&inputT=2526)
 
-\`\`\`\`
 
-\*\*encodeURIComponent\(\)\*\*
 
-该方法不会对 ASCII 字母和数字进行编码，也不会对这些 ASCII 标点符号进行编码\`\`- \_ . ! ~ \* ' \( \)\`\`
+**encodeURIComponent\(\)**
 
-其他它字符（包括\`\`：;/?:@&=+$,\# \`\`这些用于分隔 URI 组件的标点符号）都会进行转码
+> 该方法不会对 ASCII 字母和数字进行编码，也不会对这些 ASCII 标点符号进行编码\`\`- \_ . ! ~ \* ' \( \)\`\`
+>
+> 其他它字符（包括\`\`：;/?:@&=+$,\# \`\`这些用于分隔 URI 组件的标点符号）都会进行转码
 
-\`\`\`\`
 
-document.write\(encodeURIComponent\("[http://www.w3school.com.cn"\)\](http://www.w3school.com.cn"%29\)\)
 
-document.write\(encodeURIComponent\("[http://www.w3school.com.cn/p](http://www.w3school.com.cn/p) 1/"\)\)
+`document.write(encodeURIComponent("[`[`http://www.w3school.com.cn")](http://www.w3school.com.cn"))\`](http://www.w3school.com.cn"%29]%28http://www.w3school.com.cn"%29%29\)`)`
 
-document.write\(encodeURIComponent\(",/?:@&=+$\#"\)\)
+`document.write(encodeURIComponent("`[`http://www.w3school.com.cn/p`](http://www.w3school.com.cn/p)` 1/"))`
 
-var str1 = encodeURIComponent\("[http://www.baidu.com/s?wd=中国&rsv\_spt=1&issp=1&rsv\_bp=0&ie=utf-8&tn=baiduhome\_pg&inputT=2526"\](http://www.baidu.com/s?wd=中国&rsv_spt=1&issp=1&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&inputT=2526"\)\);
+`document.write(encodeURIComponent(",/?:@&=+$#"))`
 
-window.location.href=str1;
+`var str1 = encodeURIComponent("[`[`http://www.baidu.com/s?wd=中国&rsv_spt=1&issp=1&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&inputT=2526"](http://www.baidu.com/s?wd=中国&rsv_spt=1&issp=1&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&inputT=2526")\`](http://www.baidu.com/s?wd=中国&rsv_spt=1&issp=1&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&inputT=2526"]%28http://www.baidu.com/s?wd=中国&rsv_spt=1&issp=1&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&inputT=2526"%29\)`);`
 
-// 对比
+`window.location.href=str1;`
 
-http%3A%2F%2Fwww.w3school.com.cn
+`// 对比`
 
-http%3A%2F%2Fwww.w3school.com.cn%2Fp%201%2F
+`http%3A%2F%2Fwww.w3school.com.cn`
 
-%2C%2F%3F%3A%40%26%3D%2B%24%23
+`http%3A%2F%2Fwww.w3school.com.cn%2Fp%201%2F`
 
-http%3A%2F%2Fwww.baidu.com%2Fs%3Fwd%3D%E4%B8%AD%E5%9B%BD%26rsv\_spt%3D1%26issp%3D1%26rsv\_bp%3D0%26ie%3Dutf-8%26tn%3Dbaiduhome\_pg%26inputT%3D2526
+`%2C%2F%3F%3A%40%26%3D%2B%24%23`
 
-\`\`\`\`
+`http%3A%2F%2Fwww.baidu.com%2Fs%3Fwd%3D%E4%B8%AD%E5%9B%BD%26rsv_spt%3D1%26issp%3D1%26rsv_bp%3D0%26ie%3Dutf-8%26tn%3Dbaiduhome_pg%26inputT%3D2526`
+
+
 
 **总结**
 
