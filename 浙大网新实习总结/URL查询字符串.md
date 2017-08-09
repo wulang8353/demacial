@@ -10,51 +10,50 @@
 
 ····
 
-function getUrlAttribute\(name\)
+function getUrlAttribute(name)
 
 {
 
       //location.search是从当前URL的?号开始的字符串，即查询字符串
 
-      var query = \(location.search.length &gt; 0 ? location.search.substring\(1\) : null\);
+      var query = (location.search.length &gt; 0 ? location.search.substring(1) : null);
 
-       if\(null!=query\)
+       if(null!=query)
 
        {
 
-              var args = new Object\( \);
+           var args = new Object( );
 
-              var pairs = query.split\("&"\);
+           var pairs = query.split("&");
 
-              for\(var i = 0; i &lt; pairs.length; i++\)
+           for(var i = 0; i &lt; pairs.length; i++)
 
-        {
+           {
 
-        var pos = pairs\[i\].indexOf\("="\);
+                var pos = pairs[i].indexOf("=");
 
-        if \(pos == -1\)  continue;
+                if (pos == -1)  continue;
 
-        var argname = pairs\[i\].substring\(0,pos\);
+                var argname = pairs[i].substring(0,pos);
 
-        var value = pairs\[i\].substring\(pos+1\);
+                var value = pairs[i].substring(pos+1);
 
-        value = decodeURIComponent\(value\); // 由于url地址是经过编码的，所以需要解码
+                value = decodeURIComponent(value); // 由于url地址是经过编码的，所以需要解码
 
-        args\[argname\] = value;
+                args[argname] = value;
 
-        }
+           }
 
-        //根据键名获取值
+          //根据键名获取值
 
-        return args\[name\];
+           return args[name];
+
+      }
+
+      return null;
 
 }
 
-return null;
-
-}
-
-\`\`\`\`
 
 !\[\]\(/浙大网新实习总结/imgs/url编码.png\)
 
@@ -122,9 +121,9 @@ URL编码只是简单的在特殊字符的各个字节前加上%，例如，我�
 
 
 
-`document.write(encodeURIComponent("[`[`http://www.w3school.com.cn")](http://www.w3school.com.cn"))\`](http://www.w3school.com.cn"%29]%28http://www.w3school.com.cn"%29%29\)`)`
+`document.write(encodeURIComponent("[`[`http://www.w3school.com.cn")](http://www.w3school.com.cn"))`](http://www.w3school.com.cn"%29]%28http://www.w3school.com.cn"%29%29\)`)`
 
-`document.write(encodeURIComponent("`[`http://www.w3school.com.cn/p`](http://www.w3school.com.cn/p)` 1/"))`
+`document.write(encodeURIComponent("`[`http://www.w3school.com.cn/p`](http://www.w3school.com.cn/p)"))`
 
 `document.write(encodeURIComponent(",/?:@&=+$#"))`
 
